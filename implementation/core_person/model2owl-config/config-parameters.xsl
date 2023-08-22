@@ -126,8 +126,8 @@
     <xsl:variable name="createdDate" select="''"/>
     <!--    dct:issued-->
     <xsl:variable name="issuedDate" select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>
-    <!--    owl:incompatibleWith -- >
-    <xsl:variable name="incompatibleWith" select="'1.0.0'"/>
+    <!--    owl:incompatibleWith -->
+    <!--xsl:variable name="incompatibleWith" select="'1.0.0'"/-->
     <!--    owl:versionInfo -->
     <xsl:variable name="versionInfo" select="'2.1.0'"/>
     <!--    bibo:status-->
