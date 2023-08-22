@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://data.europa.eu/a4g/ontology#"
+         xmlns:adms="http://www.w3.org/ns/adms#"
+         xmlns:at-voc="http://publications.europa.eu/resource/authority/"
+         xmlns:at-voc-new="http://publications.europa.eu/resource/authority/new/"
+         xmlns:bibo="http://purl.org/ontology/bibo/"
+         xmlns:cc="http://creativecommons.org/ns#"
+         xmlns:cccev="http://data.europa.eu/m8g/"
+         xmlns:core="http://data.europa.eu/m8g/"
+         xmlns:cpov="http://data.europa.eu/m8g/"
+         xmlns:cpsv="http://data.europa.eu/m8g/"
+         xmlns:cpv="http://data.europa.eu/m8g/"
+         xmlns:cv="http://data.europa.eu/m8g/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+         xmlns:epo="http://data.europa.eu/a4g/ontology#"
+         xmlns:epo-cat="http://data.europa.eu/a4g/ontology#"
+         xmlns:epo-con="http://data.europa.eu/a4g/ontology#"
+         xmlns:epo-ful="http://data.europa.eu/a4g/ontology#"
+         xmlns:epo-not="http://data.europa.eu/a4g/ontology#"
+         xmlns:epo-ord="http://data.europa.eu/a4g/ontology#"
+         xmlns:espd="https://github.com/ESPD/ESPD-EDM/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
+         xmlns:locn="http://www.w3.org/ns/locn#"
+         xmlns:nuts="http://data.europa.eu/nuts/"
+         xmlns:org="http://www.w3.org/ns/org#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:person="http://www.w3.org/ns/person#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:time="http://www.w3.org/2006/time#"
+         xmlns:vann="http://purl.org/vocab/vann/"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+   <owl:Ontology rdf:about="http://data.europa.eu/m8g/ontology#core">
+      <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+      <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
+      <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
+      <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+      <owl:imports rdf:resource="http://data.europa.eu/nuts"/>
+      <owl:imports rdf:resource="http://publications.europa.eu/resource/authority/"/>
+      <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
+      <owl:imports rdf:resource="http://www.w3.org/ns/locn"/>
+      <owl:imports rdf:resource="https://data.europa.eu/m8g/"/>
+      <owl:imports rdf:resource="http://data.europa.eu/m8g/"/>
+      <owl:imports rdf:resource="http://data.europa.eu/m8g/"/>
+      <owl:imports rdf:resource="http://data.europa.eu/m8g/"/>
+      <owl:imports rdf:resource="http://data.europa.eu/m8g/"/>
+      <owl:imports rdf:resource="https://data.europa.eu/m8g/"/>
+      <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
+      <owl:imports rdf:resource="http://www.w3.org/ns/person"/>
+      <owl:imports rdf:resource="http://www.w3.org/ns/adms"/>
+      <dct:title xml:lang="en">Core Person Vocabulary</dct:title>
+      <dct:description xml:lang="en">TODO: replace.   This module provides the definitions for the eProcurement ontology core.         Procurement data has been identified as data with a high-reuse potential.         Given the increasing importance of data standards for eProcurement, a number of initiatives         driven by the public sector, the industry and academia have been kick-started in recent years.         Some have grown organically, while others are the result of standardisation work.         The vocabularies and the semantics that they are introducing, the phases of public procurement that they are covering,         and the technologies that they are using all differ. These differences hamper data interoperability and thus its reuse by them or by the wider public.         This creates the need for a common data standard for publishing procurement data, hence allowing data         from different sources to be easily accessed and linked, and consequently reused.</dct:description>
+      <dct:abstract>This artefact provides the ontology core specification.</dct:abstract>
+      <skos:changeNote>This version is automatically generated from core_person_CM.xml on 2023-08-22</skos:changeNote>
+      <rdfs:seeAlso rdf:resource="https://github.com/eprocurementontology/eprocurementontology"/>
+      <rdfs:seeAlso rdf:resource="https://joinup.ec.europa.eu/collection/eprocurement/solution/eprocurement-ontology/about"/>
+      <rdfs:seeAlso rdf:resource="https://op.europa.eu/en/web/eu-vocabularies/e-procurement"/>
+      <rdfs:seeAlso rdf:resource="https://docs.ted.europa.eu/EPO/latest/index.html"/>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+      <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-08-22</dct:issued>
+      <owl:versionInfo>2.1.0</owl:versionInfo>
+      <owl:incompatibleWith>1.0.0</owl:incompatibleWith>
+      <owl:versionIRI rdf:resource="http://data.europa.eu/m8g/ontology#core-2.1.0"/>
+      <bibo:status>Semantic Specification Realease</bibo:status>
+      <owl:priorVersion>2.0.0</owl:priorVersion>
+      <vann:preferredNamespaceUri>http://data.europa.eu/m8g/ontology#</vann:preferredNamespaceUri>
+      <vann:preferredNamespacePrefix>cpv</vann:preferredNamespacePrefix>
+      <dct:rights>The Commission’s reuse policy is implemented by Commission Decision2011/833/EU of 12 December 2011 on the reuse of Commission documents         (OJ L 330,14.12.2011, p. 39 – https://eur-lex.europa.eu/eli/dec/2011/833/oj). Unlessotherwise noted, the reuse of this document is authorised under the         CreativeCommons Attribution 4.0 International (CC BY 4.0) licence (https://creativecommons.org/licenses/by/4.0/).This means that reuse is allowed, provided         that appropriate credit is given and any changes are indicated.</dct:rights>
+      <dct:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0"/>
+      <cc:attributionName>European Union</cc:attributionName>
+      <cc:attributionURL rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/EURUN"/>
+   </owl:Ontology>
+   <p xmlns="">Default for &lt;xmi:XMI&gt; type ""</p>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#citizenship"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
+      <skos:prefLabel xml:lang="en">Citizenship</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
+      <skos:definition xml:lang="en">The citizenship relationship links a Person to a Jurisdiction that has conferred citizenship rights on the individual such as the right to vote, to receive certain protection from the community or the issuance of a passport. Multiple citizenships are recorded as multiple instances of the citizenship relationship. (Person -&gt; Jurisdiction (+citizenship)) </skos:definition>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
+      <label-en xmlns="" xml:lang="en">citizenship</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/person#citizenship</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
+      <definition-en xmlns="" xml:lang="en">The Jurisdiction that has conferred citizenship rights on the Person such as the right to vote, to receive certain protection from the community or the issuance of a passport.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
+      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=Citizenship is a relationship between an individual and a state to which the individual owes allegiance and in turn is entitled to its protection.
+
+Citizenship is information needed by many cross-border use cases and is a legal status as opposed to the more culturally-focussed and less well-defined term "nationality". A Person has one, multiple or even no citizenship status. Multiple citizenships are recorded as multiple instances of the citizenship relationship.</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
+      <package xmlns="" xml:lang="en">Core Person</package>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#placeOfDeath"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfDeath">
+      <skos:prefLabel xml:lang="en">Place of death</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfDeath">
+      <label-en xmlns="" xml:lang="en">place of death</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfDeath">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/person#placeOfDeath</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfDeath">
+      <definition-en xmlns="" xml:lang="en">The Location where the Person died.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfDeath">
+      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=The Place of Birth and Place of Death are given using the Location class which is associated via the appropriate relationship. The Location Class has two properties: (1) the geographic name of the place, which is given as a string such as "Amsterdam" or "Valetta" and (2) an identifier, such as a geonames URI &lt;a href="http://sws.geonames.org/2759794"&gt;http://sws.geonames.org/2759794&lt;/a&gt; (which identifies Amsterdam) or &lt;a href="http://sws.geonames.org/2562305"&gt;http://sws.geonames.org/2562305&lt;/a&gt; (which identifies Valetta). The use of identifiers is preferred as these are unambiguous, however, public sector data typically uses simple names to record places and this is fully supported.</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfDeath">
+      <package xmlns="" xml:lang="en">Core Person</package>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#countryOfDeath"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfDeath">
+      <skos:prefLabel xml:lang="en">Country of death</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfDeath">
+      <label-en xmlns="" xml:lang="en">country of death</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfDeath">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/person#countryOfDeath</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfDeath">
+      <definition-en xmlns="" xml:lang="en">The country in which the Person died.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfDeath">
+      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=The Location Class has two properties: a Geographic Name and a Geographic Identifier. Plain codes like "DE" should be provided as values for Geographical Names whereas URIs should be provided as value of the Geographical Identifier. Ideally, provide both. Providing a simple country name is problematic and should be avoided whereas using a standardised system that allows the use of a code list for country names has a lot of potential for increasing semantic interoperability. Known diversity that one has to deal with when exchanging country names between different communication partners without relying on an agreed code list are: (a) long form vs. short form of a country name (e.g. Federal Republic of Germany vs. Germany), (b) different languages (Italy vs. Italia), (c) historic name vs. current name (Burma vs. Myanmar), (d) ambiguity of similar sounding countries (Republic of the Congo vs. Democratic Republic of the Congo). The Publications Office of the European Union recommends and uses &lt;a href="https://www.iso.org/iso-3166-country-codes.html"&gt;ISO 3166-1&lt;/a&gt; codes for countries in all cases except two: use 'UK' in preference to the ISO 3166 code GB for the United Kingdom; use 'EL' in preference to the ISO 3166 code GR for Greece. See &lt;a href="http://publications.europa.eu/code/en/en-5000500.htm"&gt; Publications Office list of countries&lt;/a&gt; for details of the OPOCE's full list of countries, codes, currencies and more. Where a country has changed its name or no longer exists (such as Czechoslovakia, Yugoslavia etc.) use the&lt;a href="https://www.iso.org/standard/72484.html"&gt;ISO 3166-3 code&lt;/a&gt;.</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfDeath">
+      <package xmlns="" xml:lang="en">Core Person</package>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth">
+      <skos:prefLabel xml:lang="en">Place of birth</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth">
+      <skos:definition xml:lang="en">A person's place of birth.
+ (Person -&gt; Location (+placeOfBirth)) </skos:definition>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth">
+      <label-en xmlns="" xml:lang="en">place of birth</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/person#placeOfBirth</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth">
+      <definition-en xmlns="" xml:lang="en">The Location where the Person was born.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth">
+      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=The Place of Birth and Place of Death are given using the Location class which is associated via the appropriate relationship. The Location Class has two properties: (1) the geographic name of the place, which is given as a string such as "Amsterdam" or "Valetta" and (2) an identifier, such as a geonames URI &lt;a href="http://sws.geonames.org/2759794"&gt;http://sws.geonames.org/2759794&lt;/a&gt; (which identifies Amsterdam) or &lt;a href="http://sws.geonames.org/2562305"&gt;http://sws.geonames.org/2562305&lt;/a&gt; (which identifies Valetta). The use of identifiers is preferred as these are unambiguous, however, public sector data typically uses simple names to record places and this is fully supported.</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth">
+      <package xmlns="" xml:lang="en">Core Person</package>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#domicile"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#domicile">
+      <skos:prefLabel xml:lang="en">Domicile</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#domicile">
+      <skos:definition xml:lang="en">The permanent address of a person (Person -&gt; Address (+domicile)) </skos:definition>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#domicile">
+      <uri xmlns="" xml:lang="en">http://data.europa.eu/m8g/domicile</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#domicile">
+      <label-en xmlns="" xml:lang="en">domicile</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#domicile">
+      <definition-en xmlns="" xml:lang="en">The place that the Person treats as permanent home.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#domicile">
+      <package xmlns="" xml:lang="en">Core Person</package>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth">
+      <skos:prefLabel xml:lang="en">Country of birth</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth">
+      <skos:definition xml:lang="en">The country in which a Person was born. (Person -&gt; Location (+countryOfBirth)) </skos:definition>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth">
+      <label-en xmlns="" xml:lang="en">country of birth</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth">
+      <definition-en xmlns="" xml:lang="en">The country in which the Person was born.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth">
+      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=The Location Class has two properties: a Geographic Name and a Geographic Identifier. Plain codes like "DE" should be provided as values for Geographical Names whereas URIs should be provided as value of the Geographical Identifier. Ideally, provide both. Providing a simple country name is problematic and should be avoided whereas using a standardised system that allows the use of a code list for country names has a lot of potential for increasing semantic interoperability. Known diversity that one has to deal with when exchanging country names between different communication partners without relying on an agreed code list are: (a) long form vs. short form of a country name (e.g. Federal Republic of Germany vs. Germany), (b) different languages (Italy vs. Italia), (c) historic name vs. current name (Burma vs. Myanmar), (d) ambiguity of similar sounding countries (Republic of the Congo vs. Democratic Republic of the Congo). The Publications Office of the European Union recommends and uses &lt;a href="https://www.iso.org/iso-3166-country-codes.html"&gt;ISO 3166-1&lt;/a&gt; codes for countries in all cases except two: use 'UK' in preference to the ISO 3166 code GB for the United Kingdom; use 'EL' in preference to the ISO 3166 code GR for Greece. See &lt;a href="http://publications.europa.eu/code/en/en-5000500.htm"&gt; Publications Office list of countries&lt;/a&gt; for details of the OPOCE's full list of countries, codes, currencies and more. Where a country has changed its name or no longer exists (such as Czechoslovakia, Yugoslavia etc.) use the&lt;a href="https://www.iso.org/standard/72484.html"&gt;ISO 3166-3 code&lt;/a&gt;.</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/person#countryOfBirth</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth">
+      <package xmlns="" xml:lang="en">Core Person</package>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#change"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#change">
+      <skos:prefLabel xml:lang="en">Change</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#change">
+      <label-en xmlns="" xml:lang="en">change</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#change">
+      <usageNote-en xmlns="" xml:lang="en">For example, a change of name or a person's their death. It is assumed that an inverse relationship will also be defined.</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#change">
+      <package xmlns="" xml:lang="en">Core Person</package>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#change">
+      <definition-en xmlns="" xml:lang="en">The change relationship links a Class to a record of change in a data field associated with the Class.</definition-en>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#identifier"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <skos:prefLabel xml:lang="en">Identifier</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <skos:definition xml:lang="en">For many systems, the identifier is the key piece of information about an individual and therefore an important part of the core person vocabulary. However, all identifiers are contextspecific and when exchanging data between systems it is important to provide additional information that makes this explicit. An individual may have any number of identifiers. (Person -&gt; Identifier (+identifier)) </skos:definition>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <label-en xmlns="" xml:lang="en">identifier</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/identifier</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=Examples include a national identification number, a student ID, national fiscal number, etc. We also refer to the &lt;a href="http://data.europa.eu/eli/reg/2014/910/oj"&gt;eIDAS regulation&lt;/a&gt; on "electronic identification and trust services" and its &lt;a href="https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eIDAS%2BeID%2BProfile?preview%3D/82773108/148898847/eIDAS%2520SAML%2520Attribute%2520Profile%2520v1.2%2520Final.pdf&amp;sa=D&amp;source=editors&amp;ust=1619073953427000&amp;usg=AFQjCNFMJFPCmHjV0gLJjf8dSHqGUY3ulw"&gt;mapping&lt;/a&gt; to the Core Person Vocabulary.</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <definition-en xmlns="" xml:lang="en">The unambiguous structured reference to the Person.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <package xmlns="" xml:lang="en">Core Person</package>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#contactPoint"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#contactPoint">
+      <skos:prefLabel xml:lang="en">Contact point</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#contactPoint">
+      <label-en xmlns="" xml:lang="en">contact point</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#contactPoint">
+      <definition-en xmlns="" xml:lang="en">The main contact information of the resource.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#contactPoint">
+      <uri xmlns="" xml:lang="en">http://data.europa.eu/m8g/contactPoint</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#contactPoint">
+      <usageNote xmlns="" xml:lang="en">NOTE$ea_notes=Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information.</usageNote>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#contactPoint">
+      <package xmlns="" xml:lang="en">Core Person</package>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#residency"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#residency">
+      <skos:prefLabel xml:lang="en">Residency</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#residency">
+      <label-en xmlns="" xml:lang="en">residency</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#residency">
+      <definition-en xmlns="" xml:lang="en">Jurisdiction where the Person has their dwelling.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#residency">
+      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=A Person's fixed, permanent, and principal home for legal purposes, the place (especially the house) in which a person officially lives or resides. A Person has one, multiple or even no residency status. Multiple residencies are recorded as multiple instances of the residency relationship.</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#residency">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/person#residency</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#residency">
+      <package xmlns="" xml:lang="en">Core Person</package>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#identifies"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
+      <skos:prefLabel xml:lang="en">Identifies</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
+      <label-en xmlns="" xml:lang="en">identifies</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#identifies</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
+      <definition-en xmlns="" xml:lang="en">The entity that is referenced by the Identifier.</definition-en>
+   </rdf:Description>
+</rdf:RDF>

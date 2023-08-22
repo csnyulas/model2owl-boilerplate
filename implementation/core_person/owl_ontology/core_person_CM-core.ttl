@@ -1,0 +1,145 @@
+@prefix : <http://data.europa.eu/a4g/ontology#> .
+@prefix at-voc: <http://publications.europa.eu/resource/authority/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <file:///home/runner/work/model2owl-boilerplate/model2owl-boilerplate/implementation/core_person/owl_ontology/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:change a owl:ObjectProperty ;
+    ns1:definition-en "The change relationship links a Class to a record of change in a data field associated with the Class."@en ;
+    ns1:label-en "change"@en ;
+    ns1:package "Core Person"@en ;
+    ns1:usageNote-en "For example, a change of name or a person's their death. It is assumed that an inverse relationship will also be defined."@en ;
+    skos:prefLabel "Change"@en .
+
+:citizenship a owl:ObjectProperty ;
+    ns1:definition-en "The Jurisdiction that has conferred citizenship rights on the Person such as the right to vote, to receive certain protection from the community or the issuance of a passport."@en ;
+    ns1:label-en "citizenship"@en ;
+    ns1:package "Core Person"@en ;
+    ns1:uri "http://www.w3.org/ns/person#citizenship"@en ;
+    ns1:usageNote-en """NOTE$ea_notes=Citizenship is a relationship between an individual and a state to which the individual owes allegiance and in turn is entitled to its protection.
+
+Citizenship is information needed by many cross-border use cases and is a legal status as opposed to the more culturally-focussed and less well-defined term "nationality". A Person has one, multiple or even no citizenship status. Multiple citizenships are recorded as multiple instances of the citizenship relationship."""@en ;
+    skos:definition "The citizenship relationship links a Person to a Jurisdiction that has conferred citizenship rights on the individual such as the right to vote, to receive certain protection from the community or the issuance of a passport. Multiple citizenships are recorded as multiple instances of the citizenship relationship. (Person -> Jurisdiction (+citizenship)) "@en ;
+    skos:prefLabel "Citizenship"@en .
+
+:contactPoint a owl:ObjectProperty ;
+    ns1:definition-en "The main contact information of the resource."@en ;
+    ns1:label-en "contact point"@en ;
+    ns1:package "Core Person"@en ;
+    ns1:uri "http://data.europa.eu/m8g/contactPoint"@en ;
+    ns1:usageNote "NOTE$ea_notes=Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information."@en ;
+    skos:prefLabel "Contact point"@en .
+
+:countryOfBirth a owl:ObjectProperty ;
+    ns1:definition-en "The country in which the Person was born."@en ;
+    ns1:label-en "country of birth"@en ;
+    ns1:package "Core Person"@en ;
+    ns1:uri "http://www.w3.org/ns/person#countryOfBirth"@en ;
+    ns1:usageNote-en "NOTE$ea_notes=The Location Class has two properties: a Geographic Name and a Geographic Identifier. Plain codes like \"DE\" should be provided as values for Geographical Names whereas URIs should be provided as value of the Geographical Identifier. Ideally, provide both. Providing a simple country name is problematic and should be avoided whereas using a standardised system that allows the use of a code list for country names has a lot of potential for increasing semantic interoperability. Known diversity that one has to deal with when exchanging country names between different communication partners without relying on an agreed code list are: (a) long form vs. short form of a country name (e.g. Federal Republic of Germany vs. Germany), (b) different languages (Italy vs. Italia), (c) historic name vs. current name (Burma vs. Myanmar), (d) ambiguity of similar sounding countries (Republic of the Congo vs. Democratic Republic of the Congo). The Publications Office of the European Union recommends and uses <a href=\"https://www.iso.org/iso-3166-country-codes.html\">ISO 3166-1</a> codes for countries in all cases except two: use 'UK' in preference to the ISO 3166 code GB for the United Kingdom; use 'EL' in preference to the ISO 3166 code GR for Greece. See <a href=\"http://publications.europa.eu/code/en/en-5000500.htm\"> Publications Office list of countries</a> for details of the OPOCE's full list of countries, codes, currencies and more. Where a country has changed its name or no longer exists (such as Czechoslovakia, Yugoslavia etc.) use the<a href=\"https://www.iso.org/standard/72484.html\">ISO 3166-3 code</a>."@en ;
+    skos:definition "The country in which a Person was born. (Person -> Location (+countryOfBirth)) "@en ;
+    skos:prefLabel "Country of birth"@en .
+
+:countryOfDeath a owl:ObjectProperty ;
+    ns1:definition-en "The country in which the Person died."@en ;
+    ns1:label-en "country of death"@en ;
+    ns1:package "Core Person"@en ;
+    ns1:uri "http://www.w3.org/ns/person#countryOfDeath"@en ;
+    ns1:usageNote-en "NOTE$ea_notes=The Location Class has two properties: a Geographic Name and a Geographic Identifier. Plain codes like \"DE\" should be provided as values for Geographical Names whereas URIs should be provided as value of the Geographical Identifier. Ideally, provide both. Providing a simple country name is problematic and should be avoided whereas using a standardised system that allows the use of a code list for country names has a lot of potential for increasing semantic interoperability. Known diversity that one has to deal with when exchanging country names between different communication partners without relying on an agreed code list are: (a) long form vs. short form of a country name (e.g. Federal Republic of Germany vs. Germany), (b) different languages (Italy vs. Italia), (c) historic name vs. current name (Burma vs. Myanmar), (d) ambiguity of similar sounding countries (Republic of the Congo vs. Democratic Republic of the Congo). The Publications Office of the European Union recommends and uses <a href=\"https://www.iso.org/iso-3166-country-codes.html\">ISO 3166-1</a> codes for countries in all cases except two: use 'UK' in preference to the ISO 3166 code GB for the United Kingdom; use 'EL' in preference to the ISO 3166 code GR for Greece. See <a href=\"http://publications.europa.eu/code/en/en-5000500.htm\"> Publications Office list of countries</a> for details of the OPOCE's full list of countries, codes, currencies and more. Where a country has changed its name or no longer exists (such as Czechoslovakia, Yugoslavia etc.) use the<a href=\"https://www.iso.org/standard/72484.html\">ISO 3166-3 code</a>."@en ;
+    skos:prefLabel "Country of death"@en .
+
+:domicile a owl:ObjectProperty ;
+    ns1:definition-en "The place that the Person treats as permanent home."@en ;
+    ns1:label-en "domicile"@en ;
+    ns1:package "Core Person"@en ;
+    ns1:uri "http://data.europa.eu/m8g/domicile"@en ;
+    skos:definition "The permanent address of a person (Person -> Address (+domicile)) "@en ;
+    skos:prefLabel "Domicile"@en .
+
+:identifier a owl:ObjectProperty ;
+    ns1:definition-en "The unambiguous structured reference to the Person."@en ;
+    ns1:label-en "identifier"@en ;
+    ns1:package "Core Person"@en ;
+    ns1:uri "http://purl.org/dc/terms/identifier"@en ;
+    ns1:usageNote-en "NOTE$ea_notes=Examples include a national identification number, a student ID, national fiscal number, etc. We also refer to the <a href=\"http://data.europa.eu/eli/reg/2014/910/oj\">eIDAS regulation</a> on \"electronic identification and trust services\" and its <a href=\"https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eIDAS%2BeID%2BProfile?preview%3D/82773108/148898847/eIDAS%2520SAML%2520Attribute%2520Profile%2520v1.2%2520Final.pdf&sa=D&source=editors&ust=1619073953427000&usg=AFQjCNFMJFPCmHjV0gLJjf8dSHqGUY3ulw\">mapping</a> to the Core Person Vocabulary."@en ;
+    skos:definition "For many systems, the identifier is the key piece of information about an individual and therefore an important part of the core person vocabulary. However, all identifiers are contextspecific and when exchanging data between systems it is important to provide additional information that makes this explicit. An individual may have any number of identifiers. (Person -> Identifier (+identifier)) "@en ;
+    skos:prefLabel "Identifier"@en .
+
+:identifies a owl:ObjectProperty ;
+    ns1:definition-en "The entity that is referenced by the Identifier."@en ;
+    ns1:label-en "identifies"@en ;
+    ns1:uri "http://www.w3.org/ns/adms#identifies"@en ;
+    skos:prefLabel "Identifies"@en .
+
+:placeOfBirth a owl:ObjectProperty ;
+    ns1:definition-en "The Location where the Person was born."@en ;
+    ns1:label-en "place of birth"@en ;
+    ns1:package "Core Person"@en ;
+    ns1:uri "http://www.w3.org/ns/person#placeOfBirth"@en ;
+    ns1:usageNote-en "NOTE$ea_notes=The Place of Birth and Place of Death are given using the Location class which is associated via the appropriate relationship. The Location Class has two properties: (1) the geographic name of the place, which is given as a string such as \"Amsterdam\" or \"Valetta\" and (2) an identifier, such as a geonames URI <a href=\"http://sws.geonames.org/2759794\">http://sws.geonames.org/2759794</a> (which identifies Amsterdam) or <a href=\"http://sws.geonames.org/2562305\">http://sws.geonames.org/2562305</a> (which identifies Valetta). The use of identifiers is preferred as these are unambiguous, however, public sector data typically uses simple names to record places and this is fully supported."@en ;
+    skos:definition """A person's place of birth.
+ (Person -> Location (+placeOfBirth)) """@en ;
+    skos:prefLabel "Place of birth"@en .
+
+:placeOfDeath a owl:ObjectProperty ;
+    ns1:definition-en "The Location where the Person died."@en ;
+    ns1:label-en "place of death"@en ;
+    ns1:package "Core Person"@en ;
+    ns1:uri "http://www.w3.org/ns/person#placeOfDeath"@en ;
+    ns1:usageNote-en "NOTE$ea_notes=The Place of Birth and Place of Death are given using the Location class which is associated via the appropriate relationship. The Location Class has two properties: (1) the geographic name of the place, which is given as a string such as \"Amsterdam\" or \"Valetta\" and (2) an identifier, such as a geonames URI <a href=\"http://sws.geonames.org/2759794\">http://sws.geonames.org/2759794</a> (which identifies Amsterdam) or <a href=\"http://sws.geonames.org/2562305\">http://sws.geonames.org/2562305</a> (which identifies Valetta). The use of identifiers is preferred as these are unambiguous, however, public sector data typically uses simple names to record places and this is fully supported."@en ;
+    skos:prefLabel "Place of death"@en .
+
+:residency a owl:ObjectProperty ;
+    ns1:definition-en "Jurisdiction where the Person has their dwelling."@en ;
+    ns1:label-en "residency"@en ;
+    ns1:package "Core Person"@en ;
+    ns1:uri "http://www.w3.org/ns/person#residency"@en ;
+    ns1:usageNote-en "NOTE$ea_notes=A Person's fixed, permanent, and principal home for legal purposes, the place (especially the house) in which a person officially lives or resides. A Person has one, multiple or even no residency status. Multiple residencies are recorded as multiple instances of the residency relationship."@en ;
+    skos:prefLabel "Residency"@en .
+
+<http://data.europa.eu/m8g/ontology#core> a owl:Ontology ;
+    cc:attributionName "European Union" ;
+    cc:attributionURL <http://publications.europa.eu/resource/authority/corporate-body/EURUN> ;
+    dcterms:abstract "This artefact provides the ontology core specification." ;
+    dcterms:created ""^^xsd:date ;
+    dcterms:description "TODO: replace.   This module provides the definitions for the eProcurement ontology core.         Procurement data has been identified as data with a high-reuse potential.         Given the increasing importance of data standards for eProcurement, a number of initiatives         driven by the public sector, the industry and academia have been kick-started in recent years.         Some have grown organically, while others are the result of standardisation work.         The vocabularies and the semantics that they are introducing, the phases of public procurement that they are covering,         and the technologies that they are using all differ. These differences hamper data interoperability and thus its reuse by them or by the wider public.         This creates the need for a common data standard for publishing procurement data, hence allowing data         from different sources to be easily accessed and linked, and consequently reused."@en ;
+    dcterms:issued "2023-08-22"^^xsd:date ;
+    dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
+    dcterms:rights "The Commission’s reuse policy is implemented by Commission Decision2011/833/EU of 12 December 2011 on the reuse of Commission documents         (OJ L 330,14.12.2011, p. 39 – https://eur-lex.europa.eu/eli/dec/2011/833/oj). Unlessotherwise noted, the reuse of this document is authorised under the         CreativeCommons Attribution 4.0 International (CC BY 4.0) licence (https://creativecommons.org/licenses/by/4.0/).This means that reuse is allowed, provided         that appropriate credit is given and any changes are indicated." ;
+    dcterms:title "Core Person Vocabulary"@en ;
+    bibo:status "Semantic Specification Realease" ;
+    vann:preferredNamespacePrefix "cpv" ;
+    vann:preferredNamespaceUri "http://data.europa.eu/m8g/ontology#" ;
+    rdfs:seeAlso <https://docs.ted.europa.eu/EPO/latest/index.html>,
+        <https://github.com/eprocurementontology/eprocurementontology>,
+        <https://joinup.ec.europa.eu/collection/eprocurement/solution/eprocurement-ontology/about>,
+        <https://op.europa.eu/en/web/eu-vocabularies/e-procurement> ;
+    owl:imports cccev:,
+        <http://data.europa.eu/nuts>,
+        at-voc:,
+        dcterms:,
+        <http://www.opengis.net/ont/geosparql>,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        <http://www.w3.org/ns/adms>,
+        <http://www.w3.org/ns/locn>,
+        org:,
+        <http://www.w3.org/ns/person>,
+        foaf:,
+        <https://data.europa.eu/m8g/> ;
+    owl:incompatibleWith "1.0.0" ;
+    owl:priorVersion "2.0.0" ;
+    owl:versionIRI <http://data.europa.eu/m8g/ontology#core-2.1.0> ;
+    owl:versionInfo "2.1.0" ;
+    skos:changeNote "This version is automatically generated from core_person_CM.xml on 2023-08-22" .
+
+[] a ns1:p .
+
