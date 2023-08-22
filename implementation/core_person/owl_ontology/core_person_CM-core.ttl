@@ -8,10 +8,25 @@
 @prefix ns1: <file:///home/runner/work/model2owl-boilerplate/model2owl-boilerplate/implementation/core_person/owl_ontology/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:alternativeName a rdf:Property ;
+    ns1:definition-en "Any name by which a Person is known, other than their full name."@en ;
+    ns1:label-en "alternative name"@en ;
+    ns1:uri "http://purl.org/dc/terms/alternative"@en ;
+    ns1:usageNote-en "NOTE"@en ;
+    skos:prefLabel "Alternative name"@en .
+
+:birthName a rdf:Property ;
+    ns1:definition-en "Full name of the Person given upon their birth."@en ;
+    ns1:label-en "birth name"@en ;
+    ns1:uri "http://www.w3.org/ns/person#birthName"@en ;
+    ns1:usageNote-en "NOTE"@en ;
+    skos:prefLabel "Birth name"@en .
 
 :change a owl:ObjectProperty ;
     ns1:definition-en "The change relationship links a Class to a record of change in a data field associated with the Class."@en ;
@@ -28,7 +43,7 @@
     ns1:usageNote-en """NOTE$ea_notes=Citizenship is a relationship between an individual and a state to which the individual owes allegiance and in turn is entitled to its protection.
 
 Citizenship is information needed by many cross-border use cases and is a legal status as opposed to the more culturally-focussed and less well-defined term "nationality". A Person has one, multiple or even no citizenship status. Multiple citizenships are recorded as multiple instances of the citizenship relationship."""@en ;
-    skos:definition "The citizenship relationship links a Person to a Jurisdiction that has conferred citizenship rights on the individual such as the right to vote, to receive certain protection from the community or the issuance of a passport. Multiple citizenships are recorded as multiple instances of the citizenship relationship. (Person -> Jurisdiction (+citizenship)) "@en ;
+    skos:definition "The citizenship relationship links a Person to a Jurisdiction that has conferred citizenship rights on the individual such as the right to vote, to receive certain protection from the community or the issuance of a passport. Multiple citizenships are recorded as multiple instances of the citizenship relationship. (cpv:Person -> Jurisdiction (+citizenship)) "@en ;
     skos:prefLabel "Citizenship"@en .
 
 :contactPoint a owl:ObjectProperty ;
@@ -45,7 +60,7 @@ Citizenship is information needed by many cross-border use cases and is a legal 
     ns1:package "Core Person"@en ;
     ns1:uri "http://www.w3.org/ns/person#countryOfBirth"@en ;
     ns1:usageNote-en "NOTE$ea_notes=The Location Class has two properties: a Geographic Name and a Geographic Identifier. Plain codes like \"DE\" should be provided as values for Geographical Names whereas URIs should be provided as value of the Geographical Identifier. Ideally, provide both. Providing a simple country name is problematic and should be avoided whereas using a standardised system that allows the use of a code list for country names has a lot of potential for increasing semantic interoperability. Known diversity that one has to deal with when exchanging country names between different communication partners without relying on an agreed code list are: (a) long form vs. short form of a country name (e.g. Federal Republic of Germany vs. Germany), (b) different languages (Italy vs. Italia), (c) historic name vs. current name (Burma vs. Myanmar), (d) ambiguity of similar sounding countries (Republic of the Congo vs. Democratic Republic of the Congo). The Publications Office of the European Union recommends and uses <a href=\"https://www.iso.org/iso-3166-country-codes.html\">ISO 3166-1</a> codes for countries in all cases except two: use 'UK' in preference to the ISO 3166 code GB for the United Kingdom; use 'EL' in preference to the ISO 3166 code GR for Greece. See <a href=\"http://publications.europa.eu/code/en/en-5000500.htm\"> Publications Office list of countries</a> for details of the OPOCE's full list of countries, codes, currencies and more. Where a country has changed its name or no longer exists (such as Czechoslovakia, Yugoslavia etc.) use the<a href=\"https://www.iso.org/standard/72484.html\">ISO 3166-3 code</a>."@en ;
-    skos:definition "The country in which a Person was born. (Person -> Location (+countryOfBirth)) "@en ;
+    skos:definition "The country in which a Person was born. (cpv:Person -> Location (+countryOfBirth)) "@en ;
     skos:prefLabel "Country of birth"@en .
 
 :countryOfDeath a owl:ObjectProperty ;
@@ -56,13 +71,55 @@ Citizenship is information needed by many cross-border use cases and is a legal 
     ns1:usageNote-en "NOTE$ea_notes=The Location Class has two properties: a Geographic Name and a Geographic Identifier. Plain codes like \"DE\" should be provided as values for Geographical Names whereas URIs should be provided as value of the Geographical Identifier. Ideally, provide both. Providing a simple country name is problematic and should be avoided whereas using a standardised system that allows the use of a code list for country names has a lot of potential for increasing semantic interoperability. Known diversity that one has to deal with when exchanging country names between different communication partners without relying on an agreed code list are: (a) long form vs. short form of a country name (e.g. Federal Republic of Germany vs. Germany), (b) different languages (Italy vs. Italia), (c) historic name vs. current name (Burma vs. Myanmar), (d) ambiguity of similar sounding countries (Republic of the Congo vs. Democratic Republic of the Congo). The Publications Office of the European Union recommends and uses <a href=\"https://www.iso.org/iso-3166-country-codes.html\">ISO 3166-1</a> codes for countries in all cases except two: use 'UK' in preference to the ISO 3166 code GB for the United Kingdom; use 'EL' in preference to the ISO 3166 code GR for Greece. See <a href=\"http://publications.europa.eu/code/en/en-5000500.htm\"> Publications Office list of countries</a> for details of the OPOCE's full list of countries, codes, currencies and more. Where a country has changed its name or no longer exists (such as Czechoslovakia, Yugoslavia etc.) use the<a href=\"https://www.iso.org/standard/72484.html\">ISO 3166-3 code</a>."@en ;
     skos:prefLabel "Country of death"@en .
 
+:dateOfBirth a rdf:Property ;
+    ns1:definition-en "The point in time on which the Person was born."@en ;
+    ns1:label-en "date of birth"@en ;
+    ns1:uri "http://data.europa.eu/m8g/birthDate"@en ;
+    ns1:usageNote-en "NOTE"@en ;
+    skos:prefLabel "Date of birth"@en .
+
+:dateOfDeath a rdf:Property ;
+    ns1:definition-en "The point in time on which the Person died."@en ;
+    ns1:label-en "date of death"@en ;
+    ns1:uri "http://data.europa.eu/m8g/deathDate"@en ;
+    ns1:usageNote-en "NOTE"@en ;
+    skos:prefLabel "Date of death"@en .
+
 :domicile a owl:ObjectProperty ;
     ns1:definition-en "The place that the Person treats as permanent home."@en ;
     ns1:label-en "domicile"@en ;
     ns1:package "Core Person"@en ;
     ns1:uri "http://data.europa.eu/m8g/domicile"@en ;
-    skos:definition "The permanent address of a person (Person -> Address (+domicile)) "@en ;
+    skos:definition "The permanent address of a person (cpv:Person -> Address (+domicile)) "@en ;
     skos:prefLabel "Domicile"@en .
+
+:familyName a rdf:Property ;
+    ns1:definition-en "The hereditary surname of a family."@en ;
+    ns1:label-en "family name"@en ;
+    ns1:uri "http://xmlns.com/foaf/0.1/familyName"@en ;
+    ns1:usageNote-en "NOTE"@en ;
+    skos:prefLabel "Family name"@en .
+
+:fullName a rdf:Property ;
+    ns1:definition-en "The complete name of the Person as one string."@en ;
+    ns1:label-en "full name"@en ;
+    ns1:uri "http://xmlns.com/foaf/0.1/name"@en ;
+    ns1:usageNote-en "NOTE"@en ;
+    skos:prefLabel "Full name"@en .
+
+:gender a rdf:Property ;
+    ns1:definition-en "The identities, expressions and societal roles of the Person."@en ;
+    ns1:label-en "gender"@en ;
+    ns1:uri "http://data.europa.eu/m8g/gender"@en ;
+    ns1:usageNote-en "NOTE"@en ;
+    skos:prefLabel "Gender"@en .
+
+:givenName a rdf:Property ;
+    ns1:definition-en "The name(s) that identify the Person within a family with a common surname."@en ;
+    ns1:label-en "given name"@en ;
+    ns1:uri "http://xmlns.com/foaf/0.1/givenName"@en ;
+    ns1:usageNote-en "NOTE"@en ;
+    skos:prefLabel "Given name"@en .
 
 :identifier a owl:ObjectProperty ;
     ns1:definition-en "The unambiguous structured reference to the Person."@en ;
@@ -70,7 +127,7 @@ Citizenship is information needed by many cross-border use cases and is a legal 
     ns1:package "Core Person"@en ;
     ns1:uri "http://purl.org/dc/terms/identifier"@en ;
     ns1:usageNote-en "NOTE$ea_notes=Examples include a national identification number, a student ID, national fiscal number, etc. We also refer to the <a href=\"http://data.europa.eu/eli/reg/2014/910/oj\">eIDAS regulation</a> on \"electronic identification and trust services\" and its <a href=\"https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eIDAS%2BeID%2BProfile?preview%3D/82773108/148898847/eIDAS%2520SAML%2520Attribute%2520Profile%2520v1.2%2520Final.pdf&sa=D&source=editors&ust=1619073953427000&usg=AFQjCNFMJFPCmHjV0gLJjf8dSHqGUY3ulw\">mapping</a> to the Core Person Vocabulary."@en ;
-    skos:definition "For many systems, the identifier is the key piece of information about an individual and therefore an important part of the core person vocabulary. However, all identifiers are contextspecific and when exchanging data between systems it is important to provide additional information that makes this explicit. An individual may have any number of identifiers. (Person -> Identifier (+identifier)) "@en ;
+    skos:definition "For many systems, the identifier is the key piece of information about an individual and therefore an important part of the core person vocabulary. However, all identifiers are contextspecific and when exchanging data between systems it is important to provide additional information that makes this explicit. An individual may have any number of identifiers. (cpv:Person -> adms:Identifier (+identifier)) "@en ;
     skos:prefLabel "Identifier"@en .
 
 :identifies a owl:ObjectProperty ;
@@ -79,6 +136,19 @@ Citizenship is information needed by many cross-border use cases and is a legal 
     ns1:uri "http://www.w3.org/ns/adms#identifies"@en ;
     skos:prefLabel "Identifies"@en .
 
+:matronymicName a rdf:Property ;
+    ns1:definition-en "Name based on the given name of the Person's mother."@en ;
+    ns1:label-en "matronymic name"@en ;
+    ns1:uri "http://data.europa.eu/m8g/matronymicName"@en ;
+    skos:prefLabel "Matronymic name"@en .
+
+:patronymicName a rdf:Property ;
+    ns1:definition-en "Name based on the given name of the Person's father."@en ;
+    ns1:label-en "patronymic name"@en ;
+    ns1:uri "http://www.w3.org/ns/person#patronymicName"@en ;
+    ns1:usageNote-en "NOTE"@en ;
+    skos:prefLabel "Patronymic name"@en .
+
 :placeOfBirth a owl:ObjectProperty ;
     ns1:definition-en "The Location where the Person was born."@en ;
     ns1:label-en "place of birth"@en ;
@@ -86,7 +156,7 @@ Citizenship is information needed by many cross-border use cases and is a legal 
     ns1:uri "http://www.w3.org/ns/person#placeOfBirth"@en ;
     ns1:usageNote-en "NOTE$ea_notes=The Place of Birth and Place of Death are given using the Location class which is associated via the appropriate relationship. The Location Class has two properties: (1) the geographic name of the place, which is given as a string such as \"Amsterdam\" or \"Valetta\" and (2) an identifier, such as a geonames URI <a href=\"http://sws.geonames.org/2759794\">http://sws.geonames.org/2759794</a> (which identifies Amsterdam) or <a href=\"http://sws.geonames.org/2562305\">http://sws.geonames.org/2562305</a> (which identifies Valetta). The use of identifiers is preferred as these are unambiguous, however, public sector data typically uses simple names to record places and this is fully supported."@en ;
     skos:definition """A person's place of birth.
- (Person -> Location (+placeOfBirth)) """@en ;
+ (cpv:Person -> Location (+placeOfBirth)) """@en ;
     skos:prefLabel "Place of birth"@en .
 
 :placeOfDeath a owl:ObjectProperty ;
@@ -104,6 +174,20 @@ Citizenship is information needed by many cross-border use cases and is a legal 
     ns1:uri "http://www.w3.org/ns/person#residency"@en ;
     ns1:usageNote-en "NOTE$ea_notes=A Person's fixed, permanent, and principal home for legal purposes, the place (especially the house) in which a person officially lives or resides. A Person has one, multiple or even no residency status. Multiple residencies are recorded as multiple instances of the residency relationship."@en ;
     skos:prefLabel "Residency"@en .
+
+:sex a rdf:Property ;
+    ns1:definition-en "The organism's biological sex."@en ;
+    ns1:label-en "sex"@en ;
+    ns1:uri "http://data.europa.eu/m8g/sex"@en ;
+    ns1:usageNote-en "NOTE"@en ;
+    skos:prefLabel "Sex"@en .
+
+cccev:Person a owl:Class ;
+    ns1:definition-en "A individual human being who may be dead or alive, but not imaginary."@en ;
+    ns1:label-en "Person"@en ;
+    ns1:uri "http://www.w3.org/ns/person#Person"@en ;
+    ns1:usageNote-en "NOTE#NOTES#The fact that a person in the context of Core Person Vocabulary cannot be imaginary makes person:Person a subclass of foaf:Person which cover imaginary characters as well as real people. The Person Class is a subclass of the more general <a href=\"#Agent\">'Agent' class</a>."@en ;
+    skos:prefLabel "Person"@en .
 
 <http://data.europa.eu/m8g/ontology#core> a owl:Ontology ;
     cc:attributionName "European Union" ;
@@ -140,6 +224,4 @@ Citizenship is information needed by many cross-border use cases and is a legal 
     owl:versionIRI <http://data.europa.eu/m8g/ontology#core-2.1.0> ;
     owl:versionInfo "2.1.0" ;
     skos:changeNote "This version is automatically generated from core_person_CM.xml on 2023-08-22" .
-
-[] a ns1:p .
 

@@ -77,71 +77,136 @@
       <cc:attributionName>European Union</cc:attributionName>
       <cc:attributionURL rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/EURUN"/>
    </owl:Ontology>
-   <p xmlns="">Default for &lt;xmi:XMI&gt; type ""</p>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#alternativeName">
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#alternativeName">
+      <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Text"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#birthName">
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#birthName">
+      <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Text"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfBirth">
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfBirth">
+      <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#GenericDate"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfDeath">
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfDeath">
+      <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#GenericDate"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#familyName">
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#familyName">
+      <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Text"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#fullName">
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#fullName">
+      <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Text"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#gender">
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#gender">
+      <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Code"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#givenName">
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#givenName">
+      <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Text"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#matronymicName">
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#matronymicName">
+      <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Text"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#patronymicName">
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#patronymicName">
+      <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Text"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#sex">
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#sex">
+      <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Code"/>
+   </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
-      <rdfs:domain rdf:resource="http://data.europa.eu/a4g/ontology#Person"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
       <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Jurisdiction"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfDeath">
-      <rdfs:domain rdf:resource="http://data.europa.eu/a4g/ontology#Person"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfDeath">
       <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Location"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfDeath">
-      <rdfs:domain rdf:resource="http://data.europa.eu/a4g/ontology#Person"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfDeath">
       <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Location"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth">
-      <rdfs:domain rdf:resource="http://data.europa.eu/a4g/ontology#Person"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth">
       <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Location"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#domicile">
-      <rdfs:domain rdf:resource="http://data.europa.eu/a4g/ontology#Person"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#domicile">
       <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Address"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth">
-      <rdfs:domain rdf:resource="http://data.europa.eu/a4g/ontology#Person"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth">
       <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Location"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#change">
-      <rdfs:domain rdf:resource="http://data.europa.eu/a4g/ontology#Person"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#change">
       <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Change"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
-      <rdfs:domain rdf:resource="http://data.europa.eu/a4g/ontology#Person"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
-      <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Identifier"/>
+      <rdfs:range rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#contactPoint">
-      <rdfs:domain rdf:resource="http://data.europa.eu/a4g/ontology#Person"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#contactPoint">
       <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#ContactPoint"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#residency">
-      <rdfs:domain rdf:resource="http://data.europa.eu/a4g/ontology#Person"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#residency">
       <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Jurisdiction"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
-      <rdfs:domain rdf:resource="http://data.europa.eu/a4g/ontology#Identifier"/>
+      <rdfs:domain rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
-      <rdfs:range rdf:resource="http://data.europa.eu/a4g/ontology#Person"/>
+      <rdfs:range rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
 </rdf:RDF>

@@ -1,3 +1,4 @@
+@prefix : <http://data.europa.eu/a4g/ontology#> .
 @prefix at-voc: <http://publications.europa.eu/resource/authority/> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix cc: <http://creativecommons.org/ns#> .
@@ -9,9 +10,81 @@
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+core-shape:cpv-Person a sh:NodeShape ;
+    rdfs:label "Person" ;
+    rdfs:isDefinedBy core-shape:core-shape ;
+    sh:property core-shape:cpv-Person-alternativeName,
+        core-shape:cpv-Person-birthName,
+        core-shape:cpv-Person-dateOfBirth,
+        core-shape:cpv-Person-dateOfDeath,
+        core-shape:cpv-Person-familyName,
+        core-shape:cpv-Person-fullName,
+        core-shape:cpv-Person-gender,
+        core-shape:cpv-Person-givenName,
+        core-shape:cpv-Person-matronymicName,
+        core-shape:cpv-Person-patronymicName,
+        core-shape:cpv-Person-sex ;
+    sh:targetClass cccev:Person .
+
+core-shape:cpv-Person-alternativeName a sh:PropertyShape ;
+    rdfs:isDefinedBy core-shape:core-shape ;
+    sh:name "Alternative name" ;
+    sh:path :alternativeName .
+
+core-shape:cpv-Person-birthName a sh:PropertyShape ;
+    rdfs:isDefinedBy core-shape:core-shape ;
+    sh:name "Birth name" ;
+    sh:path :birthName .
+
+core-shape:cpv-Person-dateOfBirth a sh:PropertyShape ;
+    rdfs:isDefinedBy core-shape:core-shape ;
+    sh:name "Date of birth" ;
+    sh:path :dateOfBirth .
+
+core-shape:cpv-Person-dateOfDeath a sh:PropertyShape ;
+    rdfs:isDefinedBy core-shape:core-shape ;
+    sh:name "Date of death" ;
+    sh:path :dateOfDeath .
+
+core-shape:cpv-Person-familyName a sh:PropertyShape ;
+    rdfs:isDefinedBy core-shape:core-shape ;
+    sh:name "Family name" ;
+    sh:path :familyName .
+
+core-shape:cpv-Person-fullName a sh:PropertyShape ;
+    rdfs:isDefinedBy core-shape:core-shape ;
+    sh:name "Full name" ;
+    sh:path :fullName .
+
+core-shape:cpv-Person-gender a sh:PropertyShape ;
+    rdfs:isDefinedBy core-shape:core-shape ;
+    sh:name "Gender" ;
+    sh:path :gender .
+
+core-shape:cpv-Person-givenName a sh:PropertyShape ;
+    rdfs:isDefinedBy core-shape:core-shape ;
+    sh:name "Given name" ;
+    sh:path :givenName .
+
+core-shape:cpv-Person-matronymicName a sh:PropertyShape ;
+    rdfs:isDefinedBy core-shape:core-shape ;
+    sh:name "Matronymic name" ;
+    sh:path :matronymicName .
+
+core-shape:cpv-Person-patronymicName a sh:PropertyShape ;
+    rdfs:isDefinedBy core-shape:core-shape ;
+    sh:name "Patronymic name" ;
+    sh:path :patronymicName .
+
+core-shape:cpv-Person-sex a sh:PropertyShape ;
+    rdfs:isDefinedBy core-shape:core-shape ;
+    sh:name "Sex" ;
+    sh:path :sex .
 
 core-shape:core-shape a owl:Ontology ;
     cc:attributionName "European Union" ;
@@ -51,6 +124,4 @@ core-shape:core-shape a owl:Ontology ;
     owl:versionInfo "2.1.0" ;
     skos:changeNote """This version is automatically generated from core_person_CM.xml on 
                 2023-08-22""" .
-
-[] a <file:///home/runner/work/model2owl-boilerplate/model2owl-boilerplate/implementation/core_person/shacl_shapes/p> .
 

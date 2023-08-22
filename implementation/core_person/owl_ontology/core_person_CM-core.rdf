@@ -74,13 +74,28 @@
       <cc:attributionName>European Union</cc:attributionName>
       <cc:attributionURL rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/EURUN"/>
    </owl:Ontology>
-   <p xmlns="">Default for &lt;xmi:XMI&gt; type ""</p>
+   <owl:Class rdf:about="http://data.europa.eu/m8g/Person"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/Person">
+      <skos:prefLabel xml:lang="en">Person</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/Person">
+      <definition-en xmlns="" xml:lang="en">A individual human being who may be dead or alive, but not imaginary.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/Person">
+      <label-en xmlns="" xml:lang="en">Person</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/Person">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/person#Person</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/Person">
+      <usageNote-en xmlns="" xml:lang="en">NOTE#NOTES#The fact that a person in the context of Core Person Vocabulary cannot be imaginary makes person:Person a subclass of foaf:Person which cover imaginary characters as well as real people. The Person Class is a subclass of the more general &lt;a href="#Agent"&gt;'Agent' class&lt;/a&gt;.</usageNote-en>
+   </rdf:Description>
    <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#citizenship"/>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
       <skos:prefLabel xml:lang="en">Citizenship</skos:prefLabel>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
-      <skos:definition xml:lang="en">The citizenship relationship links a Person to a Jurisdiction that has conferred citizenship rights on the individual such as the right to vote, to receive certain protection from the community or the issuance of a passport. Multiple citizenships are recorded as multiple instances of the citizenship relationship. (Person -&gt; Jurisdiction (+citizenship)) </skos:definition>
+      <skos:definition xml:lang="en">The citizenship relationship links a Person to a Jurisdiction that has conferred citizenship rights on the individual such as the right to vote, to receive certain protection from the community or the issuance of a passport. Multiple citizenships are recorded as multiple instances of the citizenship relationship. (cpv:Person -&gt; Jurisdiction (+citizenship)) </skos:definition>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
       <label-en xmlns="" xml:lang="en">citizenship</label-en>
@@ -143,7 +158,7 @@ Citizenship is information needed by many cross-border use cases and is a legal 
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth">
       <skos:definition xml:lang="en">A person's place of birth.
- (Person -&gt; Location (+placeOfBirth)) </skos:definition>
+ (cpv:Person -&gt; Location (+placeOfBirth)) </skos:definition>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth">
       <label-en xmlns="" xml:lang="en">place of birth</label-en>
@@ -165,7 +180,7 @@ Citizenship is information needed by many cross-border use cases and is a legal 
       <skos:prefLabel xml:lang="en">Domicile</skos:prefLabel>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#domicile">
-      <skos:definition xml:lang="en">The permanent address of a person (Person -&gt; Address (+domicile)) </skos:definition>
+      <skos:definition xml:lang="en">The permanent address of a person (cpv:Person -&gt; Address (+domicile)) </skos:definition>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#domicile">
       <uri xmlns="" xml:lang="en">http://data.europa.eu/m8g/domicile</uri>
@@ -184,7 +199,7 @@ Citizenship is information needed by many cross-border use cases and is a legal 
       <skos:prefLabel xml:lang="en">Country of birth</skos:prefLabel>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth">
-      <skos:definition xml:lang="en">The country in which a Person was born. (Person -&gt; Location (+countryOfBirth)) </skos:definition>
+      <skos:definition xml:lang="en">The country in which a Person was born. (cpv:Person -&gt; Location (+countryOfBirth)) </skos:definition>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth">
       <label-en xmlns="" xml:lang="en">country of birth</label-en>
@@ -222,7 +237,7 @@ Citizenship is information needed by many cross-border use cases and is a legal 
       <skos:prefLabel xml:lang="en">Identifier</skos:prefLabel>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
-      <skos:definition xml:lang="en">For many systems, the identifier is the key piece of information about an individual and therefore an important part of the core person vocabulary. However, all identifiers are contextspecific and when exchanging data between systems it is important to provide additional information that makes this explicit. An individual may have any number of identifiers. (Person -&gt; Identifier (+identifier)) </skos:definition>
+      <skos:definition xml:lang="en">For many systems, the identifier is the key piece of information about an individual and therefore an important part of the core person vocabulary. However, all identifiers are contextspecific and when exchanging data between systems it is important to provide additional information that makes this explicit. An individual may have any number of identifiers. (cpv:Person -&gt; adms:Identifier (+identifier)) </skos:definition>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
       <label-en xmlns="" xml:lang="en">identifier</label-en>
@@ -289,5 +304,178 @@ Citizenship is information needed by many cross-border use cases and is a legal 
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
       <definition-en xmlns="" xml:lang="en">The entity that is referenced by the Identifier.</definition-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#alternativeName"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#alternativeName">
+      <skos:prefLabel xml:lang="en">Alternative name</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#alternativeName">
+      <definition-en xmlns="" xml:lang="en">Any name by which a Person is known, other than their full name.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#alternativeName">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/alternative</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#alternativeName">
+      <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#alternativeName">
+      <label-en xmlns="" xml:lang="en">alternative name</label-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#birthName"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#birthName">
+      <skos:prefLabel xml:lang="en">Birth name</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#birthName">
+      <definition-en xmlns="" xml:lang="en">Full name of the Person given upon their birth.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#birthName">
+      <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#birthName">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/person#birthName</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#birthName">
+      <label-en xmlns="" xml:lang="en">birth name</label-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#dateOfBirth"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfBirth">
+      <skos:prefLabel xml:lang="en">Date of birth</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfBirth">
+      <uri xmlns="" xml:lang="en">http://data.europa.eu/m8g/birthDate</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfBirth">
+      <definition-en xmlns="" xml:lang="en">The point in time on which the Person was born.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfBirth">
+      <label-en xmlns="" xml:lang="en">date of birth</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfBirth">
+      <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#dateOfDeath"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfDeath">
+      <skos:prefLabel xml:lang="en">Date of death</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfDeath">
+      <uri xmlns="" xml:lang="en">http://data.europa.eu/m8g/deathDate</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfDeath">
+      <definition-en xmlns="" xml:lang="en">The point in time on which the Person died.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfDeath">
+      <label-en xmlns="" xml:lang="en">date of death</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfDeath">
+      <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#familyName"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#familyName">
+      <skos:prefLabel xml:lang="en">Family name</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#familyName">
+      <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#familyName">
+      <uri xmlns="" xml:lang="en">http://xmlns.com/foaf/0.1/familyName</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#familyName">
+      <definition-en xmlns="" xml:lang="en">The hereditary surname of a family.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#familyName">
+      <label-en xmlns="" xml:lang="en">family name</label-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#fullName"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#fullName">
+      <skos:prefLabel xml:lang="en">Full name</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#fullName">
+      <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#fullName">
+      <uri xmlns="" xml:lang="en">http://xmlns.com/foaf/0.1/name</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#fullName">
+      <definition-en xmlns="" xml:lang="en">The complete name of the Person as one string.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#fullName">
+      <label-en xmlns="" xml:lang="en">full name</label-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#gender"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#gender">
+      <skos:prefLabel xml:lang="en">Gender</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#gender">
+      <uri xmlns="" xml:lang="en">http://data.europa.eu/m8g/gender</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#gender">
+      <label-en xmlns="" xml:lang="en">gender</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#gender">
+      <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#gender">
+      <definition-en xmlns="" xml:lang="en">The identities, expressions and societal roles of the Person.</definition-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#givenName"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#givenName">
+      <skos:prefLabel xml:lang="en">Given name</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#givenName">
+      <definition-en xmlns="" xml:lang="en">The name(s) that identify the Person within a family with a common surname.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#givenName">
+      <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#givenName">
+      <uri xmlns="" xml:lang="en">http://xmlns.com/foaf/0.1/givenName</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#givenName">
+      <label-en xmlns="" xml:lang="en">given name</label-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#matronymicName"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#matronymicName">
+      <skos:prefLabel xml:lang="en">Matronymic name</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#matronymicName">
+      <uri xmlns="" xml:lang="en">http://data.europa.eu/m8g/matronymicName</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#matronymicName">
+      <label-en xmlns="" xml:lang="en">matronymic name</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#matronymicName">
+      <definition-en xmlns="" xml:lang="en">Name based on the given name of the Person's mother.</definition-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#patronymicName"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#patronymicName">
+      <skos:prefLabel xml:lang="en">Patronymic name</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#patronymicName">
+      <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#patronymicName">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/person#patronymicName</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#patronymicName">
+      <definition-en xmlns="" xml:lang="en">Name based on the given name of the Person's father.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#patronymicName">
+      <label-en xmlns="" xml:lang="en">patronymic name</label-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#sex"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#sex">
+      <skos:prefLabel xml:lang="en">Sex</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#sex">
+      <uri xmlns="" xml:lang="en">http://data.europa.eu/m8g/sex</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#sex">
+      <label-en xmlns="" xml:lang="en">sex</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#sex">
+      <definition-en xmlns="" xml:lang="en">The organism's biological sex.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#sex">
+      <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
    </rdf:Description>
 </rdf:RDF>
