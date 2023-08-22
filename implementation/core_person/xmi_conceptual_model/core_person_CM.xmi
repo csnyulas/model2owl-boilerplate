@@ -1,288 +1,342 @@
-<?xml version="1.0"  encoding="windows-1252"?>
-<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:thecustomprofile="http://www.sparxsystems.com/profiles/thecustomprofile/1.0" xmlns:TerminologyProfile="http://www.sparxsystems.com/profiles/TerminologyProfile/1.0">
+<?xml version="1.0" encoding="windows-1252"?>
+<xmi:XMI xmlns:uml="http://www.omg.org/spec/UML/20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:umldi="http://www.omg.org/spec/UML/20131001/UMLDI" xmlns:dc="http://www.omg.org/spec/UML/20131001/UMLDC" xmlns:thecustomprofile="http://www.sparxsystems.com/profiles/thecustomprofile/1.0" xmlns:TerminologyProfile="http://www.sparxsystems.com/profiles/TerminologyProfile/1.0">
 	<xmi:Documentation exporter="Enterprise Architect" exporterVersion="6.5" exporterID="1560"/>
-	<uml:Model xmi:type="uml:Model" name="EA_Model" visibility="public">
-		<packagedElement xmi:type="uml:Package" xmi:id="EAPK_2408F5C0_C02F_4c92_8AC7_52AAD22F4A3F" name="Core Person" visibility="public">
-			<packagedElement xmi:type="uml:Class" xmi:id="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" name="Person" visibility="public">
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_66096EA6_6E71_4645_B320_B2CA36192ACE" name="alternativeName" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+	<uml:Model xmi:type="uml:Model" name="EA_Model">
+		<packagedElement xmi:type="uml:Package" xmi:id="EAPK_2408F5C0_C02F_4c92_8AC7_52AAD22F4A3F" name="Core Person">
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" name="Person">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_66096EA6_6E71_4645_B320_B2CA36192ACE" name="alternativeName">
 					<type xmi:idref="EAID_01DDF84E_BA04_467c_B657_9A8877C293F9"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000001_6E71_4645_B320_B2CA36192ACE" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000002_6E71_4645_B320_B2CA36192ACE" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000002_6E71_4645_B320_B2CA36192ACE" value="*"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_3FC64146_99E6_4c46_82E2_B89FFB2B6E36" name="birthName" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_3FC64146_99E6_4c46_82E2_B89FFB2B6E36" name="birthName">
 					<type xmi:idref="EAID_01DDF84E_BA04_467c_B657_9A8877C293F9"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000003_99E6_4c46_82E2_B89FFB2B6E36" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000004_99E6_4c46_82E2_B89FFB2B6E36" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000004_99E6_4c46_82E2_B89FFB2B6E36" value="*"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_56AD65A9_282B_41f4_91CB_D4164FF48280" name="dateOfBirth" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_56AD65A9_282B_41f4_91CB_D4164FF48280" name="dateOfBirth">
 					<type xmi:idref="EAID_CD915088_5381_44e7_AD6D_2E508E828797"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000005_282B_41f4_91CB_D4164FF48280" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000006_282B_41f4_91CB_D4164FF48280" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000006_282B_41f4_91CB_D4164FF48280" value="*"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_FB55B6A4_83A7_4f4d_925A_44CD35B2D54E" name="dateOfDeath" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_FB55B6A4_83A7_4f4d_925A_44CD35B2D54E" name="dateOfDeath">
 					<type xmi:idref="EAID_CD915088_5381_44e7_AD6D_2E508E828797"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000007_83A7_4f4d_925A_44CD35B2D54E" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000008_83A7_4f4d_925A_44CD35B2D54E" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000008_83A7_4f4d_925A_44CD35B2D54E" value="*"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_A7C32827_DBF1_44fa_86CC_F45B7DAA6746" name="familyName" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_A7C32827_DBF1_44fa_86CC_F45B7DAA6746" name="familyName">
 					<type xmi:idref="EAID_01DDF84E_BA04_467c_B657_9A8877C293F9"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000009_DBF1_44fa_86CC_F45B7DAA6746" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000010_DBF1_44fa_86CC_F45B7DAA6746" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000010_DBF1_44fa_86CC_F45B7DAA6746" value="*"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_5F497151_9F47_4ed9_9949_80D79100C084" name="fullName" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_5F497151_9F47_4ed9_9949_80D79100C084" name="fullName">
 					<type xmi:idref="EAID_01DDF84E_BA04_467c_B657_9A8877C293F9"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000011_9F47_4ed9_9949_80D79100C084" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000012_9F47_4ed9_9949_80D79100C084" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000012_9F47_4ed9_9949_80D79100C084" value="*"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_9EBC5954_B7E9_4264_A91C_A6854A86ACB5" name="gender" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_9EBC5954_B7E9_4264_A91C_A6854A86ACB5" name="gender">
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000013_B7E9_4264_A91C_A6854A86ACB5" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000014_B7E9_4264_A91C_A6854A86ACB5" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000014_B7E9_4264_A91C_A6854A86ACB5" value="*"/>
 					<type xmi:idref="EAnone_Code"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_B1835408_1E96_4393_8D60_9B77399F3A77" name="givenName" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_B1835408_1E96_4393_8D60_9B77399F3A77" name="givenName">
 					<type xmi:idref="EAID_01DDF84E_BA04_467c_B657_9A8877C293F9"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000015_1E96_4393_8D60_9B77399F3A77" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000016_1E96_4393_8D60_9B77399F3A77" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000016_1E96_4393_8D60_9B77399F3A77" value="*"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_E1C358E5_1249_4a9d_AB1E_2D97917A467E" name="matronymicName" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_E1C358E5_1249_4a9d_AB1E_2D97917A467E" name="matronymicName">
 					<type xmi:idref="EAID_01DDF84E_BA04_467c_B657_9A8877C293F9"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000017_1249_4a9d_AB1E_2D97917A467E" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000018_1249_4a9d_AB1E_2D97917A467E" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000018_1249_4a9d_AB1E_2D97917A467E" value="*"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_88587974_F8D9_41e9_B7E3_DC06E31F18CE" name="patronymicName" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_88587974_F8D9_41e9_B7E3_DC06E31F18CE" name="patronymicName">
 					<type xmi:idref="EAID_01DDF84E_BA04_467c_B657_9A8877C293F9"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000019_F8D9_41e9_B7E3_DC06E31F18CE" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000020_F8D9_41e9_B7E3_DC06E31F18CE" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000020_F8D9_41e9_B7E3_DC06E31F18CE" value="*"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_76CBE1FB_A4B1_4129_866A_2E9526A72F68" name="sex" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_76CBE1FB_A4B1_4129_866A_2E9526A72F68" name="sex">
 					<type xmi:idref="EAID_1AFECB03_6AE2_4459_8DC4_ABEF3B30A8CC"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000021_A4B1_4129_866A_2E9526A72F68" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000022_A4B1_4129_866A_2E9526A72F68" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000022_A4B1_4129_866A_2E9526A72F68" value="*"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstCB7958_D4C3_4cee_AE1C_AFD35C31074B" name="citizenship" visibility="public" association="EAID_0ACB7958_D4C3_4cee_AE1C_AFD35C31074B" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstCB7958_D4C3_4cee_AE1C_AFD35C31074B" name="citizenship" association="EAID_0ACB7958_D4C3_4cee_AE1C_AFD35C31074B">
 					<type xmi:idref="EAID_1F35C0ED_487E_44cf_B155_FAA631266668"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000023__D4C3_4cee_AE1C_AFD35C31074B" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000024__D4C3_4cee_AE1C_AFD35C31074B" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000024__D4C3_4cee_AE1C_AFD35C31074B" value="*"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst50BD42_0B62_4267_AA9E_D6D5B8769F9C" name="placeOfDeath" visibility="public" association="EAID_1D50BD42_0B62_4267_AA9E_D6D5B8769F9C" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst50BD42_0B62_4267_AA9E_D6D5B8769F9C" name="placeOfDeath" association="EAID_1D50BD42_0B62_4267_AA9E_D6D5B8769F9C">
 					<type xmi:idref="EAID_C893D9C5_F21F_401b_A896_22D5EB56D6A7"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000025__0B62_4267_AA9E_D6D5B8769F9C" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000026__0B62_4267_AA9E_D6D5B8769F9C" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000026__0B62_4267_AA9E_D6D5B8769F9C" value="*"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst2EE47F_54C4_4e6a_9C3B_EEC2239993F0" name="countryOfDeath" visibility="public" association="EAID_232EE47F_54C4_4e6a_9C3B_EEC2239993F0" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst2EE47F_54C4_4e6a_9C3B_EEC2239993F0" name="countryOfDeath" association="EAID_232EE47F_54C4_4e6a_9C3B_EEC2239993F0">
 					<type xmi:idref="EAID_C893D9C5_F21F_401b_A896_22D5EB56D6A7"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000027__54C4_4e6a_9C3B_EEC2239993F0" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000028__54C4_4e6a_9C3B_EEC2239993F0" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000028__54C4_4e6a_9C3B_EEC2239993F0" value="*"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst689A5A_510A_4f2b_9384_F6EE5C04AE07" name="placeOfBirth" visibility="public" association="EAID_27689A5A_510A_4f2b_9384_F6EE5C04AE07" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst689A5A_510A_4f2b_9384_F6EE5C04AE07" name="placeOfBirth" association="EAID_27689A5A_510A_4f2b_9384_F6EE5C04AE07">
 					<type xmi:idref="EAID_C893D9C5_F21F_401b_A896_22D5EB56D6A7"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000029__510A_4f2b_9384_F6EE5C04AE07" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000030__510A_4f2b_9384_F6EE5C04AE07" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000030__510A_4f2b_9384_F6EE5C04AE07" value="*"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst371DFF_875B_4d96_802F_A4E7CCDA8024" name="domicile" visibility="public" association="EAID_3F371DFF_875B_4d96_802F_A4E7CCDA8024" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst371DFF_875B_4d96_802F_A4E7CCDA8024" name="domicile" association="EAID_3F371DFF_875B_4d96_802F_A4E7CCDA8024">
 					<type xmi:idref="EAID_650BCC62_B5E6_4070_8DC6_A39F0953E191"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000031__875B_4d96_802F_A4E7CCDA8024" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000032__875B_4d96_802F_A4E7CCDA8024" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000032__875B_4d96_802F_A4E7CCDA8024" value="*"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst3608C6_124D_4e06_9D37_A1D69C594FC3" name="countryOfBirth" visibility="public" association="EAID_433608C6_124D_4e06_9D37_A1D69C594FC3" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst3608C6_124D_4e06_9D37_A1D69C594FC3" name="countryOfBirth" association="EAID_433608C6_124D_4e06_9D37_A1D69C594FC3">
 					<type xmi:idref="EAID_C893D9C5_F21F_401b_A896_22D5EB56D6A7"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000033__124D_4e06_9D37_A1D69C594FC3" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000034__124D_4e06_9D37_A1D69C594FC3" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000034__124D_4e06_9D37_A1D69C594FC3" value="*"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst4ED4E7_B851_4f68_95DF_A8B575F3D3DA" name="change" visibility="public" association="EAID_5D4ED4E7_B851_4f68_95DF_A8B575F3D3DA" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst4ED4E7_B851_4f68_95DF_A8B575F3D3DA" name="change" association="EAID_5D4ED4E7_B851_4f68_95DF_A8B575F3D3DA">
 					<type xmi:idref="EAID_28D6807E_B59D_4501_BA49_6F19B5600DD7"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstD836C7_63CE_4888_B742_5B14EC72C697" name="identifier" visibility="public" association="EAID_65D836C7_63CE_4888_B742_5B14EC72C697" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstD836C7_63CE_4888_B742_5B14EC72C697" name="identifier" association="EAID_65D836C7_63CE_4888_B742_5B14EC72C697">
 					<type xmi:idref="EAID_4252FD49_50E1_4fa8_AE37_1FE59010D3AB"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000035__63CE_4888_B742_5B14EC72C697" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000036__63CE_4888_B742_5B14EC72C697" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000036__63CE_4888_B742_5B14EC72C697" value="*"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst9BC931_4E9B_4920_8C09_8021D660DA7D" name="contactPoint" visibility="public" association="EAID_C49BC931_4E9B_4920_8C09_8021D660DA7D" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst9BC931_4E9B_4920_8C09_8021D660DA7D" name="contactPoint" association="EAID_C49BC931_4E9B_4920_8C09_8021D660DA7D">
 					<type xmi:idref="EAID_6954994D_2205_40c1_8615_BCEC693F47D9"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000037__4E9B_4920_8C09_8021D660DA7D" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000038__4E9B_4920_8C09_8021D660DA7D" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000038__4E9B_4920_8C09_8021D660DA7D" value="*"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstD475F6_818A_4a41_9AAB_80257138150F" name="residency" visibility="public" association="EAID_C4D475F6_818A_4a41_9AAB_80257138150F" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstD475F6_818A_4a41_9AAB_80257138150F" name="residency" association="EAID_C4D475F6_818A_4a41_9AAB_80257138150F">
 					<type xmi:idref="EAID_1F35C0ED_487E_44cf_B155_FAA631266668"/>
 					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000039__818A_4a41_9AAB_80257138150F" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000040__818A_4a41_9AAB_80257138150F" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000040__818A_4a41_9AAB_80257138150F" value="*"/>
 				</ownedAttribute>
 				<generalization xmi:type="uml:Generalization" xmi:id="EAID_F02A34C5_8407_4f21_ACFE_40B21C952CD5" general="EAID_D862BFE3_8B9A_4715_96CD_14BE188AFF56"/>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_0ACB7958_D4C3_4cee_AE1C_AFD35C31074B" visibility="public">
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_0ACB7958_D4C3_4cee_AE1C_AFD35C31074B">
 				<memberEnd xmi:idref="EAID_dstCB7958_D4C3_4cee_AE1C_AFD35C31074B"/>
 				<memberEnd xmi:idref="EAID_srcCB7958_D4C3_4cee_AE1C_AFD35C31074B"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcCB7958_D4C3_4cee_AE1C_AFD35C31074B" visibility="public" association="EAID_0ACB7958_D4C3_4cee_AE1C_AFD35C31074B" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcCB7958_D4C3_4cee_AE1C_AFD35C31074B" association="EAID_0ACB7958_D4C3_4cee_AE1C_AFD35C31074B">
 					<type xmi:idref="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_1D50BD42_0B62_4267_AA9E_D6D5B8769F9C" visibility="public">
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_1D50BD42_0B62_4267_AA9E_D6D5B8769F9C">
 				<memberEnd xmi:idref="EAID_dst50BD42_0B62_4267_AA9E_D6D5B8769F9C"/>
 				<memberEnd xmi:idref="EAID_src50BD42_0B62_4267_AA9E_D6D5B8769F9C"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src50BD42_0B62_4267_AA9E_D6D5B8769F9C" visibility="public" association="EAID_1D50BD42_0B62_4267_AA9E_D6D5B8769F9C" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src50BD42_0B62_4267_AA9E_D6D5B8769F9C" association="EAID_1D50BD42_0B62_4267_AA9E_D6D5B8769F9C">
 					<type xmi:idref="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_232EE47F_54C4_4e6a_9C3B_EEC2239993F0" visibility="public">
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_232EE47F_54C4_4e6a_9C3B_EEC2239993F0">
 				<memberEnd xmi:idref="EAID_dst2EE47F_54C4_4e6a_9C3B_EEC2239993F0"/>
 				<memberEnd xmi:idref="EAID_src2EE47F_54C4_4e6a_9C3B_EEC2239993F0"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src2EE47F_54C4_4e6a_9C3B_EEC2239993F0" visibility="public" association="EAID_232EE47F_54C4_4e6a_9C3B_EEC2239993F0" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src2EE47F_54C4_4e6a_9C3B_EEC2239993F0" association="EAID_232EE47F_54C4_4e6a_9C3B_EEC2239993F0">
 					<type xmi:idref="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_27689A5A_510A_4f2b_9384_F6EE5C04AE07" visibility="public">
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_27689A5A_510A_4f2b_9384_F6EE5C04AE07">
 				<memberEnd xmi:idref="EAID_dst689A5A_510A_4f2b_9384_F6EE5C04AE07"/>
 				<memberEnd xmi:idref="EAID_src689A5A_510A_4f2b_9384_F6EE5C04AE07"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src689A5A_510A_4f2b_9384_F6EE5C04AE07" visibility="public" association="EAID_27689A5A_510A_4f2b_9384_F6EE5C04AE07" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src689A5A_510A_4f2b_9384_F6EE5C04AE07" association="EAID_27689A5A_510A_4f2b_9384_F6EE5C04AE07">
 					<type xmi:idref="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_3F371DFF_875B_4d96_802F_A4E7CCDA8024" visibility="public">
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_3F371DFF_875B_4d96_802F_A4E7CCDA8024">
 				<memberEnd xmi:idref="EAID_dst371DFF_875B_4d96_802F_A4E7CCDA8024"/>
 				<memberEnd xmi:idref="EAID_src371DFF_875B_4d96_802F_A4E7CCDA8024"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src371DFF_875B_4d96_802F_A4E7CCDA8024" visibility="public" association="EAID_3F371DFF_875B_4d96_802F_A4E7CCDA8024" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src371DFF_875B_4d96_802F_A4E7CCDA8024" association="EAID_3F371DFF_875B_4d96_802F_A4E7CCDA8024">
 					<type xmi:idref="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_433608C6_124D_4e06_9D37_A1D69C594FC3" visibility="public">
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_433608C6_124D_4e06_9D37_A1D69C594FC3">
 				<memberEnd xmi:idref="EAID_dst3608C6_124D_4e06_9D37_A1D69C594FC3"/>
 				<memberEnd xmi:idref="EAID_src3608C6_124D_4e06_9D37_A1D69C594FC3"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src3608C6_124D_4e06_9D37_A1D69C594FC3" visibility="public" association="EAID_433608C6_124D_4e06_9D37_A1D69C594FC3" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src3608C6_124D_4e06_9D37_A1D69C594FC3" association="EAID_433608C6_124D_4e06_9D37_A1D69C594FC3">
 					<type xmi:idref="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_5D4ED4E7_B851_4f68_95DF_A8B575F3D3DA" visibility="public">
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_5D4ED4E7_B851_4f68_95DF_A8B575F3D3DA">
 				<memberEnd xmi:idref="EAID_dst4ED4E7_B851_4f68_95DF_A8B575F3D3DA"/>
 				<memberEnd xmi:idref="EAID_src4ED4E7_B851_4f68_95DF_A8B575F3D3DA"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src4ED4E7_B851_4f68_95DF_A8B575F3D3DA" visibility="public" association="EAID_5D4ED4E7_B851_4f68_95DF_A8B575F3D3DA" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src4ED4E7_B851_4f68_95DF_A8B575F3D3DA" association="EAID_5D4ED4E7_B851_4f68_95DF_A8B575F3D3DA">
 					<type xmi:idref="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_65D836C7_63CE_4888_B742_5B14EC72C697" visibility="public">
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_65D836C7_63CE_4888_B742_5B14EC72C697">
 				<memberEnd xmi:idref="EAID_dstD836C7_63CE_4888_B742_5B14EC72C697"/>
 				<memberEnd xmi:idref="EAID_srcD836C7_63CE_4888_B742_5B14EC72C697"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcD836C7_63CE_4888_B742_5B14EC72C697" visibility="public" association="EAID_65D836C7_63CE_4888_B742_5B14EC72C697" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcD836C7_63CE_4888_B742_5B14EC72C697" association="EAID_65D836C7_63CE_4888_B742_5B14EC72C697">
 					<type xmi:idref="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_C49BC931_4E9B_4920_8C09_8021D660DA7D" visibility="public">
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_C49BC931_4E9B_4920_8C09_8021D660DA7D">
 				<memberEnd xmi:idref="EAID_dst9BC931_4E9B_4920_8C09_8021D660DA7D"/>
 				<memberEnd xmi:idref="EAID_src9BC931_4E9B_4920_8C09_8021D660DA7D"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src9BC931_4E9B_4920_8C09_8021D660DA7D" visibility="public" association="EAID_C49BC931_4E9B_4920_8C09_8021D660DA7D" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src9BC931_4E9B_4920_8C09_8021D660DA7D" association="EAID_C49BC931_4E9B_4920_8C09_8021D660DA7D">
 					<type xmi:idref="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_C4D475F6_818A_4a41_9AAB_80257138150F" visibility="public">
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_C4D475F6_818A_4a41_9AAB_80257138150F">
 				<memberEnd xmi:idref="EAID_dstD475F6_818A_4a41_9AAB_80257138150F"/>
 				<memberEnd xmi:idref="EAID_srcD475F6_818A_4a41_9AAB_80257138150F"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcD475F6_818A_4a41_9AAB_80257138150F" visibility="public" association="EAID_C4D475F6_818A_4a41_9AAB_80257138150F" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcD475F6_818A_4a41_9AAB_80257138150F" association="EAID_C4D475F6_818A_4a41_9AAB_80257138150F">
 					<type xmi:idref="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_F1960C10_04AE_4f8a_89EE_1ED9424B37E0" visibility="public">
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_F1960C10_04AE_4f8a_89EE_1ED9424B37E0">
 				<memberEnd xmi:idref="EAID_dst960C10_04AE_4f8a_89EE_1ED9424B37E0"/>
 				<memberEnd xmi:idref="EAID_src960C10_04AE_4f8a_89EE_1ED9424B37E0"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src960C10_04AE_4f8a_89EE_1ED9424B37E0" visibility="public" association="EAID_F1960C10_04AE_4f8a_89EE_1ED9424B37E0" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src960C10_04AE_4f8a_89EE_1ED9424B37E0" association="EAID_F1960C10_04AE_4f8a_89EE_1ED9424B37E0">
 					<type xmi:idref="EAID_4252FD49_50E1_4fa8_AE37_1FE59010D3AB"/>
 				</ownedEnd>
 			</packagedElement>
 		</packagedElement>
-		<thecustomprofile:definition-en base_Class="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" definition-en="A individual human being who may be dead or alive, but not imaginary."/>
-		<thecustomprofile:usageNote-en base_Class="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" usageNote-en="NOTE"/>
-		<TerminologyProfile:ResourceReference base_Class="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" uri="http://www.w3.org/ns/person#Person"/>
-		<thecustomprofile:label-en base_Class="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" label-en="Person"/>
-		<thecustomprofile:definition-en base_Property="EAID_66096EA6_6E71_4645_B320_B2CA36192ACE" definition-en="Any name by which a Person is known, other than their full name."/>
-		<thecustomprofile:usageNote-en base_Property="EAID_66096EA6_6E71_4645_B320_B2CA36192ACE" usageNote-en="NOTE"/>
-		<thecustomprofile:label-en base_Property="EAID_66096EA6_6E71_4645_B320_B2CA36192ACE" label-en="alternative name"/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_66096EA6_6E71_4645_B320_B2CA36192ACE" uri="http://purl.org/dc/terms/alternative"/>
-		<thecustomprofile:definition-en base_Property="EAID_3FC64146_99E6_4c46_82E2_B89FFB2B6E36" definition-en="Full name of the Person given upon their birth."/>
-		<thecustomprofile:usageNote-en base_Property="EAID_3FC64146_99E6_4c46_82E2_B89FFB2B6E36" usageNote-en="NOTE"/>
-		<thecustomprofile:label-en base_Property="EAID_3FC64146_99E6_4c46_82E2_B89FFB2B6E36" label-en="birth name"/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_3FC64146_99E6_4c46_82E2_B89FFB2B6E36" uri="http://www.w3.org/ns/person#birthName"/>
-		<thecustomprofile:definition-en base_Property="EAID_56AD65A9_282B_41f4_91CB_D4164FF48280" definition-en="The point in time on which the Person was born."/>
-		<thecustomprofile:usageNote-en base_Property="EAID_56AD65A9_282B_41f4_91CB_D4164FF48280" usageNote-en="NOTE"/>
-		<thecustomprofile:label-en base_Property="EAID_56AD65A9_282B_41f4_91CB_D4164FF48280" label-en="date of birth"/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_56AD65A9_282B_41f4_91CB_D4164FF48280" uri="http://data.europa.eu/m8g/birthDate"/>
-		<thecustomprofile:definition-en base_Property="EAID_FB55B6A4_83A7_4f4d_925A_44CD35B2D54E" definition-en="The point in time on which the Person died."/>
-		<thecustomprofile:usageNote-en base_Property="EAID_FB55B6A4_83A7_4f4d_925A_44CD35B2D54E" usageNote-en="NOTE"/>
-		<thecustomprofile:label-en base_Property="EAID_FB55B6A4_83A7_4f4d_925A_44CD35B2D54E" label-en="date of death"/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_FB55B6A4_83A7_4f4d_925A_44CD35B2D54E" uri="http://data.europa.eu/m8g/deathDate"/>
-		<thecustomprofile:definition-en base_Property="EAID_A7C32827_DBF1_44fa_86CC_F45B7DAA6746" definition-en="The hereditary surname of a family."/>
-		<thecustomprofile:usageNote-en base_Property="EAID_A7C32827_DBF1_44fa_86CC_F45B7DAA6746" usageNote-en="NOTE"/>
-		<thecustomprofile:label-en base_Property="EAID_A7C32827_DBF1_44fa_86CC_F45B7DAA6746" label-en="family name"/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_A7C32827_DBF1_44fa_86CC_F45B7DAA6746" uri="http://xmlns.com/foaf/0.1/familyName"/>
-		<thecustomprofile:definition-en base_Property="EAID_5F497151_9F47_4ed9_9949_80D79100C084" definition-en="The complete name of the Person as one string."/>
-		<thecustomprofile:usageNote-en base_Property="EAID_5F497151_9F47_4ed9_9949_80D79100C084" usageNote-en="NOTE"/>
-		<thecustomprofile:label-en base_Property="EAID_5F497151_9F47_4ed9_9949_80D79100C084" label-en="full name"/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_5F497151_9F47_4ed9_9949_80D79100C084" uri="http://xmlns.com/foaf/0.1/name"/>
-		<thecustomprofile:definition-en base_Property="EAID_9EBC5954_B7E9_4264_A91C_A6854A86ACB5" definition-en="The identities, expressions and societal roles of the Person."/>
-		<thecustomprofile:usageNote-en base_Property="EAID_9EBC5954_B7E9_4264_A91C_A6854A86ACB5" usageNote-en="NOTE"/>
-		<thecustomprofile:label-en base_Property="EAID_9EBC5954_B7E9_4264_A91C_A6854A86ACB5" label-en="gender"/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_9EBC5954_B7E9_4264_A91C_A6854A86ACB5" uri="http://data.europa.eu/m8g/gender"/>
-		<thecustomprofile:definition-en base_Property="EAID_B1835408_1E96_4393_8D60_9B77399F3A77" definition-en="The name(s) that identify the Person within a family with a common surname."/>
-		<thecustomprofile:usageNote-en base_Property="EAID_B1835408_1E96_4393_8D60_9B77399F3A77" usageNote-en="NOTE"/>
-		<thecustomprofile:label-en base_Property="EAID_B1835408_1E96_4393_8D60_9B77399F3A77" label-en="given name"/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_B1835408_1E96_4393_8D60_9B77399F3A77" uri="http://xmlns.com/foaf/0.1/givenName"/>
-		<thecustomprofile:definition-en base_Property="EAID_E1C358E5_1249_4a9d_AB1E_2D97917A467E" definition-en="Name based on the given name of the Person's mother."/>
-		<thecustomprofile:label-en base_Property="EAID_E1C358E5_1249_4a9d_AB1E_2D97917A467E" label-en="matronymic name"/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_E1C358E5_1249_4a9d_AB1E_2D97917A467E" uri="http://data.europa.eu/m8g/matronymicName"/>
-		<thecustomprofile:definition-en base_Property="EAID_88587974_F8D9_41e9_B7E3_DC06E31F18CE" definition-en="Name based on the given name of the Person's father."/>
-		<thecustomprofile:usageNote-en base_Property="EAID_88587974_F8D9_41e9_B7E3_DC06E31F18CE" usageNote-en="NOTE"/>
-		<thecustomprofile:label-en base_Property="EAID_88587974_F8D9_41e9_B7E3_DC06E31F18CE" label-en="patronymic name"/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_88587974_F8D9_41e9_B7E3_DC06E31F18CE" uri="http://www.w3.org/ns/person#patronymicName"/>
-		<thecustomprofile:definition-en base_Property="EAID_76CBE1FB_A4B1_4129_866A_2E9526A72F68" definition-en="The organism's biological sex."/>
-		<thecustomprofile:usageNote-en base_Property="EAID_76CBE1FB_A4B1_4129_866A_2E9526A72F68" usageNote-en="NOTE"/>
-		<thecustomprofile:label-en base_Property="EAID_76CBE1FB_A4B1_4129_866A_2E9526A72F68" label-en="sex"/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_76CBE1FB_A4B1_4129_866A_2E9526A72F68" uri="http://data.europa.eu/m8g/sex"/>
-		<thecustomprofile:definition-en base_Property="EAID_dstCB7958_D4C3_4cee_AE1C_AFD35C31074B" definition-en="The Jurisdiction that has conferred citizenship rights on the Person such as the right to vote, to receive certain protection from the community or the issuance of a passport."/>
-		<thecustomprofile:usageNote-en base_Property="EAID_dstCB7958_D4C3_4cee_AE1C_AFD35C31074B" usageNote-en="NOTE$ea_notes=Citizenship is a relationship between an individual and a state to which the individual owes allegiance and in turn is entitled to its protection.&#xA;&#xA;Citizenship is information needed by many cross-border use cases and is a legal status as opposed to the more culturally-focussed and less well-defined term &quot;nationality&quot;. A Person has one, multiple or even no citizenship status. Multiple citizenships are recorded as multiple instances of the citizenship relationship."/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_dstCB7958_D4C3_4cee_AE1C_AFD35C31074B" uri="http://www.w3.org/ns/person#citizenship"/>
-		<thecustomprofile:label-en base_Property="EAID_dstCB7958_D4C3_4cee_AE1C_AFD35C31074B" label-en="citizenship"/>
-		<thecustomprofile:package base_Property="EAID_dstCB7958_D4C3_4cee_AE1C_AFD35C31074B" package="Core Person"/>
-		<thecustomprofile:definition-en base_Property="EAID_dst50BD42_0B62_4267_AA9E_D6D5B8769F9C" definition-en="The Location where the Person died."/>
-		<thecustomprofile:usageNote-en base_Property="EAID_dst50BD42_0B62_4267_AA9E_D6D5B8769F9C" usageNote-en="NOTE$ea_notes=The Place of Birth and Place of Death are given using the Location class which is associated via the appropriate relationship. The Location Class has two properties: (1) the geographic name of the place, which is given as a string such as &quot;Amsterdam&quot; or &quot;Valetta&quot; and (2) an identifier, such as a geonames URI &lt;a href=&quot;http://sws.geonames.org/2759794&quot;&gt;http://sws.geonames.org/2759794&lt;/a&gt; (which identifies Amsterdam) or &lt;a href=&quot;http://sws.geonames.org/2562305&quot;&gt;http://sws.geonames.org/2562305&lt;/a&gt; (which identifies Valetta). The use of identifiers is preferred as these are unambiguous, however, public sector data typically uses simple names to record places and this is fully supported."/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_dst50BD42_0B62_4267_AA9E_D6D5B8769F9C" uri="http://www.w3.org/ns/person#placeOfDeath"/>
-		<thecustomprofile:label-en base_Property="EAID_dst50BD42_0B62_4267_AA9E_D6D5B8769F9C" label-en="place of death"/>
-		<thecustomprofile:package base_Property="EAID_dst50BD42_0B62_4267_AA9E_D6D5B8769F9C" package="Core Person"/>
-		<thecustomprofile:definition-en base_Property="EAID_dst2EE47F_54C4_4e6a_9C3B_EEC2239993F0" definition-en="The country in which the Person died."/>
-		<thecustomprofile:usageNote-en base_Property="EAID_dst2EE47F_54C4_4e6a_9C3B_EEC2239993F0" usageNote-en="NOTE$ea_notes=The Location Class has two properties: a Geographic Name and a Geographic Identifier. Plain codes like &quot;DE&quot; should be provided as values for Geographical Names whereas URIs should be provided as value of the Geographical Identifier. Ideally, provide both. Providing a simple country name is problematic and should be avoided whereas using a standardised system that allows the use of a code list for country names has a lot of potential for increasing semantic interoperability. Known diversity that one has to deal with when exchanging country names between different communication partners without relying on an agreed code list are: (a) long form vs. short form of a country name (e.g. Federal Republic of Germany vs. Germany), (b) different languages (Italy vs. Italia), (c) historic name vs. current name (Burma vs. Myanmar), (d) ambiguity of similar sounding countries (Republic of the Congo vs. Democratic Republic of the Congo). The Publications Office of the European Union recommends and uses &lt;a href=&quot;https://www.iso.org/iso-3166-country-codes.html&quot;&gt;ISO 3166-1&lt;/a&gt; codes for countries in all cases except two: use 'UK' in preference to the ISO 3166 code GB for the United Kingdom; use 'EL' in preference to the ISO 3166 code GR for Greece. See &lt;a href=&quot;http://publications.europa.eu/code/en/en-5000500.htm&quot;&gt; Publications Office list of countries&lt;/a&gt; for details of the OPOCE's full list of countries, codes, currencies and more. Where a country has changed its name or no longer exists (such as Czechoslovakia, Yugoslavia etc.) use the&lt;a href=&quot;https://www.iso.org/standard/72484.html&quot;&gt;ISO 3166-3 code&lt;/a&gt;."/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_dst2EE47F_54C4_4e6a_9C3B_EEC2239993F0" uri="http://www.w3.org/ns/person#countryOfDeath"/>
-		<thecustomprofile:label-en base_Property="EAID_dst2EE47F_54C4_4e6a_9C3B_EEC2239993F0" label-en="country of death"/>
-		<thecustomprofile:package base_Property="EAID_dst2EE47F_54C4_4e6a_9C3B_EEC2239993F0" package="Core Person"/>
-		<thecustomprofile:definition-en base_Property="EAID_dst689A5A_510A_4f2b_9384_F6EE5C04AE07" definition-en="The Location where the Person was born."/>
-		<thecustomprofile:usageNote-en base_Property="EAID_dst689A5A_510A_4f2b_9384_F6EE5C04AE07" usageNote-en="NOTE$ea_notes=The Place of Birth and Place of Death are given using the Location class which is associated via the appropriate relationship. The Location Class has two properties: (1) the geographic name of the place, which is given as a string such as &quot;Amsterdam&quot; or &quot;Valetta&quot; and (2) an identifier, such as a geonames URI &lt;a href=&quot;http://sws.geonames.org/2759794&quot;&gt;http://sws.geonames.org/2759794&lt;/a&gt; (which identifies Amsterdam) or &lt;a href=&quot;http://sws.geonames.org/2562305&quot;&gt;http://sws.geonames.org/2562305&lt;/a&gt; (which identifies Valetta). The use of identifiers is preferred as these are unambiguous, however, public sector data typically uses simple names to record places and this is fully supported."/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_dst689A5A_510A_4f2b_9384_F6EE5C04AE07" uri="http://www.w3.org/ns/person#placeOfBirth"/>
-		<thecustomprofile:label-en base_Property="EAID_dst689A5A_510A_4f2b_9384_F6EE5C04AE07" label-en="place of birth"/>
-		<thecustomprofile:package base_Property="EAID_dst689A5A_510A_4f2b_9384_F6EE5C04AE07" package="Core Person"/>
-		<thecustomprofile:definition-en base_Property="EAID_dst371DFF_875B_4d96_802F_A4E7CCDA8024" definition-en="The place that the Person treats as permanent home."/>
-		<thecustomprofile:label-en base_Property="EAID_dst371DFF_875B_4d96_802F_A4E7CCDA8024" label-en="domicile"/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_dst371DFF_875B_4d96_802F_A4E7CCDA8024" uri="http://data.europa.eu/m8g/domicile"/>
-		<thecustomprofile:package base_Property="EAID_dst371DFF_875B_4d96_802F_A4E7CCDA8024" package="Core Person"/>
-		<thecustomprofile:definition-en base_Property="EAID_dst3608C6_124D_4e06_9D37_A1D69C594FC3" definition-en="The country in which the Person was born."/>
-		<thecustomprofile:usageNote-en base_Property="EAID_dst3608C6_124D_4e06_9D37_A1D69C594FC3" usageNote-en="NOTE$ea_notes=The Location Class has two properties: a Geographic Name and a Geographic Identifier. Plain codes like &quot;DE&quot; should be provided as values for Geographical Names whereas URIs should be provided as value of the Geographical Identifier. Ideally, provide both. Providing a simple country name is problematic and should be avoided whereas using a standardised system that allows the use of a code list for country names has a lot of potential for increasing semantic interoperability. Known diversity that one has to deal with when exchanging country names between different communication partners without relying on an agreed code list are: (a) long form vs. short form of a country name (e.g. Federal Republic of Germany vs. Germany), (b) different languages (Italy vs. Italia), (c) historic name vs. current name (Burma vs. Myanmar), (d) ambiguity of similar sounding countries (Republic of the Congo vs. Democratic Republic of the Congo). The Publications Office of the European Union recommends and uses &lt;a href=&quot;https://www.iso.org/iso-3166-country-codes.html&quot;&gt;ISO 3166-1&lt;/a&gt; codes for countries in all cases except two: use 'UK' in preference to the ISO 3166 code GB for the United Kingdom; use 'EL' in preference to the ISO 3166 code GR for Greece. See &lt;a href=&quot;http://publications.europa.eu/code/en/en-5000500.htm&quot;&gt; Publications Office list of countries&lt;/a&gt; for details of the OPOCE's full list of countries, codes, currencies and more. Where a country has changed its name or no longer exists (such as Czechoslovakia, Yugoslavia etc.) use the&lt;a href=&quot;https://www.iso.org/standard/72484.html&quot;&gt;ISO 3166-3 code&lt;/a&gt;."/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_dst3608C6_124D_4e06_9D37_A1D69C594FC3" uri="http://www.w3.org/ns/person#countryOfBirth"/>
-		<thecustomprofile:label-en base_Property="EAID_dst3608C6_124D_4e06_9D37_A1D69C594FC3" label-en="country of birth"/>
-		<thecustomprofile:package base_Property="EAID_dst3608C6_124D_4e06_9D37_A1D69C594FC3" package="Core Person"/>
-		<thecustomprofile:definition-en base_Property="EAID_dst4ED4E7_B851_4f68_95DF_A8B575F3D3DA" definition-en="The change relationship links a Class to a record of change in a data field associated with the Class."/>
-		<thecustomprofile:usageNote-en base_Property="EAID_dst4ED4E7_B851_4f68_95DF_A8B575F3D3DA" usageNote-en="For example, a change of name or a person's their death. It is assumed that an inverse relationship will also be defined."/>
-		<thecustomprofile:label-en base_Property="EAID_dst4ED4E7_B851_4f68_95DF_A8B575F3D3DA" label-en="change"/>
-		<thecustomprofile:package base_Property="EAID_dst4ED4E7_B851_4f68_95DF_A8B575F3D3DA" package="Core Person"/>
-		<thecustomprofile:definition-en base_Property="EAID_dstD836C7_63CE_4888_B742_5B14EC72C697" definition-en="The unambiguous structured reference to the Person."/>
-		<thecustomprofile:usageNote-en base_Property="EAID_dstD836C7_63CE_4888_B742_5B14EC72C697" usageNote-en="NOTE$ea_notes=Examples include a national identification number, a student ID, national fiscal number, etc. We also refer to the &lt;a href=&quot;http://data.europa.eu/eli/reg/2014/910/oj&quot;&gt;eIDAS regulation&lt;/a&gt; on &quot;electronic identification and trust services&quot; and its &lt;a href=&quot;https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eIDAS%2BeID%2BProfile?preview%3D/82773108/148898847/eIDAS%2520SAML%2520Attribute%2520Profile%2520v1.2%2520Final.pdf&amp;sa=D&amp;source=editors&amp;ust=1619073953427000&amp;usg=AFQjCNFMJFPCmHjV0gLJjf8dSHqGUY3ulw&quot;&gt;mapping&lt;/a&gt; to the Core Person Vocabulary."/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_dstD836C7_63CE_4888_B742_5B14EC72C697" uri="http://purl.org/dc/terms/identifier"/>
-		<thecustomprofile:label-en base_Property="EAID_dstD836C7_63CE_4888_B742_5B14EC72C697" label-en="identifier"/>
-		<thecustomprofile:package base_Property="EAID_dstD836C7_63CE_4888_B742_5B14EC72C697" package="Core Person"/>
-		<thecustomprofile:definition-en base_Property="EAID_dst9BC931_4E9B_4920_8C09_8021D660DA7D" definition-en="The main contact information of the resource."/>
-		<thecustomprofile:usageNote base_Property="EAID_dst9BC931_4E9B_4920_8C09_8021D660DA7D" usageNote="NOTE$ea_notes=Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information."/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_dst9BC931_4E9B_4920_8C09_8021D660DA7D" uri="http://data.europa.eu/m8g/contactPoint"/>
-		<thecustomprofile:label-en base_Property="EAID_dst9BC931_4E9B_4920_8C09_8021D660DA7D" label-en="contact point"/>
-		<thecustomprofile:package base_Property="EAID_dst9BC931_4E9B_4920_8C09_8021D660DA7D" package="Core Person"/>
-		<thecustomprofile:definition-en base_Property="EAID_dstD475F6_818A_4a41_9AAB_80257138150F" definition-en="Jurisdiction where the Person has their dwelling."/>
-		<thecustomprofile:usageNote-en base_Property="EAID_dstD475F6_818A_4a41_9AAB_80257138150F" usageNote-en="NOTE$ea_notes=A Person's fixed, permanent, and principal home for legal purposes, the place (especially the house) in which a person officially lives or resides. A Person has one, multiple or even no residency status. Multiple residencies are recorded as multiple instances of the residency relationship."/>
-		<TerminologyProfile:ResourceReference base_Property="EAID_dstD475F6_818A_4a41_9AAB_80257138150F" uri="http://www.w3.org/ns/person#residency"/>
-		<thecustomprofile:label-en base_Property="EAID_dstD475F6_818A_4a41_9AAB_80257138150F" label-en="residency"/>
-		<thecustomprofile:package base_Property="EAID_dstD475F6_818A_4a41_9AAB_80257138150F" package="Core Person"/>
-		<thecustomprofile:baseURI base_Package="EAPK_2408F5C0_C02F_4c92_8AC7_52AAD22F4A3F" baseURI="http://data.europa.eu/m8g/"/>
+		<umldi:Diagram xmi:type="umldi:UMLClassDiagram" xmi:id="EAID_149BE43E_4782_499f_B545_D46BC2BE304D" isFrame="false" modelElement="EAPK_2408F5C0_C02F_4c92_8AC7_52AAD22F4A3F">
+			<ownedElement xmi:type="umldi:UMLClassifierShape" xmi:id="EAID_149BE43E_4782_499f_AE37_1FE59010D3AB" modelElement="EAID_4252FD49_50E1_4fa8_AE37_1FE59010D3AB">
+				<ownedElement xmi:type="umldi:UMLNameLabel" xmi:id="EAID_NL000000_4782_499f_AE37_1FE59010D3AB" text="Identifier"/>
+				<bounds xmi:type="dc:bounds" xmi:id="EAID_DB000000_4782_499f_AE37_1FE59010D3AB" x="669" y="221" width="172" height="114"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLClassifierShape" xmi:id="EAID_149BE43E_4782_499f_8FAC_33C504817515" modelElement="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515">
+				<ownedElement xmi:type="umldi:UMLNameLabel" xmi:id="EAID_NL000000_4782_499f_8FAC_33C504817515" text="Person"/>
+				<bounds xmi:type="dc:bounds" xmi:id="EAID_DB000000_4782_499f_8FAC_33C504817515" x="355" y="221" width="200" height="295"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLClassifierShape" xmi:id="EAID_149BE43E_4782_499f_A896_22D5EB56D6A7" modelElement="EAID_C893D9C5_F21F_401b_A896_22D5EB56D6A7">
+				<ownedElement xmi:type="umldi:UMLNameLabel" xmi:id="EAID_NL000000_4782_499f_A896_22D5EB56D6A7" text="Location"/>
+				<bounds xmi:type="dc:bounds" xmi:id="EAID_DB000000_4782_499f_A896_22D5EB56D6A7" x="357" y="629" width="200" height="81"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLClassifierShape" xmi:id="EAID_149BE43E_4782_499f_B155_FAA631266668" modelElement="EAID_1F35C0ED_487E_44cf_B155_FAA631266668">
+				<ownedElement xmi:type="umldi:UMLNameLabel" xmi:id="EAID_NL000000_4782_499f_B155_FAA631266668" text="Jurisdiction"/>
+				<bounds xmi:type="dc:bounds" xmi:id="EAID_DB000000_4782_499f_B155_FAA631266668" x="669" y="368" width="172" height="60"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLClassifierShape" xmi:id="EAID_149BE43E_4782_499f_8DC6_A39F0953E191" modelElement="EAID_650BCC62_B5E6_4070_8DC6_A39F0953E191">
+				<ownedElement xmi:type="umldi:UMLNameLabel" xmi:id="EAID_NL000000_4782_499f_8DC6_A39F0953E191" text="Address"/>
+				<bounds xmi:type="dc:bounds" xmi:id="EAID_DB000000_4782_499f_8DC6_A39F0953E191" x="669" y="456" width="172" height="192"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLClassifierShape" xmi:id="EAID_149BE43E_4782_499f_88FD_7B1D1D8D373A" modelElement="EAID_F41DDB41_25B4_4b39_88FD_7B1D1D8D373A">
+				<ownedElement xmi:type="umldi:UMLNameLabel" xmi:id="EAID_NL000000_4782_499f_88FD_7B1D1D8D373A" text="Agent"/>
+				<bounds xmi:type="dc:bounds" xmi:id="EAID_DB000000_4782_499f_88FD_7B1D1D8D373A" x="669" y="67" width="172" height="70"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLShape" xmi:id="EAID_149BE43E_4782_499f_AD6D_2E508E828797" modelElement="EAID_CD915088_5381_44e7_AD6D_2E508E828797">
+				<ownedElement xmi:type="umldi:UMLNameLabel" xmi:id="EAID_NL000000_4782_499f_AD6D_2E508E828797" text="GenericDate"/>
+				<bounds xmi:type="dc:bounds" xmi:id="EAID_DB000000_4782_499f_AD6D_2E508E828797" x="751" y="658" width="90" height="39"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLClassifierShape" xmi:id="EAID_149BE43E_4782_499f_8615_BCEC693F47D9" modelElement="EAID_6954994D_2205_40c1_8615_BCEC693F47D9">
+				<ownedElement xmi:type="umldi:UMLNameLabel" xmi:id="EAID_NL000000_4782_499f_8615_BCEC693F47D9" text="ContactPoint"/>
+				<bounds xmi:type="dc:bounds" xmi:id="EAID_DB000000_4782_499f_8615_BCEC693F47D9" x="138" y="221" width="146" height="70"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLEdge" xmi:id="EAID_149BE43E_4782_499f_8C09_8021D660DA7D" source="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" target="EAID_6954994D_2205_40c1_8615_BCEC693F47D9" modelElement="EAID_C49BC931_4E9B_4920_8C09_8021D660DA7D">
+				<ownedElement xmi:type="umldi:UMLAssociationEndLabel" xmi:id="EAID_TEL000000_4782_499f_8C09_8021D660DA7D" text="+contactPoint" modelElement="EAID_dst9BC931_4E9B_4920_8C09_8021D660DA7D">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTEL000000_4782_499f_8C09_8021D660DA7D" x="287" y="245" width="54" height="13"/>
+				</ownedElement>
+				<ownedElement xmi:type="umldi:UMLMultiplicityLabel" xmi:id="EAID_TML000000_4782_499f_8C09_8021D660DA7D" text="0..*" modelElement="EAID_dst9BC931_4E9B_4920_8C09_8021D660DA7D">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTML000000_4782_499f_8C09_8021D660DA7D" x="287" y="268" width="16" height="13"/>
+				</ownedElement>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000000_4782_499f_8C09_8021D660DA7D" x="355" y="263"/>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000001_4782_499f_8C09_8021D660DA7D" x="284" y="263"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLEdge" xmi:id="EAID_149BE43E_4782_499f_AA9E_D6D5B8769F9C" source="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" target="EAID_C893D9C5_F21F_401b_A896_22D5EB56D6A7" modelElement="EAID_1D50BD42_0B62_4267_AA9E_D6D5B8769F9C">
+				<ownedElement xmi:type="umldi:UMLAssociationEndLabel" xmi:id="EAID_TEL000000_4782_499f_AA9E_D6D5B8769F9C" text="+placeOfDeath" modelElement="EAID_dst50BD42_0B62_4267_AA9E_D6D5B8769F9C">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTEL000000_4782_499f_AA9E_D6D5B8769F9C" x="500" y="590" width="60" height="13"/>
+				</ownedElement>
+				<ownedElement xmi:type="umldi:UMLMultiplicityLabel" xmi:id="EAID_TML000000_4782_499f_AA9E_D6D5B8769F9C" text="0..*" modelElement="EAID_dst50BD42_0B62_4267_AA9E_D6D5B8769F9C">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTML000000_4782_499f_AA9E_D6D5B8769F9C" x="541" y="611" width="16" height="13"/>
+				</ownedElement>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000000_4782_499f_AA9E_D6D5B8769F9C" x="533" y="516"/>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000001_4782_499f_AA9E_D6D5B8769F9C" x="533" y="629"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLEdge" xmi:id="EAID_149BE43E_4782_499f_9C3B_EEC2239993F0" source="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" target="EAID_C893D9C5_F21F_401b_A896_22D5EB56D6A7" modelElement="EAID_232EE47F_54C4_4e6a_9C3B_EEC2239993F0">
+				<ownedElement xmi:type="umldi:UMLAssociationEndLabel" xmi:id="EAID_TEL000000_4782_499f_9C3B_EEC2239993F0" text="+countryOfDeath" modelElement="EAID_dst2EE47F_54C4_4e6a_9C3B_EEC2239993F0">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTEL000000_4782_499f_9C3B_EEC2239993F0" x="439" y="571" width="69" height="13"/>
+				</ownedElement>
+				<ownedElement xmi:type="umldi:UMLMultiplicityLabel" xmi:id="EAID_TML000000_4782_499f_9C3B_EEC2239993F0" text="0..*" modelElement="EAID_dst2EE47F_54C4_4e6a_9C3B_EEC2239993F0">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTML000000_4782_499f_9C3B_EEC2239993F0" x="476" y="611" width="16" height="13"/>
+				</ownedElement>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000000_4782_499f_9C3B_EEC2239993F0" x="468" y="516"/>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000001_4782_499f_9C3B_EEC2239993F0" x="468" y="629"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLEdge" xmi:id="EAID_149BE43E_4782_499f_9AAB_80257138150F" source="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" target="EAID_1F35C0ED_487E_44cf_B155_FAA631266668" modelElement="EAID_C4D475F6_818A_4a41_9AAB_80257138150F">
+				<ownedElement xmi:type="umldi:UMLAssociationEndLabel" xmi:id="EAID_TEL000000_4782_499f_9AAB_80257138150F" text="+residency" modelElement="EAID_dstD475F6_818A_4a41_9AAB_80257138150F">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTEL000000_4782_499f_9AAB_80257138150F" x="620" y="399" width="43" height="13"/>
+				</ownedElement>
+				<ownedElement xmi:type="umldi:UMLMultiplicityLabel" xmi:id="EAID_TML000000_4782_499f_9AAB_80257138150F" text="0..*" modelElement="EAID_dstD475F6_818A_4a41_9AAB_80257138150F">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTML000000_4782_499f_9AAB_80257138150F" x="650" y="423" width="16" height="13"/>
+				</ownedElement>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000000_4782_499f_9AAB_80257138150F" x="555" y="418"/>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000001_4782_499f_9AAB_80257138150F" x="669" y="418"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLEdge" xmi:id="EAID_149BE43E_4782_499f_AE1C_AFD35C31074B" source="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" target="EAID_1F35C0ED_487E_44cf_B155_FAA631266668" modelElement="EAID_0ACB7958_D4C3_4cee_AE1C_AFD35C31074B">
+				<ownedElement xmi:type="umldi:UMLAssociationEndLabel" xmi:id="EAID_TEL000000_4782_499f_AE1C_AFD35C31074B" text="+citizenship" modelElement="EAID_dstCB7958_D4C3_4cee_AE1C_AFD35C31074B">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTEL000000_4782_499f_AE1C_AFD35C31074B" x="613" y="359" width="46" height="13"/>
+				</ownedElement>
+				<ownedElement xmi:type="umldi:UMLMultiplicityLabel" xmi:id="EAID_TML000000_4782_499f_AE1C_AFD35C31074B" text="0..*" modelElement="EAID_dstCB7958_D4C3_4cee_AE1C_AFD35C31074B">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTML000000_4782_499f_AE1C_AFD35C31074B" x="650" y="385" width="16" height="13"/>
+				</ownedElement>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000000_4782_499f_AE1C_AFD35C31074B" x="555" y="380"/>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000001_4782_499f_AE1C_AFD35C31074B" x="669" y="380"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLEdge" xmi:id="EAID_149BE43E_4782_499f_89EE_1ED9424B37E0" source="EAID_4252FD49_50E1_4fa8_AE37_1FE59010D3AB" target="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" modelElement="EAID_F1960C10_04AE_4f8a_89EE_1ED9424B37E0">
+				<ownedElement xmi:type="umldi:UMLAssociationEndLabel" xmi:id="EAID_TEL000000_4782_499f_89EE_1ED9424B37E0" text="+identifies" modelElement="EAID_dst960C10_04AE_4f8a_89EE_1ED9424B37E0">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTEL000000_4782_499f_89EE_1ED9424B37E0" x="558" y="247" width="41" height="13"/>
+				</ownedElement>
+				<ownedElement xmi:type="umldi:UMLMultiplicityLabel" xmi:id="EAID_TML000000_4782_499f_89EE_1ED9424B37E0" text="0..*" modelElement="EAID_dst960C10_04AE_4f8a_89EE_1ED9424B37E0">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTML000000_4782_499f_89EE_1ED9424B37E0" x="558" y="270" width="16" height="13"/>
+				</ownedElement>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000000_4782_499f_89EE_1ED9424B37E0" x="669" y="265"/>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000001_4782_499f_89EE_1ED9424B37E0" x="555" y="265"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLEdge" xmi:id="EAID_149BE43E_4782_499f_802F_A4E7CCDA8024" source="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" target="EAID_650BCC62_B5E6_4070_8DC6_A39F0953E191" modelElement="EAID_3F371DFF_875B_4d96_802F_A4E7CCDA8024">
+				<ownedElement xmi:type="umldi:UMLAssociationEndLabel" xmi:id="EAID_TEL000000_4782_499f_802F_A4E7CCDA8024" text="+domicile" modelElement="EAID_dst371DFF_875B_4d96_802F_A4E7CCDA8024">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTEL000000_4782_499f_802F_A4E7CCDA8024" x="628" y="462" width="38" height="13"/>
+				</ownedElement>
+				<ownedElement xmi:type="umldi:UMLMultiplicityLabel" xmi:id="EAID_TML000000_4782_499f_802F_A4E7CCDA8024" text="0..*" modelElement="EAID_dst371DFF_875B_4d96_802F_A4E7CCDA8024">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTML000000_4782_499f_802F_A4E7CCDA8024" x="650" y="485" width="16" height="13"/>
+				</ownedElement>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000000_4782_499f_802F_A4E7CCDA8024" x="555" y="480"/>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000001_4782_499f_802F_A4E7CCDA8024" x="669" y="480"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLEdge" xmi:id="EAID_149BE43E_4782_499f_9384_F6EE5C04AE07" source="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" target="EAID_C893D9C5_F21F_401b_A896_22D5EB56D6A7" modelElement="EAID_27689A5A_510A_4f2b_9384_F6EE5C04AE07">
+				<ownedElement xmi:type="umldi:UMLAssociationEndLabel" xmi:id="EAID_TEL000000_4782_499f_9384_F6EE5C04AE07" text="+placeOfBirth" modelElement="EAID_dst689A5A_510A_4f2b_9384_F6EE5C04AE07">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTEL000000_4782_499f_9384_F6EE5C04AE07" x="392" y="555" width="54" height="13"/>
+				</ownedElement>
+				<ownedElement xmi:type="umldi:UMLMultiplicityLabel" xmi:id="EAID_TML000000_4782_499f_9384_F6EE5C04AE07" text="0..*" modelElement="EAID_dst689A5A_510A_4f2b_9384_F6EE5C04AE07">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTML000000_4782_499f_9384_F6EE5C04AE07" x="423" y="611" width="16" height="13"/>
+				</ownedElement>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000000_4782_499f_9384_F6EE5C04AE07" x="415" y="516"/>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000001_4782_499f_9384_F6EE5C04AE07" x="415" y="629"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLEdge" xmi:id="EAID_149BE43E_4782_499f_9D37_A1D69C594FC3" source="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" target="EAID_C893D9C5_F21F_401b_A896_22D5EB56D6A7" modelElement="EAID_433608C6_124D_4e06_9D37_A1D69C594FC3">
+				<ownedElement xmi:type="umldi:UMLAssociationEndLabel" xmi:id="EAID_TEL000000_4782_499f_9D37_A1D69C594FC3" text="+countryOfBirth" modelElement="EAID_dst3608C6_124D_4e06_9D37_A1D69C594FC3">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTEL000000_4782_499f_9D37_A1D69C594FC3" x="343" y="533" width="63" height="13"/>
+				</ownedElement>
+				<ownedElement xmi:type="umldi:UMLMultiplicityLabel" xmi:id="EAID_TML000000_4782_499f_9D37_A1D69C594FC3" text="0..*" modelElement="EAID_dst3608C6_124D_4e06_9D37_A1D69C594FC3">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTML000000_4782_499f_9D37_A1D69C594FC3" x="377" y="611" width="16" height="13"/>
+				</ownedElement>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000000_4782_499f_9D37_A1D69C594FC3" x="369" y="516"/>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000001_4782_499f_9D37_A1D69C594FC3" x="369" y="629"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLEdge" xmi:id="EAID_149BE43E_4782_499f_A6E8_F50E0A5E6ED4" source="EAID_4252FD49_50E1_4fa8_AE37_1FE59010D3AB" target="EAID_F41DDB41_25B4_4b39_88FD_7B1D1D8D373A" modelElement="EAID_F41A0156_324A_4648_A6E8_F50E0A5E6ED4">
+				<ownedElement xmi:type="umldi:UMLAssociationEndLabel" xmi:id="EAID_TEL000000_4782_499f_A6E8_F50E0A5E6ED4" text="+issuingAuthorityURI" modelElement="EAID_dst1A0156_324A_4648_A6E8_F50E0A5E6ED4">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTEL000000_4782_499f_A6E8_F50E0A5E6ED4" x="657" y="144" width="83" height="13"/>
+				</ownedElement>
+				<ownedElement xmi:type="umldi:UMLMultiplicityLabel" xmi:id="EAID_TML000000_4782_499f_A6E8_F50E0A5E6ED4" text="0..*" modelElement="EAID_dst1A0156_324A_4648_A6E8_F50E0A5E6ED4">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTML000000_4782_499f_A6E8_F50E0A5E6ED4" x="767" y="142" width="16" height="13"/>
+				</ownedElement>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000000_4782_499f_A6E8_F50E0A5E6ED4" x="755" y="221"/>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000001_4782_499f_A6E8_F50E0A5E6ED4" x="755" y="137"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLEdge" xmi:id="EAID_149BE43E_4782_499f_B742_5B14EC72C697" source="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" target="EAID_4252FD49_50E1_4fa8_AE37_1FE59010D3AB" modelElement="EAID_65D836C7_63CE_4888_B742_5B14EC72C697">
+				<ownedElement xmi:type="umldi:UMLAssociationEndLabel" xmi:id="EAID_TEL000000_4782_499f_B742_5B14EC72C697" text="+identifier" modelElement="EAID_dstD836C7_63CE_4888_B742_5B14EC72C697">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTEL000000_4782_499f_B742_5B14EC72C697" x="620" y="291" width="40" height="13"/>
+				</ownedElement>
+				<ownedElement xmi:type="umldi:UMLMultiplicityLabel" xmi:id="EAID_TML000000_4782_499f_B742_5B14EC72C697" text="0..*" modelElement="EAID_dstD836C7_63CE_4888_B742_5B14EC72C697">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTML000000_4782_499f_B742_5B14EC72C697" x="650" y="314" width="16" height="13"/>
+				</ownedElement>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000000_4782_499f_B742_5B14EC72C697" x="555" y="309"/>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000001_4782_499f_B742_5B14EC72C697" x="669" y="309"/>
+			</ownedElement>
+		</umldi:Diagram>
+		<profileApplication xmi:type="uml:ProfileApplication" xmi:id="profileap_thecustomprofile">
+			<appliedProfile xmi:type="uml:Profile" href="http://www.sparxsystems.com/profiles/thecustomprofile/1.0#thecustomprofile"/>
+		</profileApplication>
+		<profileApplication xmi:type="uml:ProfileApplication" xmi:id="profileap_5792762A-8">
+			<appliedProfile xmi:type="uml:Profile" href="http://www.sparxsystems.com/profiles/TerminologyProfile/1.0#5792762A-8"/>
+		</profileApplication>
 	</uml:Model>
 	<xmi:Extension extender="Enterprise Architect" extenderID="6.5">
 		<elements>
@@ -1037,26 +1091,26 @@
 			</connector>
 		</connectors>
 		<primitivetypes>
-			<packagedElement xmi:type="uml:Package" xmi:id="EAPrimitiveTypesPackage" name="EA_PrimitiveTypes_Package" visibility="public">
-				<packagedElement xmi:type="uml:Package" xmi:id="EAnoneTypesPackage" name="EA_none_Types_Package" visibility="public">
-					<packagedElement xmi:type="uml:PrimitiveType" xmi:id="EAnone_Code" name="Code" visibility="public"/>
+			<packagedElement xmi:type="uml:Package" xmi:id="EAPrimitiveTypesPackage" name="EA_PrimitiveTypes_Package">
+				<packagedElement xmi:type="uml:Package" xmi:id="EAnoneTypesPackage" name="EA_none_Types_Package">
+					<packagedElement xmi:type="uml:PrimitiveType" xmi:id="EAnone_Code" name="Code"/>
 				</packagedElement>
 			</packagedElement>
 		</primitivetypes>
 		<profiles>
-			<uml:Profile xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1/" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:id="thecustomprofile" nsPrefix="thecustomprofile" name="thecustomprofile" metamodelReference="mmref01">
+			<uml:Profile xmlns:uml="http://www.omg.org/spec/UML/20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="thecustomprofile" nsPrefix="thecustomprofile" name="thecustomprofile" metamodelReference="mmref01">
 				<ownedComment xmi:type="uml:Comment" xmi:id="comment01" annotatedElement="thecustomprofile">
 					<body> Version:1.0</body>
 				</ownedComment>
 				<packageImport xmi:id="mmref01">
-					<importedPackage href="http://schema.omg.org/spec/UML/2.1/"/>
+					<importedPackage href="http://www.omg.org/spec/UML/20131001"/>
 				</packageImport>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="usageNote" name="usageNote">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="usageNote-base_Property" name="base_Property" association="Property_usageNote">
-						<type href="http://schema.omg.org/spec/UML/2.1/Property"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Property"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="usageNote-usageNote" name="usageNote">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Property_usageNote" name="A_Property_usageNote" memberEnd="extension_usageNote usageNote-base_Property">
@@ -1064,10 +1118,10 @@
 				</packagedElement>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="package" name="package">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="package-base_Property" name="base_Property" association="Property_package">
-						<type href="http://schema.omg.org/spec/UML/2.1/Property"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Property"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="package-package" name="package">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Property_package" name="A_Property_package" memberEnd="extension_package package-base_Property">
@@ -1075,10 +1129,10 @@
 				</packagedElement>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="label-en" name="label-en">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="label-en-base_Class" name="base_Class" association="Class_label-en">
-						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Class"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="label-en-label-en" name="label-en">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Class_label-en" name="A_Class_label-en" memberEnd="extension_label-en label-en-base_Class">
@@ -1086,10 +1140,10 @@
 				</packagedElement>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="definition-en" name="definition-en">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="definition-en-base_Class" name="base_Class" association="Class_definition-en">
-						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Class"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="definition-en-definition-en" name="definition-en">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Class_definition-en" name="A_Class_definition-en" memberEnd="extension_definition-en definition-en-base_Class">
@@ -1097,10 +1151,10 @@
 				</packagedElement>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="baseURI" name="baseURI">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="baseURI-base_Package" name="base_Package" association="Package_baseURI">
-						<type href="http://schema.omg.org/spec/UML/2.1/Package"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Package"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="baseURI-baseURI" name="baseURI">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Package_baseURI" name="A_Package_baseURI" memberEnd="extension_baseURI baseURI-base_Package">
@@ -1108,35 +1162,35 @@
 				</packagedElement>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="usageNote-en" name="usageNote-en">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="usageNote-en-base_Class" name="base_Class" association="Class_usageNote-en">
-						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Class"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="usageNote-en-usageNote-en" name="usageNote-en">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Class_usageNote-en" name="A_Class_usageNote-en" memberEnd="extension_usageNote-en usageNote-en-base_Class">
 					<ownedEnd xmi:id="extension_usageNote-en" name="extension_usageNote-en" type="usageNote-en" isComposite="true" lower="0" upper="1" memberEnd="extension_usageNote-en usageNote-en-base_Class"/>
 				</packagedElement>
 			</uml:Profile>
-			<uml:Profile xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1/" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:id="5792762A-8" nsPrefix="TerminologyProfile" name="TerminologyProfile" metamodelReference="mmref01">
+			<uml:Profile xmlns:uml="http://www.omg.org/spec/UML/20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="5792762A-8" nsPrefix="TerminologyProfile" name="TerminologyProfile" metamodelReference="mmref01">
 				<ownedComment xmi:type="uml:Comment" xmi:id="comment01" annotatedElement="5792762A-8">
 					<body>TerminologyProfile Version:1.0</body>
 				</ownedComment>
 				<packageImport xmi:id="mmref01">
-					<importedPackage href="http://schema.omg.org/spec/UML/2.1/"/>
+					<importedPackage href="http://www.omg.org/spec/UML/20131001"/>
 				</packageImport>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="DescribedIdentifier" name="DescribedIdentifier">
 					<generalization xmi:type="uml:Generalization" xmi:id="DescribedIdentifier_ScopedIdentifier_generalization" general="ScopedIdentifier"/>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="DescribedIdentifier-definingCodeSystem" name="definingCodeSystem">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="Entry" name="Entry">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Entry-base_Attribute" name="base_Attribute" association="Attribute_Entry">
-						<type href="http://schema.omg.org/spec/UML/2.1/Attribute"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Attribute"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Entry-text" name="text">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Attribute_Entry" name="A_Attribute_Entry" memberEnd="extension_Entry Entry-base_Attribute">
@@ -1144,10 +1198,10 @@
 				</packagedElement>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="ResourceReference" name="ResourceReference" isAbstract="true">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="ResourceReference-base_Attribute" name="base_Attribute" association="Attribute_ResourceReference">
-						<type href="http://schema.omg.org/spec/UML/2.1/Attribute"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Attribute"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="ResourceReference-uri" name="uri">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Attribute_ResourceReference" name="A_Attribute_ResourceReference" memberEnd="extension_ResourceReference ResourceReference-base_Attribute">
@@ -1156,10 +1210,10 @@
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="EnumeratedValueDomain" name="EnumeratedValueDomain">
 					<generalization xmi:type="uml:Generalization" xmi:id="EnumeratedValueDomain_IdentifiedItem_generalization" general="IdentifiedItem"/>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="EnumeratedValueDomain-base_Enumeration" name="base_Enumeration" association="Enumeration_EnumeratedValueDomain">
-						<type href="http://schema.omg.org/spec/UML/2.1/Enumeration"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Enumeration"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="EnumeratedValueDomain-valueSetBinding" name="valueSetBinding">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Enumeration_EnumeratedValueDomain" name="A_Enumeration_EnumeratedValueDomain" memberEnd="extension_EnumeratedValueDomain EnumeratedValueDomain-base_Enumeration">
@@ -1167,10 +1221,10 @@
 				</packagedElement>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="TermResourceTranslation" name="TermResourceTranslation">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="TermResourceTranslation-base_Enumeration" name="base_Enumeration" association="Enumeration_TermResourceTranslation">
-						<type href="http://schema.omg.org/spec/UML/2.1/Enumeration"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Enumeration"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="TermResourceTranslation-language" name="language">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Enumeration_TermResourceTranslation" name="A_Enumeration_TermResourceTranslation" memberEnd="extension_TermResourceTranslation TermResourceTranslation-base_Enumeration">
@@ -1179,24 +1233,24 @@
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="IdEntry" name="IdEntry">
 					<generalization xmi:type="uml:Generalization" xmi:id="IdEntry_Entry_generalization" general="Entry"/>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="IdEntry-ref" name="ref">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="CodeSystemVersionReference" name="CodeSystemVersionReference">
 					<generalization xmi:type="uml:Generalization" xmi:id="CodeSystemVersionReference_ResourceReference_generalization" general="ResourceReference"/>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="CodeSystemVersionReference-codeSystem" name="codeSystem">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="ScopedIdentifier" name="ScopedIdentifier">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="ScopedIdentifier-base_Enumeration" name="base_Enumeration" association="Enumeration_ScopedIdentifier">
-						<type href="http://schema.omg.org/spec/UML/2.1/Enumeration"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Enumeration"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="ScopedIdentifier-uri" name="uri">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="ScopedIdentifier-identifierURIPattern" name="identifierURIPattern">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Enumeration_ScopedIdentifier" name="A_Enumeration_ScopedIdentifier" memberEnd="extension_ScopedIdentifier ScopedIdentifier-base_Enumeration">
@@ -1204,7 +1258,7 @@
 				</packagedElement>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="about" name="about">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="about-base_Abstraction" name="base_Abstraction" association="Abstraction_about">
-						<type href="http://schema.omg.org/spec/UML/2.1/Abstraction"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Abstraction"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Abstraction_about" name="A_Abstraction_about" memberEnd="extension_about about-base_Abstraction">
@@ -1216,15 +1270,15 @@
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="ValueSetReference" name="ValueSetReference">
 					<generalization xmi:type="uml:Generalization" xmi:id="ValueSetReference_ResourceReference_generalization" general="ResourceReference"/>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="ValueSetReference-valueSetDefinition" name="valueSetDefinition">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="IdentifiedItem" name="IdentifiedItem">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="IdentifiedItem-base_&lt;All&gt;" name="base_&lt;All&gt;" association="&lt;All&gt;_IdentifiedItem">
-						<type href="http://schema.omg.org/spec/UML/2.1/&lt;All&gt;"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#&lt;All&gt;"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="IdentifiedItem-id" name="id">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="&lt;All&gt;_IdentifiedItem" name="A_&lt;All&gt;_IdentifiedItem" memberEnd="extension_IdentifiedItem IdentifiedItem-base_&lt;All&gt;">
@@ -1233,19 +1287,19 @@
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="ConceptReference" name="ConceptReference">
 					<generalization xmi:type="uml:Generalization" xmi:id="ConceptReference_ResourceReference_generalization" general="ResourceReference"/>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="ConceptReference-designation" name="designation">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="ArchetypeTerm" name="ArchetypeTerm">
 					<generalization xmi:type="uml:Generalization" xmi:id="ArchetypeTerm_PermissibleValue_generalization" general="PermissibleValue"/>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="ArchetypeTerm-base_Attribute" name="base_Attribute" association="Attribute_ArchetypeTerm">
-						<type href="http://schema.omg.org/spec/UML/2.1/Attribute"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Attribute"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="ArchetypeTerm-term_bindings" name="term_bindings">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="ArchetypeTerm-value_set_members" name="value_set_members">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Attribute_ArchetypeTerm" name="A_Attribute_ArchetypeTerm" memberEnd="extension_ArchetypeTerm ArchetypeTerm-base_Attribute">
@@ -1254,16 +1308,16 @@
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="ValueSetDefinitionReference" name="ValueSetDefinitionReference">
 					<generalization xmi:type="uml:Generalization" xmi:id="ValueSetDefinitionReference_ResourceReference_generalization" general="ResourceReference"/>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="ValueSetDefinitionReference-valueSet" name="valueSet">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="PermissibleValue" name="PermissibleValue">
 					<generalization xmi:type="uml:Generalization" xmi:id="PermissibleValue_IdentifiedItem_generalization" general="IdentifiedItem"/>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="PermissibleValue-base_Attribute" name="base_Attribute" association="Attribute_PermissibleValue">
-						<type href="http://schema.omg.org/spec/UML/2.1/Attribute"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Attribute"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="PermissibleValue-meaning" name="meaning">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Attribute_PermissibleValue" name="A_Attribute_PermissibleValue" memberEnd="extension_PermissibleValue PermissibleValue-base_Attribute">
@@ -1309,4 +1363,100 @@
 		<EAStub xmi:id="EAID_CD915088_5381_44e7_AD6D_2E508E828797" name="GenericDate" UMLType="DataType"/>
 		<EAStub xmi:id="EAID_1AFECB03_6AE2_4459_8DC4_ABEF3B30A8CC" name="Code" UMLType="Class"/>
 	</xmi:Extension>
+	<thecustomprofile:definition-en base_Class="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" definition-en="A individual human being who may be dead or alive, but not imaginary."/>
+	<thecustomprofile:usageNote-en base_Class="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" usageNote-en="NOTE"/>
+	<TerminologyProfile:ResourceReference base_Class="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" uri="http://www.w3.org/ns/person#Person"/>
+	<thecustomprofile:label-en base_Class="EAID_A0ECD6E2_3D19_4928_8FAC_33C504817515" label-en="Person"/>
+	<thecustomprofile:definition-en base_Property="EAID_66096EA6_6E71_4645_B320_B2CA36192ACE" definition-en="Any name by which a Person is known, other than their full name."/>
+	<thecustomprofile:usageNote-en base_Property="EAID_66096EA6_6E71_4645_B320_B2CA36192ACE" usageNote-en="NOTE"/>
+	<thecustomprofile:label-en base_Property="EAID_66096EA6_6E71_4645_B320_B2CA36192ACE" label-en="alternative name"/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_66096EA6_6E71_4645_B320_B2CA36192ACE" uri="http://purl.org/dc/terms/alternative"/>
+	<thecustomprofile:definition-en base_Property="EAID_3FC64146_99E6_4c46_82E2_B89FFB2B6E36" definition-en="Full name of the Person given upon their birth."/>
+	<thecustomprofile:usageNote-en base_Property="EAID_3FC64146_99E6_4c46_82E2_B89FFB2B6E36" usageNote-en="NOTE"/>
+	<thecustomprofile:label-en base_Property="EAID_3FC64146_99E6_4c46_82E2_B89FFB2B6E36" label-en="birth name"/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_3FC64146_99E6_4c46_82E2_B89FFB2B6E36" uri="http://www.w3.org/ns/person#birthName"/>
+	<thecustomprofile:definition-en base_Property="EAID_56AD65A9_282B_41f4_91CB_D4164FF48280" definition-en="The point in time on which the Person was born."/>
+	<thecustomprofile:usageNote-en base_Property="EAID_56AD65A9_282B_41f4_91CB_D4164FF48280" usageNote-en="NOTE"/>
+	<thecustomprofile:label-en base_Property="EAID_56AD65A9_282B_41f4_91CB_D4164FF48280" label-en="date of birth"/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_56AD65A9_282B_41f4_91CB_D4164FF48280" uri="http://data.europa.eu/m8g/birthDate"/>
+	<thecustomprofile:definition-en base_Property="EAID_FB55B6A4_83A7_4f4d_925A_44CD35B2D54E" definition-en="The point in time on which the Person died."/>
+	<thecustomprofile:usageNote-en base_Property="EAID_FB55B6A4_83A7_4f4d_925A_44CD35B2D54E" usageNote-en="NOTE"/>
+	<thecustomprofile:label-en base_Property="EAID_FB55B6A4_83A7_4f4d_925A_44CD35B2D54E" label-en="date of death"/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_FB55B6A4_83A7_4f4d_925A_44CD35B2D54E" uri="http://data.europa.eu/m8g/deathDate"/>
+	<thecustomprofile:definition-en base_Property="EAID_A7C32827_DBF1_44fa_86CC_F45B7DAA6746" definition-en="The hereditary surname of a family."/>
+	<thecustomprofile:usageNote-en base_Property="EAID_A7C32827_DBF1_44fa_86CC_F45B7DAA6746" usageNote-en="NOTE"/>
+	<thecustomprofile:label-en base_Property="EAID_A7C32827_DBF1_44fa_86CC_F45B7DAA6746" label-en="family name"/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_A7C32827_DBF1_44fa_86CC_F45B7DAA6746" uri="http://xmlns.com/foaf/0.1/familyName"/>
+	<thecustomprofile:definition-en base_Property="EAID_5F497151_9F47_4ed9_9949_80D79100C084" definition-en="The complete name of the Person as one string."/>
+	<thecustomprofile:usageNote-en base_Property="EAID_5F497151_9F47_4ed9_9949_80D79100C084" usageNote-en="NOTE"/>
+	<thecustomprofile:label-en base_Property="EAID_5F497151_9F47_4ed9_9949_80D79100C084" label-en="full name"/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_5F497151_9F47_4ed9_9949_80D79100C084" uri="http://xmlns.com/foaf/0.1/name"/>
+	<thecustomprofile:definition-en base_Property="EAID_9EBC5954_B7E9_4264_A91C_A6854A86ACB5" definition-en="The identities, expressions and societal roles of the Person."/>
+	<thecustomprofile:usageNote-en base_Property="EAID_9EBC5954_B7E9_4264_A91C_A6854A86ACB5" usageNote-en="NOTE"/>
+	<thecustomprofile:label-en base_Property="EAID_9EBC5954_B7E9_4264_A91C_A6854A86ACB5" label-en="gender"/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_9EBC5954_B7E9_4264_A91C_A6854A86ACB5" uri="http://data.europa.eu/m8g/gender"/>
+	<thecustomprofile:definition-en base_Property="EAID_B1835408_1E96_4393_8D60_9B77399F3A77" definition-en="The name(s) that identify the Person within a family with a common surname."/>
+	<thecustomprofile:usageNote-en base_Property="EAID_B1835408_1E96_4393_8D60_9B77399F3A77" usageNote-en="NOTE"/>
+	<thecustomprofile:label-en base_Property="EAID_B1835408_1E96_4393_8D60_9B77399F3A77" label-en="given name"/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_B1835408_1E96_4393_8D60_9B77399F3A77" uri="http://xmlns.com/foaf/0.1/givenName"/>
+	<thecustomprofile:definition-en base_Property="EAID_E1C358E5_1249_4a9d_AB1E_2D97917A467E" definition-en="Name based on the given name of the Person's mother."/>
+	<thecustomprofile:label-en base_Property="EAID_E1C358E5_1249_4a9d_AB1E_2D97917A467E" label-en="matronymic name"/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_E1C358E5_1249_4a9d_AB1E_2D97917A467E" uri="http://data.europa.eu/m8g/matronymicName"/>
+	<thecustomprofile:definition-en base_Property="EAID_88587974_F8D9_41e9_B7E3_DC06E31F18CE" definition-en="Name based on the given name of the Person's father."/>
+	<thecustomprofile:usageNote-en base_Property="EAID_88587974_F8D9_41e9_B7E3_DC06E31F18CE" usageNote-en="NOTE"/>
+	<thecustomprofile:label-en base_Property="EAID_88587974_F8D9_41e9_B7E3_DC06E31F18CE" label-en="patronymic name"/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_88587974_F8D9_41e9_B7E3_DC06E31F18CE" uri="http://www.w3.org/ns/person#patronymicName"/>
+	<thecustomprofile:definition-en base_Property="EAID_76CBE1FB_A4B1_4129_866A_2E9526A72F68" definition-en="The organism's biological sex."/>
+	<thecustomprofile:usageNote-en base_Property="EAID_76CBE1FB_A4B1_4129_866A_2E9526A72F68" usageNote-en="NOTE"/>
+	<thecustomprofile:label-en base_Property="EAID_76CBE1FB_A4B1_4129_866A_2E9526A72F68" label-en="sex"/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_76CBE1FB_A4B1_4129_866A_2E9526A72F68" uri="http://data.europa.eu/m8g/sex"/>
+	<thecustomprofile:definition-en base_Property="EAID_dstCB7958_D4C3_4cee_AE1C_AFD35C31074B" definition-en="The Jurisdiction that has conferred citizenship rights on the Person such as the right to vote, to receive certain protection from the community or the issuance of a passport."/>
+	<thecustomprofile:usageNote-en base_Property="EAID_dstCB7958_D4C3_4cee_AE1C_AFD35C31074B" usageNote-en="NOTE$ea_notes=Citizenship is a relationship between an individual and a state to which the individual owes allegiance and in turn is entitled to its protection.&#xA;&#xA;Citizenship is information needed by many cross-border use cases and is a legal status as opposed to the more culturally-focussed and less well-defined term &quot;nationality&quot;. A Person has one, multiple or even no citizenship status. Multiple citizenships are recorded as multiple instances of the citizenship relationship."/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_dstCB7958_D4C3_4cee_AE1C_AFD35C31074B" uri="http://www.w3.org/ns/person#citizenship"/>
+	<thecustomprofile:label-en base_Property="EAID_dstCB7958_D4C3_4cee_AE1C_AFD35C31074B" label-en="citizenship"/>
+	<thecustomprofile:package base_Property="EAID_dstCB7958_D4C3_4cee_AE1C_AFD35C31074B" package="Core Person"/>
+	<thecustomprofile:definition-en base_Property="EAID_dst50BD42_0B62_4267_AA9E_D6D5B8769F9C" definition-en="The Location where the Person died."/>
+	<thecustomprofile:usageNote-en base_Property="EAID_dst50BD42_0B62_4267_AA9E_D6D5B8769F9C" usageNote-en="NOTE$ea_notes=The Place of Birth and Place of Death are given using the Location class which is associated via the appropriate relationship. The Location Class has two properties: (1) the geographic name of the place, which is given as a string such as &quot;Amsterdam&quot; or &quot;Valetta&quot; and (2) an identifier, such as a geonames URI &lt;a href=&quot;http://sws.geonames.org/2759794&quot;&gt;http://sws.geonames.org/2759794&lt;/a&gt; (which identifies Amsterdam) or &lt;a href=&quot;http://sws.geonames.org/2562305&quot;&gt;http://sws.geonames.org/2562305&lt;/a&gt; (which identifies Valetta). The use of identifiers is preferred as these are unambiguous, however, public sector data typically uses simple names to record places and this is fully supported."/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_dst50BD42_0B62_4267_AA9E_D6D5B8769F9C" uri="http://www.w3.org/ns/person#placeOfDeath"/>
+	<thecustomprofile:label-en base_Property="EAID_dst50BD42_0B62_4267_AA9E_D6D5B8769F9C" label-en="place of death"/>
+	<thecustomprofile:package base_Property="EAID_dst50BD42_0B62_4267_AA9E_D6D5B8769F9C" package="Core Person"/>
+	<thecustomprofile:definition-en base_Property="EAID_dst2EE47F_54C4_4e6a_9C3B_EEC2239993F0" definition-en="The country in which the Person died."/>
+	<thecustomprofile:usageNote-en base_Property="EAID_dst2EE47F_54C4_4e6a_9C3B_EEC2239993F0" usageNote-en="NOTE$ea_notes=The Location Class has two properties: a Geographic Name and a Geographic Identifier. Plain codes like &quot;DE&quot; should be provided as values for Geographical Names whereas URIs should be provided as value of the Geographical Identifier. Ideally, provide both. Providing a simple country name is problematic and should be avoided whereas using a standardised system that allows the use of a code list for country names has a lot of potential for increasing semantic interoperability. Known diversity that one has to deal with when exchanging country names between different communication partners without relying on an agreed code list are: (a) long form vs. short form of a country name (e.g. Federal Republic of Germany vs. Germany), (b) different languages (Italy vs. Italia), (c) historic name vs. current name (Burma vs. Myanmar), (d) ambiguity of similar sounding countries (Republic of the Congo vs. Democratic Republic of the Congo). The Publications Office of the European Union recommends and uses &lt;a href=&quot;https://www.iso.org/iso-3166-country-codes.html&quot;&gt;ISO 3166-1&lt;/a&gt; codes for countries in all cases except two: use 'UK' in preference to the ISO 3166 code GB for the United Kingdom; use 'EL' in preference to the ISO 3166 code GR for Greece. See &lt;a href=&quot;http://publications.europa.eu/code/en/en-5000500.htm&quot;&gt; Publications Office list of countries&lt;/a&gt; for details of the OPOCE's full list of countries, codes, currencies and more. Where a country has changed its name or no longer exists (such as Czechoslovakia, Yugoslavia etc.) use the&lt;a href=&quot;https://www.iso.org/standard/72484.html&quot;&gt;ISO 3166-3 code&lt;/a&gt;."/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_dst2EE47F_54C4_4e6a_9C3B_EEC2239993F0" uri="http://www.w3.org/ns/person#countryOfDeath"/>
+	<thecustomprofile:label-en base_Property="EAID_dst2EE47F_54C4_4e6a_9C3B_EEC2239993F0" label-en="country of death"/>
+	<thecustomprofile:package base_Property="EAID_dst2EE47F_54C4_4e6a_9C3B_EEC2239993F0" package="Core Person"/>
+	<thecustomprofile:definition-en base_Property="EAID_dst689A5A_510A_4f2b_9384_F6EE5C04AE07" definition-en="The Location where the Person was born."/>
+	<thecustomprofile:usageNote-en base_Property="EAID_dst689A5A_510A_4f2b_9384_F6EE5C04AE07" usageNote-en="NOTE$ea_notes=The Place of Birth and Place of Death are given using the Location class which is associated via the appropriate relationship. The Location Class has two properties: (1) the geographic name of the place, which is given as a string such as &quot;Amsterdam&quot; or &quot;Valetta&quot; and (2) an identifier, such as a geonames URI &lt;a href=&quot;http://sws.geonames.org/2759794&quot;&gt;http://sws.geonames.org/2759794&lt;/a&gt; (which identifies Amsterdam) or &lt;a href=&quot;http://sws.geonames.org/2562305&quot;&gt;http://sws.geonames.org/2562305&lt;/a&gt; (which identifies Valetta). The use of identifiers is preferred as these are unambiguous, however, public sector data typically uses simple names to record places and this is fully supported."/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_dst689A5A_510A_4f2b_9384_F6EE5C04AE07" uri="http://www.w3.org/ns/person#placeOfBirth"/>
+	<thecustomprofile:label-en base_Property="EAID_dst689A5A_510A_4f2b_9384_F6EE5C04AE07" label-en="place of birth"/>
+	<thecustomprofile:package base_Property="EAID_dst689A5A_510A_4f2b_9384_F6EE5C04AE07" package="Core Person"/>
+	<thecustomprofile:definition-en base_Property="EAID_dst371DFF_875B_4d96_802F_A4E7CCDA8024" definition-en="The place that the Person treats as permanent home."/>
+	<thecustomprofile:label-en base_Property="EAID_dst371DFF_875B_4d96_802F_A4E7CCDA8024" label-en="domicile"/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_dst371DFF_875B_4d96_802F_A4E7CCDA8024" uri="http://data.europa.eu/m8g/domicile"/>
+	<thecustomprofile:package base_Property="EAID_dst371DFF_875B_4d96_802F_A4E7CCDA8024" package="Core Person"/>
+	<thecustomprofile:definition-en base_Property="EAID_dst3608C6_124D_4e06_9D37_A1D69C594FC3" definition-en="The country in which the Person was born."/>
+	<thecustomprofile:usageNote-en base_Property="EAID_dst3608C6_124D_4e06_9D37_A1D69C594FC3" usageNote-en="NOTE$ea_notes=The Location Class has two properties: a Geographic Name and a Geographic Identifier. Plain codes like &quot;DE&quot; should be provided as values for Geographical Names whereas URIs should be provided as value of the Geographical Identifier. Ideally, provide both. Providing a simple country name is problematic and should be avoided whereas using a standardised system that allows the use of a code list for country names has a lot of potential for increasing semantic interoperability. Known diversity that one has to deal with when exchanging country names between different communication partners without relying on an agreed code list are: (a) long form vs. short form of a country name (e.g. Federal Republic of Germany vs. Germany), (b) different languages (Italy vs. Italia), (c) historic name vs. current name (Burma vs. Myanmar), (d) ambiguity of similar sounding countries (Republic of the Congo vs. Democratic Republic of the Congo). The Publications Office of the European Union recommends and uses &lt;a href=&quot;https://www.iso.org/iso-3166-country-codes.html&quot;&gt;ISO 3166-1&lt;/a&gt; codes for countries in all cases except two: use 'UK' in preference to the ISO 3166 code GB for the United Kingdom; use 'EL' in preference to the ISO 3166 code GR for Greece. See &lt;a href=&quot;http://publications.europa.eu/code/en/en-5000500.htm&quot;&gt; Publications Office list of countries&lt;/a&gt; for details of the OPOCE's full list of countries, codes, currencies and more. Where a country has changed its name or no longer exists (such as Czechoslovakia, Yugoslavia etc.) use the&lt;a href=&quot;https://www.iso.org/standard/72484.html&quot;&gt;ISO 3166-3 code&lt;/a&gt;."/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_dst3608C6_124D_4e06_9D37_A1D69C594FC3" uri="http://www.w3.org/ns/person#countryOfBirth"/>
+	<thecustomprofile:label-en base_Property="EAID_dst3608C6_124D_4e06_9D37_A1D69C594FC3" label-en="country of birth"/>
+	<thecustomprofile:package base_Property="EAID_dst3608C6_124D_4e06_9D37_A1D69C594FC3" package="Core Person"/>
+	<thecustomprofile:definition-en base_Property="EAID_dst4ED4E7_B851_4f68_95DF_A8B575F3D3DA" definition-en="The change relationship links a Class to a record of change in a data field associated with the Class."/>
+	<thecustomprofile:usageNote-en base_Property="EAID_dst4ED4E7_B851_4f68_95DF_A8B575F3D3DA" usageNote-en="For example, a change of name or a person's their death. It is assumed that an inverse relationship will also be defined."/>
+	<thecustomprofile:label-en base_Property="EAID_dst4ED4E7_B851_4f68_95DF_A8B575F3D3DA" label-en="change"/>
+	<thecustomprofile:package base_Property="EAID_dst4ED4E7_B851_4f68_95DF_A8B575F3D3DA" package="Core Person"/>
+	<thecustomprofile:definition-en base_Property="EAID_dstD836C7_63CE_4888_B742_5B14EC72C697" definition-en="The unambiguous structured reference to the Person."/>
+	<thecustomprofile:usageNote-en base_Property="EAID_dstD836C7_63CE_4888_B742_5B14EC72C697" usageNote-en="NOTE$ea_notes=Examples include a national identification number, a student ID, national fiscal number, etc. We also refer to the &lt;a href=&quot;http://data.europa.eu/eli/reg/2014/910/oj&quot;&gt;eIDAS regulation&lt;/a&gt; on &quot;electronic identification and trust services&quot; and its &lt;a href=&quot;https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eIDAS%2BeID%2BProfile?preview%3D/82773108/148898847/eIDAS%2520SAML%2520Attribute%2520Profile%2520v1.2%2520Final.pdf&amp;sa=D&amp;source=editors&amp;ust=1619073953427000&amp;usg=AFQjCNFMJFPCmHjV0gLJjf8dSHqGUY3ulw&quot;&gt;mapping&lt;/a&gt; to the Core Person Vocabulary."/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_dstD836C7_63CE_4888_B742_5B14EC72C697" uri="http://purl.org/dc/terms/identifier"/>
+	<thecustomprofile:label-en base_Property="EAID_dstD836C7_63CE_4888_B742_5B14EC72C697" label-en="identifier"/>
+	<thecustomprofile:package base_Property="EAID_dstD836C7_63CE_4888_B742_5B14EC72C697" package="Core Person"/>
+	<thecustomprofile:definition-en base_Property="EAID_dst9BC931_4E9B_4920_8C09_8021D660DA7D" definition-en="The main contact information of the resource."/>
+	<thecustomprofile:usageNote base_Property="EAID_dst9BC931_4E9B_4920_8C09_8021D660DA7D" usageNote="NOTE$ea_notes=Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information."/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_dst9BC931_4E9B_4920_8C09_8021D660DA7D" uri="http://data.europa.eu/m8g/contactPoint"/>
+	<thecustomprofile:label-en base_Property="EAID_dst9BC931_4E9B_4920_8C09_8021D660DA7D" label-en="contact point"/>
+	<thecustomprofile:package base_Property="EAID_dst9BC931_4E9B_4920_8C09_8021D660DA7D" package="Core Person"/>
+	<thecustomprofile:definition-en base_Property="EAID_dstD475F6_818A_4a41_9AAB_80257138150F" definition-en="Jurisdiction where the Person has their dwelling."/>
+	<thecustomprofile:usageNote-en base_Property="EAID_dstD475F6_818A_4a41_9AAB_80257138150F" usageNote-en="NOTE$ea_notes=A Person's fixed, permanent, and principal home for legal purposes, the place (especially the house) in which a person officially lives or resides. A Person has one, multiple or even no residency status. Multiple residencies are recorded as multiple instances of the residency relationship."/>
+	<TerminologyProfile:ResourceReference base_Property="EAID_dstD475F6_818A_4a41_9AAB_80257138150F" uri="http://www.w3.org/ns/person#residency"/>
+	<thecustomprofile:label-en base_Property="EAID_dstD475F6_818A_4a41_9AAB_80257138150F" label-en="residency"/>
+	<thecustomprofile:package base_Property="EAID_dstD475F6_818A_4a41_9AAB_80257138150F" package="Core Person"/>
+	<thecustomprofile:baseURI base_Package="EAPK_2408F5C0_C02F_4c92_8AC7_52AAD22F4A3F" baseURI="http://data.europa.eu/m8g/"/>
 </xmi:XMI>
