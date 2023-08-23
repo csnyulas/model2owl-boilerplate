@@ -80,527 +80,145 @@
       <cc:attributionName>European Union</cc:attributionName>
       <cc:attributionURL rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/EURUN"/>
    </owl:Ontology>
-   <sh:NodeShape rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier">
-      <sh:targetClass rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
+   <sh:NodeShape rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person">
+      <sh:targetClass rdf:resource="http://data.europa.eu/m8g/Person"/>
    </sh:NodeShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier">
-      <rdfs:label>Identifier</rdfs:label>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person">
+      <rdfs:label>Person</rdfs:label>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
    </rdf:Description>
-   <sh:NodeShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:targetClass rdf:resource="http://data.europa.eu/a4g/ontology#Asset"/>
-   </sh:NodeShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <rdfs:label>Asset</rdfs:label>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#cpv-Person-alternativeName"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-alternativeName">
+      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#alternativeName"/>
+   </sh:PropertyShape>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-alternativeName">
+      <sh:name>Alternative name</sh:name>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-alternativeName">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
    </rdf:Description>
-   <sh:NodeShape rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution">
-      <sh:targetClass rdf:resource="http://data.europa.eu/a4g/ontology#AssetDistribution"/>
-   </sh:NodeShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution">
-      <rdfs:label>Asset distribution</rdfs:label>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#cpv-Person-birthName"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution">
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-birthName">
+      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#birthName"/>
+   </sh:PropertyShape>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-birthName">
+      <sh:name>Birth name</sh:name>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-birthName">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
    </rdf:Description>
-   <sh:NodeShape rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository">
-      <sh:targetClass rdf:resource="http://data.europa.eu/a4g/ontology#AssetRepository"/>
-   </sh:NodeShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository">
-      <rdfs:label>Asset repository</rdfs:label>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#cpv-Person-dateOfBirth"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository">
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-dateOfBirth">
+      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#dateOfBirth"/>
+   </sh:PropertyShape>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-dateOfBirth">
+      <sh:name>Date of birth</sh:name>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-dateOfBirth">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#adms-Identifier-dateOfIssue"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#cpv-Person-dateOfDeath"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier-dateOfIssue">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#dateOfIssue"/>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-dateOfDeath">
+      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#dateOfDeath"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier-dateOfIssue">
-      <sh:name>Date of issue</sh:name>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-dateOfDeath">
+      <sh:name>Date of death</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier-dateOfIssue">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-dateOfDeath">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#adms-Identifier-issuingAuthorityName"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#cpv-Person-familyName"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier-issuingAuthorityName">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#issuingAuthorityName"/>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-familyName">
+      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#familyName"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier-issuingAuthorityName">
-      <sh:name>Issuing authority name</sh:name>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-familyName">
+      <sh:name>Family name</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier-issuingAuthorityName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-familyName">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#adms-Identifier-notation"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#cpv-Person-fullName"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier-notation">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#notation"/>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-fullName">
+      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#fullName"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier-notation">
-      <sh:name>Notation</sh:name>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-fullName">
+      <sh:name>Full name</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier-notation">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-fullName">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#adms-Identifier-schemeName"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#cpv-Person-gender"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier-schemeName">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#schemeName"/>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-gender">
+      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#gender"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier-schemeName">
-      <sh:name>Scheme name</sh:name>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-gender">
+      <sh:name>Gender</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier-schemeName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-gender">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#adms-Identifier-schemeURI"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#cpv-Person-givenName"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier-schemeURI">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#schemeURI"/>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-givenName">
+      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#givenName"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier-schemeURI">
-      <sh:name>Scheme u r i</sh:name>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-givenName">
+      <sh:name>Given name</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#adms-Identifier-schemeURI">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-givenName">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#Asset-alternativeLabel"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#cpv-Person-matronymicName"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset-alternativeLabel">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#alternativeLabel"/>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-matronymicName">
+      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#matronymicName"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-alternativeLabel">
-      <sh:name>Alternative label</sh:name>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-matronymicName">
+      <sh:name>Matronymic name</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-alternativeLabel">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-matronymicName">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#Asset-description"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#cpv-Person-patronymicName"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset-description">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#description"/>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-patronymicName">
+      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#patronymicName"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-description">
-      <sh:name>Description</sh:name>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-patronymicName">
+      <sh:name>Patronymic name</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-description">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-patronymicName">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#Asset-issued"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#cpv-Person-sex"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset-issued">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#issued"/>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-sex">
+      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#sex"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-issued">
-      <sh:name>Issued</sh:name>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-sex">
+      <sh:name>Sex</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-issued">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#cpv-Person-sex">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#Asset-keyword"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset-keyword">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#keyword"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-keyword">
-      <sh:name>Keyword</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-keyword">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#Asset-language"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset-language">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#language"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-language">
-      <sh:name>Language</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-language">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#Asset-modified"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset-modified">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#modified"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-modified">
-      <sh:name>Modified</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-modified">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#Asset-title"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset-title">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#title"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-title">
-      <sh:name>Title</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-title">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#Asset-versionInfo"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset-versionInfo">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#versionInfo"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-versionInfo">
-      <sh:name>Version info</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-versionInfo">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#Asset-versionNotes"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset-versionNotes">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#versionNotes"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-versionNotes">
-      <sh:name>Version notes</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-versionNotes">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#AssetDistribution-accessURL"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution-accessURL">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#accessURL"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution-accessURL">
-      <sh:name>Access u r l</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution-accessURL">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#AssetDistribution-description"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution-description">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#description"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution-description">
-      <sh:name>Description</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution-description">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#AssetDistribution-downloadURL"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution-downloadURL">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#downloadURL"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution-downloadURL">
-      <sh:name>Download u r l</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution-downloadURL">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#AssetDistribution-issued"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution-issued">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#issued"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution-issued">
-      <sh:name>Issued</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution-issued">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#AssetDistribution-modified"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution-modified">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#modified"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution-modified">
-      <sh:name>Modified</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution-modified">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#AssetDistribution-title"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution-title">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#title"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution-title">
-      <sh:name>Title</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetDistribution-title">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#AssetRepository-accessURL"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-accessURL">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#accessURL"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-accessURL">
-      <sh:name>Access u r l</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-accessURL">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#AssetRepository-description"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-description">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#description"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-description">
-      <sh:name>Description</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-description">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#AssetRepository-issued"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-issued">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#issued"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-issued">
-      <sh:name>Issued</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-issued">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#AssetRepository-modified"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-modified">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#modified"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-modified">
-      <sh:name>Modified</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-modified">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#AssetRepository-title"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-title">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#title"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-title">
-      <sh:name>Title</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-title">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape#core-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-identifier">
-      <sh:class rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-identifier">
-      <sh:sparql rdf:parseType="Resource">
-         <sh:select> SELECT ?this ?that WHERE { ?this &lt;http://data.europa.eu/a4g/ontology#identifier&gt; ?that . ?that &lt;http://data.europa.eu/a4g/ontology#identifier&gt; ?this .} </sh:select>
-      </sh:sparql>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#Asset-identifier"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset-identifier">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#identifier"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-identifier">
-      <sh:name>Identifier</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-translation">
-      <sh:class rdf:resource="http://data.europa.eu/a4g/ontology#Asset"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-translation">
-      <sh:sparql rdf:parseType="Resource">
-         <sh:select> SELECT ?this ?that WHERE { ?this &lt;http://data.europa.eu/a4g/ontology#translation&gt; ?that . ?that &lt;http://data.europa.eu/a4g/ontology#translation&gt; ?this .} </sh:select>
-      </sh:sparql>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#Asset-translation"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset-translation">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#translation"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-translation">
-      <sh:name>Translation</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-sample">
-      <sh:class rdf:resource="http://data.europa.eu/a4g/ontology#Asset"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-sample">
-      <sh:sparql rdf:parseType="Resource">
-         <sh:select> SELECT ?this ?that WHERE { ?this &lt;http://data.europa.eu/a4g/ontology#sample&gt; ?that . ?that &lt;http://data.europa.eu/a4g/ontology#sample&gt; ?this .} </sh:select>
-      </sh:sparql>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#Asset-sample"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset-sample">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#sample"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-sample">
-      <sh:name>Sample</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-relation">
-      <sh:class rdf:resource="http://data.europa.eu/a4g/ontology#Asset"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-relation">
-      <sh:sparql rdf:parseType="Resource">
-         <sh:select> SELECT ?this ?that WHERE { ?this &lt;http://data.europa.eu/a4g/ontology#relation&gt; ?that . ?that &lt;http://data.europa.eu/a4g/ontology#relation&gt; ?this .} </sh:select>
-      </sh:sparql>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#Asset-relation"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset-relation">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#relation"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-relation">
-      <sh:name>Relation</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-next">
-      <sh:class rdf:resource="http://data.europa.eu/a4g/ontology#Asset"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-next">
-      <sh:sparql rdf:parseType="Resource">
-         <sh:select> SELECT ?this ?that WHERE { ?this &lt;http://data.europa.eu/a4g/ontology#next&gt; ?that . ?that &lt;http://data.europa.eu/a4g/ontology#next&gt; ?this .} </sh:select>
-      </sh:sparql>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#Asset-next"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset-next">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#next"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-next">
-      <sh:name>Next</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-distribution">
-      <sh:class rdf:resource="http://data.europa.eu/a4g/ontology#AssetDistribution"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-distribution">
-      <sh:sparql rdf:parseType="Resource">
-         <sh:select> SELECT ?this ?that WHERE { ?this &lt;http://data.europa.eu/a4g/ontology#distribution&gt; ?that . ?that &lt;http://data.europa.eu/a4g/ontology#distribution&gt; ?this .} </sh:select>
-      </sh:sparql>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#Asset-distribution"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset-distribution">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#distribution"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-distribution">
-      <sh:name>Distribution</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-last">
-      <sh:class rdf:resource="http://data.europa.eu/a4g/ontology#Asset"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-last">
-      <sh:sparql rdf:parseType="Resource">
-         <sh:select> SELECT ?this ?that WHERE { ?this &lt;http://data.europa.eu/a4g/ontology#last&gt; ?that . ?that &lt;http://data.europa.eu/a4g/ontology#last&gt; ?this .} </sh:select>
-      </sh:sparql>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#Asset-last"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset-last">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#last"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-last">
-      <sh:name>Last</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-includedAsset">
-      <sh:class rdf:resource="http://data.europa.eu/a4g/ontology#Asset"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-includedAsset">
-      <sh:sparql rdf:parseType="Resource">
-         <sh:select> SELECT ?this ?that WHERE { ?this &lt;http://data.europa.eu/a4g/ontology#includedAsset&gt; ?that . ?that &lt;http://data.europa.eu/a4g/ontology#includedAsset&gt; ?this .} </sh:select>
-      </sh:sparql>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#Asset-includedAsset"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset-includedAsset">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#includedAsset"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-includedAsset">
-      <sh:name>Included asset</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-prev">
-      <sh:class rdf:resource="http://data.europa.eu/a4g/ontology#Asset"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-prev">
-      <sh:sparql rdf:parseType="Resource">
-         <sh:select> SELECT ?this ?that WHERE { ?this &lt;http://data.europa.eu/a4g/ontology#prev&gt; ?that . ?that &lt;http://data.europa.eu/a4g/ontology#prev&gt; ?this .} </sh:select>
-      </sh:sparql>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#Asset-prev"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#Asset-prev">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#prev"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#Asset-prev">
-      <sh:name>Prev</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-supportedSchema">
-      <sh:class rdf:resource="http://data.europa.eu/a4g/ontology#Asset"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-supportedSchema">
-      <sh:sparql rdf:parseType="Resource">
-         <sh:select> SELECT ?this ?that WHERE { ?this &lt;http://data.europa.eu/a4g/ontology#supportedSchema&gt; ?that . ?that &lt;http://data.europa.eu/a4g/ontology#supportedSchema&gt; ?this .} </sh:select>
-      </sh:sparql>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#AssetRepository-supportedSchema"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-supportedSchema">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#supportedSchema"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-supportedSchema">
-      <sh:name>Supported schema</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-dataset">
-      <sh:class rdf:resource="http://data.europa.eu/a4g/ontology#Asset"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-dataset">
-      <sh:sparql rdf:parseType="Resource">
-         <sh:select> SELECT ?this ?that WHERE { ?this &lt;http://data.europa.eu/a4g/ontology#dataset&gt; ?that . ?that &lt;http://data.europa.eu/a4g/ontology#dataset&gt; ?this .} </sh:select>
-      </sh:sparql>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape#AssetRepository-dataset"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-dataset">
-      <sh:path rdf:resource="http://data.europa.eu/a4g/ontology#dataset"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape#AssetRepository-dataset">
-      <sh:name>Dataset</sh:name>
    </rdf:Description>
 </rdf:RDF>

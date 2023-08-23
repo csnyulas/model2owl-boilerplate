@@ -1,5 +1,4 @@
 @prefix : <http://data.europa.eu/a4g/ontology#> .
-@prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix at-voc: <http://publications.europa.eu/resource/authority/> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix cc: <http://creativecommons.org/ns#> .
@@ -16,252 +15,76 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-core-shape:Asset a sh:NodeShape ;
-    rdfs:label "Asset" ;
+core-shape:cpv-Person a sh:NodeShape ;
+    rdfs:label "Person" ;
     rdfs:isDefinedBy core-shape:core-shape ;
-    sh:property core-shape:Asset-alternativeLabel,
-        core-shape:Asset-description,
-        core-shape:Asset-distribution,
-        core-shape:Asset-identifier,
-        core-shape:Asset-includedAsset,
-        core-shape:Asset-issued,
-        core-shape:Asset-keyword,
-        core-shape:Asset-language,
-        core-shape:Asset-last,
-        core-shape:Asset-modified,
-        core-shape:Asset-next,
-        core-shape:Asset-prev,
-        core-shape:Asset-relation,
-        core-shape:Asset-sample,
-        core-shape:Asset-title,
-        core-shape:Asset-translation,
-        core-shape:Asset-versionInfo,
-        core-shape:Asset-versionNotes ;
-    sh:targetClass :Asset .
+    sh:property core-shape:cpv-Person-alternativeName,
+        core-shape:cpv-Person-birthName,
+        core-shape:cpv-Person-dateOfBirth,
+        core-shape:cpv-Person-dateOfDeath,
+        core-shape:cpv-Person-familyName,
+        core-shape:cpv-Person-fullName,
+        core-shape:cpv-Person-gender,
+        core-shape:cpv-Person-givenName,
+        core-shape:cpv-Person-matronymicName,
+        core-shape:cpv-Person-patronymicName,
+        core-shape:cpv-Person-sex ;
+    sh:targetClass cccev:Person .
 
-core-shape:AssetDistribution a sh:NodeShape ;
-    rdfs:label "Asset distribution" ;
+core-shape:cpv-Person-alternativeName a sh:PropertyShape ;
     rdfs:isDefinedBy core-shape:core-shape ;
-    sh:property core-shape:AssetDistribution-accessURL,
-        core-shape:AssetDistribution-description,
-        core-shape:AssetDistribution-downloadURL,
-        core-shape:AssetDistribution-issued,
-        core-shape:AssetDistribution-modified,
-        core-shape:AssetDistribution-title ;
-    sh:targetClass :AssetDistribution .
+    sh:name "Alternative name" ;
+    sh:path :alternativeName .
 
-core-shape:AssetRepository a sh:NodeShape ;
-    rdfs:label "Asset repository" ;
+core-shape:cpv-Person-birthName a sh:PropertyShape ;
     rdfs:isDefinedBy core-shape:core-shape ;
-    sh:property core-shape:AssetRepository-accessURL,
-        core-shape:AssetRepository-dataset,
-        core-shape:AssetRepository-description,
-        core-shape:AssetRepository-issued,
-        core-shape:AssetRepository-modified,
-        core-shape:AssetRepository-supportedSchema,
-        core-shape:AssetRepository-title ;
-    sh:targetClass :AssetRepository .
+    sh:name "Birth name" ;
+    sh:path :birthName .
 
-core-shape:adms-Identifier a sh:NodeShape ;
-    rdfs:label "Identifier" ;
+core-shape:cpv-Person-dateOfBirth a sh:PropertyShape ;
     rdfs:isDefinedBy core-shape:core-shape ;
-    sh:property core-shape:adms-Identifier-dateOfIssue,
-        core-shape:adms-Identifier-issuingAuthorityName,
-        core-shape:adms-Identifier-notation,
-        core-shape:adms-Identifier-schemeName,
-        core-shape:adms-Identifier-schemeURI ;
-    sh:targetClass adms:Identifier .
+    sh:name "Date of birth" ;
+    sh:path :dateOfBirth .
 
-core-shape:Asset-alternativeLabel a sh:PropertyShape ;
+core-shape:cpv-Person-dateOfDeath a sh:PropertyShape ;
     rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Alternative label" ;
-    sh:path :alternativeLabel .
+    sh:name "Date of death" ;
+    sh:path :dateOfDeath .
 
-core-shape:Asset-description a sh:PropertyShape ;
+core-shape:cpv-Person-familyName a sh:PropertyShape ;
     rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Description" ;
-    sh:path :description .
+    sh:name "Family name" ;
+    sh:path :familyName .
 
-core-shape:Asset-distribution a sh:PropertyShape ;
-    sh:class :AssetDistribution ;
-    sh:name "Distribution" ;
-    sh:path :distribution ;
-    sh:sparql [ sh:select " SELECT ?this ?that WHERE { ?this <http://data.europa.eu/a4g/ontology#distribution> ?that . ?that <http://data.europa.eu/a4g/ontology#distribution> ?this .} " ] .
-
-core-shape:Asset-identifier a sh:PropertyShape ;
-    sh:class adms:Identifier ;
-    sh:name "Identifier" ;
-    sh:path :identifier ;
-    sh:sparql [ sh:select " SELECT ?this ?that WHERE { ?this <http://data.europa.eu/a4g/ontology#identifier> ?that . ?that <http://data.europa.eu/a4g/ontology#identifier> ?this .} " ] .
-
-core-shape:Asset-includedAsset a sh:PropertyShape ;
-    sh:class :Asset ;
-    sh:name "Included asset" ;
-    sh:path :includedAsset ;
-    sh:sparql [ sh:select " SELECT ?this ?that WHERE { ?this <http://data.europa.eu/a4g/ontology#includedAsset> ?that . ?that <http://data.europa.eu/a4g/ontology#includedAsset> ?this .} " ] .
-
-core-shape:Asset-issued a sh:PropertyShape ;
+core-shape:cpv-Person-fullName a sh:PropertyShape ;
     rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Issued" ;
-    sh:path :issued .
+    sh:name "Full name" ;
+    sh:path :fullName .
 
-core-shape:Asset-keyword a sh:PropertyShape ;
+core-shape:cpv-Person-gender a sh:PropertyShape ;
     rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Keyword" ;
-    sh:path :keyword .
+    sh:name "Gender" ;
+    sh:path :gender .
 
-core-shape:Asset-language a sh:PropertyShape ;
+core-shape:cpv-Person-givenName a sh:PropertyShape ;
     rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Language" ;
-    sh:path :language .
+    sh:name "Given name" ;
+    sh:path :givenName .
 
-core-shape:Asset-last a sh:PropertyShape ;
-    sh:class :Asset ;
-    sh:name "Last" ;
-    sh:path :last ;
-    sh:sparql [ sh:select " SELECT ?this ?that WHERE { ?this <http://data.europa.eu/a4g/ontology#last> ?that . ?that <http://data.europa.eu/a4g/ontology#last> ?this .} " ] .
-
-core-shape:Asset-modified a sh:PropertyShape ;
+core-shape:cpv-Person-matronymicName a sh:PropertyShape ;
     rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Modified" ;
-    sh:path :modified .
+    sh:name "Matronymic name" ;
+    sh:path :matronymicName .
 
-core-shape:Asset-next a sh:PropertyShape ;
-    sh:class :Asset ;
-    sh:name "Next" ;
-    sh:path :next ;
-    sh:sparql [ sh:select " SELECT ?this ?that WHERE { ?this <http://data.europa.eu/a4g/ontology#next> ?that . ?that <http://data.europa.eu/a4g/ontology#next> ?this .} " ] .
-
-core-shape:Asset-prev a sh:PropertyShape ;
-    sh:class :Asset ;
-    sh:name "Prev" ;
-    sh:path :prev ;
-    sh:sparql [ sh:select " SELECT ?this ?that WHERE { ?this <http://data.europa.eu/a4g/ontology#prev> ?that . ?that <http://data.europa.eu/a4g/ontology#prev> ?this .} " ] .
-
-core-shape:Asset-relation a sh:PropertyShape ;
-    sh:class :Asset ;
-    sh:name "Relation" ;
-    sh:path :relation ;
-    sh:sparql [ sh:select " SELECT ?this ?that WHERE { ?this <http://data.europa.eu/a4g/ontology#relation> ?that . ?that <http://data.europa.eu/a4g/ontology#relation> ?this .} " ] .
-
-core-shape:Asset-sample a sh:PropertyShape ;
-    sh:class :Asset ;
-    sh:name "Sample" ;
-    sh:path :sample ;
-    sh:sparql [ sh:select " SELECT ?this ?that WHERE { ?this <http://data.europa.eu/a4g/ontology#sample> ?that . ?that <http://data.europa.eu/a4g/ontology#sample> ?this .} " ] .
-
-core-shape:Asset-title a sh:PropertyShape ;
+core-shape:cpv-Person-patronymicName a sh:PropertyShape ;
     rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Title" ;
-    sh:path :title .
+    sh:name "Patronymic name" ;
+    sh:path :patronymicName .
 
-core-shape:Asset-translation a sh:PropertyShape ;
-    sh:class :Asset ;
-    sh:name "Translation" ;
-    sh:path :translation ;
-    sh:sparql [ sh:select " SELECT ?this ?that WHERE { ?this <http://data.europa.eu/a4g/ontology#translation> ?that . ?that <http://data.europa.eu/a4g/ontology#translation> ?this .} " ] .
-
-core-shape:Asset-versionInfo a sh:PropertyShape ;
+core-shape:cpv-Person-sex a sh:PropertyShape ;
     rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Version info" ;
-    sh:path :versionInfo .
-
-core-shape:Asset-versionNotes a sh:PropertyShape ;
-    rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Version notes" ;
-    sh:path :versionNotes .
-
-core-shape:AssetDistribution-accessURL a sh:PropertyShape ;
-    rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Access u r l" ;
-    sh:path :accessURL .
-
-core-shape:AssetDistribution-description a sh:PropertyShape ;
-    rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Description" ;
-    sh:path :description .
-
-core-shape:AssetDistribution-downloadURL a sh:PropertyShape ;
-    rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Download u r l" ;
-    sh:path :downloadURL .
-
-core-shape:AssetDistribution-issued a sh:PropertyShape ;
-    rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Issued" ;
-    sh:path :issued .
-
-core-shape:AssetDistribution-modified a sh:PropertyShape ;
-    rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Modified" ;
-    sh:path :modified .
-
-core-shape:AssetDistribution-title a sh:PropertyShape ;
-    rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Title" ;
-    sh:path :title .
-
-core-shape:AssetRepository-accessURL a sh:PropertyShape ;
-    rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Access u r l" ;
-    sh:path :accessURL .
-
-core-shape:AssetRepository-dataset a sh:PropertyShape ;
-    sh:class :Asset ;
-    sh:name "Dataset" ;
-    sh:path :dataset ;
-    sh:sparql [ sh:select " SELECT ?this ?that WHERE { ?this <http://data.europa.eu/a4g/ontology#dataset> ?that . ?that <http://data.europa.eu/a4g/ontology#dataset> ?this .} " ] .
-
-core-shape:AssetRepository-description a sh:PropertyShape ;
-    rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Description" ;
-    sh:path :description .
-
-core-shape:AssetRepository-issued a sh:PropertyShape ;
-    rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Issued" ;
-    sh:path :issued .
-
-core-shape:AssetRepository-modified a sh:PropertyShape ;
-    rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Modified" ;
-    sh:path :modified .
-
-core-shape:AssetRepository-supportedSchema a sh:PropertyShape ;
-    sh:class :Asset ;
-    sh:name "Supported schema" ;
-    sh:path :supportedSchema ;
-    sh:sparql [ sh:select " SELECT ?this ?that WHERE { ?this <http://data.europa.eu/a4g/ontology#supportedSchema> ?that . ?that <http://data.europa.eu/a4g/ontology#supportedSchema> ?this .} " ] .
-
-core-shape:AssetRepository-title a sh:PropertyShape ;
-    rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Title" ;
-    sh:path :title .
-
-core-shape:adms-Identifier-dateOfIssue a sh:PropertyShape ;
-    rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Date of issue" ;
-    sh:path :dateOfIssue .
-
-core-shape:adms-Identifier-issuingAuthorityName a sh:PropertyShape ;
-    rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Issuing authority name" ;
-    sh:path :issuingAuthorityName .
-
-core-shape:adms-Identifier-notation a sh:PropertyShape ;
-    rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Notation" ;
-    sh:path :notation .
-
-core-shape:adms-Identifier-schemeName a sh:PropertyShape ;
-    rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Scheme name" ;
-    sh:path :schemeName .
-
-core-shape:adms-Identifier-schemeURI a sh:PropertyShape ;
-    rdfs:isDefinedBy core-shape:core-shape ;
-    sh:name "Scheme u r i" ;
-    sh:path :schemeURI .
+    sh:name "Sex" ;
+    sh:path :sex .
 
 core-shape:core-shape a owl:Ontology ;
     cc:attributionName "European Union" ;

@@ -9,166 +9,76 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:accessURL rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :AssetDistribution :AssetRepository ) ] ;
-    rdfs:range :Resource .
-
-:alternativeLabel rdfs:domain :Asset ;
-    rdfs:range :Literal .
-
-:contactPoint rdfs:domain :Asset ;
-    rdfs:range :VCard .
-
-:dataset rdfs:domain :AssetRepository ;
-    rdfs:range :Asset .
-
-:dateOfIssue rdfs:domain adms:Identifier ;
-    rdfs:range :Date .
-
-:describedBy rdfs:domain :Asset ;
-    rdfs:range :Document .
-
-:description rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Asset :AssetDistribution :AssetRepository ) ] ;
-    rdfs:range :Literal .
-
-:distribution rdfs:domain :Asset ;
-    rdfs:range :AssetDistribution .
-
-:downloadURL rdfs:domain :AssetDistribution ;
-    rdfs:range :Resource .
-
-:format rdfs:domain :AssetDistribution ;
-    rdfs:range :FileFormat .
-
-:identifier rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :PublicOrganisation cccev:Person :LegalEntity :Asset ) ] ;
-    rdfs:range adms:Identifier .
-
-:identifies rdf:domain adms:Identifier ;
-    rdfs:range [ a owl:Class ;
-            owl:unionOf ( :LegalEntity cccev:Person ) ] .
-
-:includedAsset a owl:AsymmetricProperty ;
-    rdfs:domain :Asset ;
-    rdfs:range :Asset .
-
-:interoperabilityLevel rdfs:domain :Asset ;
-    rdfs:range :Concept .
-
-:issued rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Asset :AssetDistribution :AssetRepository ) ] ;
-    rdfs:range :Literal .
-
-:issuingAuthorityName rdfs:domain adms:Identifier ;
+:alternativeName rdfs:domain cccev:Person ;
     rdfs:range :Text .
 
-:issuingAuthorityURI rdfs:domain adms:Identifier ;
-    rdfs:range :Agent .
-
-:keyword rdfs:domain :Asset ;
-    rdfs:range :Literal .
-
-:landingPage rdfs:domain :Asset ;
-    rdfs:range :Document .
-
-:language rdfs:domain :Asset ;
-    rdfs:range :LinguisticSystem .
-
-:last a owl:AsymmetricProperty ;
-    rdfs:domain :Asset ;
-    rdfs:range :Asset .
-
-:legalIdentifier rdfs:domain :LegalEntity ;
-    rdfs:range adms:Identifier .
-
-:license rdfs:domain :AssetDistribution ;
-    rdfs:range :LicenseDocument .
-
-:mediatype rdfs:domain :AssetDistribution ;
-    rdfs:range :FileFormat .
-
-:modified rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Asset :AssetDistribution :AssetRepository ) ] ;
-    rdfs:range :Literal .
-
-:next a owl:AsymmetricProperty ;
-    rdfs:domain :Asset ;
-    rdfs:range :Asset .
-
-:notation rdfs:domain adms:Identifier ;
-    rdfs:range :Literal .
-
-:page rdfs:domain :Asset ;
-    rdfs:range :Document .
-
-:prev a owl:AsymmetricProperty ;
-    rdfs:domain :Asset ;
-    rdfs:range :Asset .
-
-:publisher rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Asset :AssetDistribution :AssetRepository ) ] ;
-    rdfs:range :Agent .
-
-:relation a owl:AsymmetricProperty ;
-    rdfs:domain :Asset ;
-    rdfs:range :Asset .
-
-:representationTechnique rdfs:domain :AssetDistribution ;
-    rdfs:range :Concept .
-
-:sample a owl:AsymmetricProperty ;
-    rdfs:domain :Asset ;
-    rdfs:range :Asset .
-
-:schemeName rdfs:domain adms:Identifier ;
+:birthName rdfs:domain cccev:Person ;
     rdfs:range :Text .
 
-:schemeURI rdfs:domain adms:Identifier ;
-    rdfs:range :Text .
+:change rdfs:domain cccev:Person ;
+    rdfs:range :Change .
 
-:spatial rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Asset :AssetRepository ) ] ;
+:citizenship rdfs:domain cccev:Person ;
+    rdfs:range :Jurisdiction .
+
+:contactPoint rdfs:domain cccev:Person ;
+    rdfs:range :ContactPoint .
+
+:countryOfBirth rdfs:domain cccev:Person ;
     rdfs:range :Location .
 
-:status rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Asset :AssetDistribution ) ] ;
-    rdfs:range :Concept .
+:countryOfDeath rdfs:domain cccev:Person ;
+    rdfs:range :Location .
 
-:supportedSchema rdfs:domain :AssetRepository ;
-    rdfs:range :Asset .
+:dateOfBirth rdfs:domain cccev:Person ;
+    rdfs:range :GenericDate .
 
-:temporal rdfs:domain :Asset ;
-    rdfs:range :PeriodOfTime .
+:dateOfDeath rdfs:domain cccev:Person ;
+    rdfs:range :GenericDate .
 
-:theme rdfs:domain :Asset ;
-    rdfs:range :Concept .
+:domicile rdfs:domain cccev:Person ;
+    rdfs:range :Address .
 
-:themeTaxonomy rdfs:domain :AssetRepository ;
-    rdfs:range :ConceptScheme .
+:familyName rdfs:domain cccev:Person ;
+    rdfs:range :Text .
 
-:title rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Asset :AssetDistribution :AssetRepository ) ] ;
-    rdfs:range :Literal .
+:fullName rdfs:domain cccev:Person ;
+    rdfs:range :Text .
 
-:translation a owl:AsymmetricProperty ;
-    rdfs:domain :Asset ;
-    rdfs:range :Asset .
+:gender rdfs:domain cccev:Person ;
+    rdfs:range :Code .
 
-:type rdfs:domain :Asset ;
-    rdfs:range :Concept .
+:givenName rdfs:domain cccev:Person ;
+    rdfs:range :Text .
 
-:versionInfo rdfs:domain :Asset ;
-    rdfs:range :Literal .
+:identifier rdfs:domain cccev:Person ;
+    rdfs:range adms:Identifier .
 
-:versionNotes rdfs:domain :Asset ;
-    rdfs:range :Literal .
+:identifies rdfs:domain adms:Identifier ;
+    rdfs:range cccev:Person .
+
+:matronymicName rdfs:domain cccev:Person ;
+    rdfs:range :Text .
+
+:patronymicName rdfs:domain cccev:Person ;
+    rdfs:range :Text .
+
+:placeOfBirth rdfs:domain cccev:Person ;
+    rdfs:range :Location .
+
+:placeOfDeath rdfs:domain cccev:Person ;
+    rdfs:range :Location .
+
+:residency rdfs:domain cccev:Person ;
+    rdfs:range :Jurisdiction .
+
+:sex rdfs:domain cccev:Person ;
+    rdfs:range :Code .
 
 core-res:core-restriction a owl:Ontology ;
     cc:attributionName "European Union" ;
@@ -207,10 +117,4 @@ core-res:core-restriction a owl:Ontology ;
     owl:versionInfo "2.1.0" ;
     skos:changeNote """This version is automatically generated from core_person_CM.xml on 
                 2023-08-23""" .
-
-:AssetRepository a owl:Class .
-
-:AssetDistribution a owl:Class .
-
-:Asset a owl:Class .
 
