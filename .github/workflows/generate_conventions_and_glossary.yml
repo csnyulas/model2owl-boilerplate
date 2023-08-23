@@ -4,7 +4,7 @@ on:
     branches:
       - "**"
     paths:
-      - "implementation/core_person/**/*"
+      - "implementation/core_person/**"
 
 
 jobs:
