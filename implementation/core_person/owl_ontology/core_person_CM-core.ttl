@@ -1,4 +1,5 @@
 @prefix : <http://data.europa.eu/a4g/ontology#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix at-voc: <http://publications.europa.eu/resource/authority/> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix cc: <http://creativecommons.org/ns#> .
@@ -14,180 +15,336 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:alternativeName a rdf:Property ;
-    ns1:definition-en "Any name by which a Person is known, other than their full name."@en ;
-    ns1:label-en "alternative name"@en ;
-    ns1:uri "http://purl.org/dc/terms/alternative"@en ;
+:Asset a owl:Class ;
+    ns1:definition-en "NOTE#NOTES#An abstract entity that reflects the intellectual content of the asset and represents those characteristics of the asset that are independent of its physical embodiment. This abstract entity combines the FRBR entities work (a distinct intellectual or artistic creation) and expression (the intellectual or artistic realization of a work)."@en ;
+    ns1:label-en "Asset"@en ;
+    ns1:usageNote-en """NOTE#NOTES#Assets can be versioned. Every time the intellectual content of an asset changes, the result is considered to be a new asset that can be linked to previous and next versions of the Asset.
+<br/><br/>
+The physical embodiment of an Asset is called an Asset Distribution. A particular Asset may have zero or more Distributions."""@en ;
+    skos:prefLabel "Asset"@en .
+
+:AssetDistribution a owl:Class ;
+    ns1:definition-en "A particular physical embodiment of an Asset, which is an example of the FRBR entity manifestation (the physical embodiment of an expression of a work)."@en ;
+    ns1:label-en "Asset Distribution"@en ;
+    ns1:usageNote-en """NOTE#NOTES#A Distribution is typically a downloadable computer file (but in principle it could also be a paper document or API response) that implements the intellectual content of an Asset.
+<br/><br/>
+A particular Distribution is associated with one and only one Asset, while all Distributions of an Asset share the same intellectual content in different physical formats.
+<br/><br/>
+Distributions themselves are not versioned. If Distribution 1A is the manifestation of Asset 1 and Distribution 2A is the manifestation of Asset 2, a version relationship will be expressed between Asset 1 and Asset 2, not between Distribution 1A and Distribution 2A."""@en ;
+    skos:prefLabel "Asset distribution"@en .
+
+:AssetRepository a owl:Class ;
+    ns1:definition-en "NOTE#NOTES#A system or service that provides facilities for storage and maintenance of descriptions of Assets and Asset Distributions, and functionality that allows users to search and access these descriptions. An Asset Repository will typically contain descriptions of several Assets and related Asset Distributions."@en ;
+    ns1:label-en "Asset Repository"@en ;
+    ns1:usageNote-en "adms:AssetRepository is a sub class of dcat:Catalog"@en ;
+    skos:prefLabel "Asset repository"@en .
+
+:accessURL a rdf:Property ;
+    ns1:definition-en "NOTE"@en ;
+    ns1:label-en "access URL"@en ;
+    ns1:uri "http://www.w3.org/ns/dcat#accessURL"@en ;
     ns1:usageNote-en "NOTE"@en ;
-    skos:prefLabel "Alternative name"@en .
+    skos:prefLabel "Access u r l"@en .
 
-:birthName a rdf:Property ;
-    ns1:definition-en "Full name of the Person given upon their birth."@en ;
-    ns1:label-en "birth name"@en ;
-    ns1:uri "http://www.w3.org/ns/person#birthName"@en ;
-    ns1:usageNote-en "NOTE"@en ;
-    skos:prefLabel "Birth name"@en .
-
-:change a owl:ObjectProperty ;
-    ns1:definition-en "The change relationship links a Class to a record of change in a data field associated with the Class."@en ;
-    ns1:label-en "change"@en ;
-    ns1:package "Core Person"@en ;
-    ns1:usageNote-en "For example, a change of name or a person's their death. It is assumed that an inverse relationship will also be defined."@en ;
-    skos:prefLabel "Change"@en .
-
-:citizenship a owl:ObjectProperty ;
-    ns1:definition-en "The Jurisdiction that has conferred citizenship rights on the Person such as the right to vote, to receive certain protection from the community or the issuance of a passport."@en ;
-    ns1:label-en "citizenship"@en ;
-    ns1:package "Core Person"@en ;
-    ns1:uri "http://www.w3.org/ns/person#citizenship"@en ;
-    ns1:usageNote-en """NOTE$ea_notes=Citizenship is a relationship between an individual and a state to which the individual owes allegiance and in turn is entitled to its protection.
-
-Citizenship is information needed by many cross-border use cases and is a legal status as opposed to the more culturally-focussed and less well-defined term "nationality". A Person has one, multiple or even no citizenship status. Multiple citizenships are recorded as multiple instances of the citizenship relationship."""@en ;
-    skos:definition "The citizenship relationship links a Person to a Jurisdiction that has conferred citizenship rights on the individual such as the right to vote, to receive certain protection from the community or the issuance of a passport. Multiple citizenships are recorded as multiple instances of the citizenship relationship. (cpv:Person -> Jurisdiction (+citizenship)) "@en ;
-    skos:prefLabel "Citizenship"@en .
+:alternativeLabel a rdf:Property ;
+    ns1:definition-en "An alternative name for the Asset."@en ;
+    ns1:label-en "alternative label"@en ;
+    ns1:uri "http://www.w3.org/2004/02/skos/core#altLabel"@en ;
+    skos:prefLabel "Alternative label"@en .
 
 :contactPoint a owl:ObjectProperty ;
-    ns1:definition-en "The main contact information of the resource."@en ;
+    ns1:definition-en "Links an asset to a contact point from where further information about an Asset can be obtained."@en ;
     ns1:label-en "contact point"@en ;
-    ns1:package "Core Person"@en ;
-    ns1:uri "http://data.europa.eu/m8g/contactPoint"@en ;
-    ns1:usageNote "NOTE$ea_notes=Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information."@en ;
+    ns1:uri "http://www.w3.org/ns/dcat#contactPoint"@en ;
     skos:prefLabel "Contact point"@en .
 
-:countryOfBirth a owl:ObjectProperty ;
-    ns1:definition-en "The country in which the Person was born."@en ;
-    ns1:label-en "country of birth"@en ;
-    ns1:package "Core Person"@en ;
-    ns1:uri "http://www.w3.org/ns/person#countryOfBirth"@en ;
-    ns1:usageNote-en "NOTE$ea_notes=The Location Class has two properties: a Geographic Name and a Geographic Identifier. Plain codes like \"DE\" should be provided as values for Geographical Names whereas URIs should be provided as value of the Geographical Identifier. Ideally, provide both. Providing a simple country name is problematic and should be avoided whereas using a standardised system that allows the use of a code list for country names has a lot of potential for increasing semantic interoperability. Known diversity that one has to deal with when exchanging country names between different communication partners without relying on an agreed code list are: (a) long form vs. short form of a country name (e.g. Federal Republic of Germany vs. Germany), (b) different languages (Italy vs. Italia), (c) historic name vs. current name (Burma vs. Myanmar), (d) ambiguity of similar sounding countries (Republic of the Congo vs. Democratic Republic of the Congo). The Publications Office of the European Union recommends and uses <a href=\"https://www.iso.org/iso-3166-country-codes.html\">ISO 3166-1</a> codes for countries in all cases except two: use 'UK' in preference to the ISO 3166 code GB for the United Kingdom; use 'EL' in preference to the ISO 3166 code GR for Greece. See <a href=\"http://publications.europa.eu/code/en/en-5000500.htm\"> Publications Office list of countries</a> for details of the OPOCE's full list of countries, codes, currencies and more. Where a country has changed its name or no longer exists (such as Czechoslovakia, Yugoslavia etc.) use the<a href=\"https://www.iso.org/standard/72484.html\">ISO 3166-3 code</a>."@en ;
-    skos:definition "The country in which a Person was born. (cpv:Person -> Location (+countryOfBirth)) "@en ;
-    skos:prefLabel "Country of birth"@en .
+:dataset a owl:ObjectProperty ;
+    ns1:definition-en "Used to link an Asset Repository to an Asset."@en ;
+    ns1:label-en "dataset"@en ;
+    ns1:uri "http://www.w3.org/ns/dcat#dataset"@en ;
+    skos:prefLabel "Dataset"@en .
 
-:countryOfDeath a owl:ObjectProperty ;
-    ns1:definition-en "The country in which the Person died."@en ;
-    ns1:label-en "country of death"@en ;
-    ns1:package "Core Person"@en ;
-    ns1:uri "http://www.w3.org/ns/person#countryOfDeath"@en ;
-    ns1:usageNote-en "NOTE$ea_notes=The Location Class has two properties: a Geographic Name and a Geographic Identifier. Plain codes like \"DE\" should be provided as values for Geographical Names whereas URIs should be provided as value of the Geographical Identifier. Ideally, provide both. Providing a simple country name is problematic and should be avoided whereas using a standardised system that allows the use of a code list for country names has a lot of potential for increasing semantic interoperability. Known diversity that one has to deal with when exchanging country names between different communication partners without relying on an agreed code list are: (a) long form vs. short form of a country name (e.g. Federal Republic of Germany vs. Germany), (b) different languages (Italy vs. Italia), (c) historic name vs. current name (Burma vs. Myanmar), (d) ambiguity of similar sounding countries (Republic of the Congo vs. Democratic Republic of the Congo). The Publications Office of the European Union recommends and uses <a href=\"https://www.iso.org/iso-3166-country-codes.html\">ISO 3166-1</a> codes for countries in all cases except two: use 'UK' in preference to the ISO 3166 code GB for the United Kingdom; use 'EL' in preference to the ISO 3166 code GR for Greece. See <a href=\"http://publications.europa.eu/code/en/en-5000500.htm\"> Publications Office list of countries</a> for details of the OPOCE's full list of countries, codes, currencies and more. Where a country has changed its name or no longer exists (such as Czechoslovakia, Yugoslavia etc.) use the<a href=\"https://www.iso.org/standard/72484.html\">ISO 3166-3 code</a>."@en ;
-    skos:prefLabel "Country of death"@en .
+:dateOfIssue a rdf:Property ;
+    ns1:definition-en "The date on which the Identifier was assigned."@en ;
+    ns1:label-en "date of issue"@en ;
+    ns1:uri "http://purl.org/dc/terms/issued"@en ;
+    skos:prefLabel "Date of issue"@en .
 
-:dateOfBirth a rdf:Property ;
-    ns1:definition-en "The point in time on which the Person was born."@en ;
-    ns1:label-en "date of birth"@en ;
-    ns1:uri "http://data.europa.eu/m8g/birthDate"@en ;
-    ns1:usageNote-en "NOTE"@en ;
-    skos:prefLabel "Date of birth"@en .
+:describedBy a owl:ObjectProperty ;
+    ns1:definition-en "The main documentation or specification of the Asset."@en ;
+    ns1:label-en "described by"@en ;
+    ns1:uri "http://www.w3.org/2007/05/powder-s#describedby"@en ;
+    ns1:usageNote-en "NOTE$ea_notes=See also dcat:landingPage , foaf:page."@en ;
+    skos:prefLabel "Described by"@en .
 
-:dateOfDeath a rdf:Property ;
-    ns1:definition-en "The point in time on which the Person died."@en ;
-    ns1:label-en "date of death"@en ;
-    ns1:uri "http://data.europa.eu/m8g/deathDate"@en ;
-    ns1:usageNote-en "NOTE"@en ;
-    skos:prefLabel "Date of death"@en .
+:description a rdf:Property ;
+    ns1:definition-en "A description of the Asset."@en ;
+    ns1:label-en "description"@en ;
+    ns1:uri "http://purl.org/dc/terms/description"@en ;
+    skos:prefLabel "Description"@en .
 
-:domicile a owl:ObjectProperty ;
-    ns1:definition-en "The place that the Person treats as permanent home."@en ;
-    ns1:label-en "domicile"@en ;
-    ns1:package "Core Person"@en ;
-    ns1:uri "http://data.europa.eu/m8g/domicile"@en ;
-    skos:definition "The permanent address of a person (cpv:Person -> Address (+domicile)) "@en ;
-    skos:prefLabel "Domicile"@en .
+:distribution a owl:ObjectProperty ;
+    ns1:definition-en "Links an Asset to an implementation in a particular format."@en ;
+    ns1:label-en "distribution"@en ;
+    ns1:uri "http://www.w3.org/ns/dcat#distribution"@en ;
+    skos:prefLabel "Distribution"@en .
 
-:familyName a rdf:Property ;
-    ns1:definition-en "The hereditary surname of a family."@en ;
-    ns1:label-en "family name"@en ;
-    ns1:uri "http://xmlns.com/foaf/0.1/familyName"@en ;
-    ns1:usageNote-en "NOTE"@en ;
-    skos:prefLabel "Family name"@en .
+:downloadURL a rdf:Property ;
+    ns1:definition-en "NOTE"@en ;
+    ns1:label-en "download URL"@en ;
+    ns1:uri "http://www.w3.org/ns/dcat#downloadURL"@en ;
+    skos:prefLabel "Download u r l"@en .
 
-:fullName a rdf:Property ;
-    ns1:definition-en "The complete name of the Person as one string."@en ;
-    ns1:label-en "full name"@en ;
-    ns1:uri "http://xmlns.com/foaf/0.1/name"@en ;
-    ns1:usageNote-en "NOTE"@en ;
-    skos:prefLabel "Full name"@en .
-
-:gender a rdf:Property ;
-    ns1:definition-en "The identities, expressions and societal roles of the Person."@en ;
-    ns1:label-en "gender"@en ;
-    ns1:uri "http://data.europa.eu/m8g/gender"@en ;
-    ns1:usageNote-en "NOTE"@en ;
-    skos:prefLabel "Gender"@en .
-
-:givenName a rdf:Property ;
-    ns1:definition-en "The name(s) that identify the Person within a family with a common surname."@en ;
-    ns1:label-en "given name"@en ;
-    ns1:uri "http://xmlns.com/foaf/0.1/givenName"@en ;
-    ns1:usageNote-en "NOTE"@en ;
-    skos:prefLabel "Given name"@en .
+:format a owl:ObjectProperty ;
+    ns1:definition-en "The file format of the distribution."@en ;
+    ns1:label-en "format"@en ;
+    ns1:uri "http://purl.org/dc/terms/format"@en ;
+    ns1:usageNote-en "NOTE$ea_notes=dcat:mediaType should be used if the type of the distribution is defined by IANA . Suitable values for dcterms:format include URIs as used in the example . See also adms:representationTechnique ."@en ;
+    skos:prefLabel "Format"@en .
 
 :identifier a owl:ObjectProperty ;
-    ns1:definition-en "The unambiguous structured reference to the Person."@en ;
+    ns1:definition-en "Links a resource to an adms:Identifier class."@en,
+        "The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status."@en,
+        "The unambiguous structured reference for the Public Organization."@en,
+        "The unambiguous structured reference to the Person."@en ;
     ns1:label-en "identifier"@en ;
-    ns1:package "Core Person"@en ;
-    ns1:uri "http://purl.org/dc/terms/identifier"@en ;
-    ns1:usageNote-en "NOTE$ea_notes=Examples include a national identification number, a student ID, national fiscal number, etc. We also refer to the <a href=\"http://data.europa.eu/eli/reg/2014/910/oj\">eIDAS regulation</a> on \"electronic identification and trust services\" and its <a href=\"https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eIDAS%2BeID%2BProfile?preview%3D/82773108/148898847/eIDAS%2520SAML%2520Attribute%2520Profile%2520v1.2%2520Final.pdf&sa=D&source=editors&ust=1619073953427000&usg=AFQjCNFMJFPCmHjV0gLJjf8dSHqGUY3ulw\">mapping</a> to the Core Person Vocabulary."@en ;
+    ns1:package "Core Person"@en,
+        "adms"@en ;
+    ns1:uri "http://purl.org/dc/terms/identifier"@en,
+        "http://www.w3.org/ns/adms#identifier"@en ;
+    ns1:usageNote-en "NOTE$ea_notes=Examples include a national identification number, a student ID, national fiscal number, etc. We also refer to the <a href=\"http://data.europa.eu/eli/reg/2014/910/oj\">eIDAS regulation</a> on \"electronic identification and trust services\" and its <a href=\"https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eIDAS%2BeID%2BProfile?preview%3D/82773108/148898847/eIDAS%2520SAML%2520Attribute%2520Profile%2520v1.2%2520Final.pdf&sa=D&source=editors&ust=1619073953427000&usg=AFQjCNFMJFPCmHjV0gLJjf8dSHqGUY3ulw\">mapping</a> to the Core Person Vocabulary."@en,
+        "NOTE$ea_notes=Legal Entities may have any number of identifiers (but only one legal identifier). For example, in many jurisdictions, a business will have one or more tax numbers associated with them which do not, by themselves, confer legal entity status. An individual may be issued with identifiers for everything from social security to club membership. The identifier relationship must not be used to link to the identifier issued by the authority that conferred legal entity status on a business."@en,
+        "NOTE$ea_notes=Public organizations identifiers are often using (but not limited to) acronyms. For example, among the EU institutions, the ECB is the identifier for the European Central Bank, OLAF for the European Anti-Fraud Office, and so on. These are formally recognised by the European Commission which provides a <a href=\"https://ec.europa.eu/eurostat/ramon/cybernews/abbreviations.htm\"> list</a> of such acronyms."@en ;
     skos:definition "For many systems, the identifier is the key piece of information about an individual and therefore an important part of the core person vocabulary. However, all identifiers are contextspecific and when exchanging data between systems it is important to provide additional information that makes this explicit. An individual may have any number of identifiers. (cpv:Person -> adms:Identifier (+identifier)) "@en ;
     skos:prefLabel "Identifier"@en .
 
 :identifies a owl:ObjectProperty ;
     ns1:definition-en "The entity that is referenced by the Identifier."@en ;
     ns1:label-en "identifies"@en ;
-    ns1:uri "http://www.w3.org/ns/adms#identifies"@en ;
+    ns1:package "Core Business"@en ;
+    ns1:uri "http://data.europa.eu/m8g/identifies"@en,
+        "http://www.w3.org/ns/adms#identifies"@en ;
     skos:prefLabel "Identifies"@en .
 
-:matronymicName a rdf:Property ;
-    ns1:definition-en "Name based on the given name of the Person's mother."@en ;
-    ns1:label-en "matronymic name"@en ;
-    ns1:uri "http://data.europa.eu/m8g/matronymicName"@en ;
-    skos:prefLabel "Matronymic name"@en .
+:includedAsset a owl:ObjectProperty ;
+    ns1:definition-en "An Asset that is contained in the Asset being described, e.g. when there are several vocabularies defined in a single document."@en ;
+    ns1:label-en "included asset"@en ;
+    ns1:uri "http://www.w3.org/ns/adms#includedAsset"@en ;
+    skos:prefLabel "Included asset"@en .
 
-:patronymicName a rdf:Property ;
-    ns1:definition-en "Name based on the given name of the Person's father."@en ;
-    ns1:label-en "patronymic name"@en ;
-    ns1:uri "http://www.w3.org/ns/person#patronymicName"@en ;
+:interoperabilityLevel a owl:ObjectProperty ;
+    ns1:definition-en "The interoperability level for which the Asset is relevant."@en ;
+    ns1:label-en "interoperability level"@en ;
+    ns1:uri "http://www.w3.org/ns/adms#interoperabilityLevel"@en ;
+    skos:prefLabel "Interoperability level"@en .
+
+:issued a rdf:Property ;
+    ns1:definition-en "Date of formal issuance (e.g., publication) of the Asset."@en ;
+    ns1:label-en "issued"@en ;
+    ns1:uri "http://purl.org/dc/terms/issued"@en ;
+    skos:prefLabel "Issued"@en .
+
+:issuingAuthorityName a rdf:Property ;
+    ns1:definition-en "The name of the agency responsible for issuing the Identifier."@en ;
+    ns1:label-en "issuing authority name"@en ;
+    ns1:uri "http://www.w3.org/ns/adms#schemeAgency"@en ;
+    ns1:usageNote-en "Example: \"Federal Public Service Interior\"@en."@en ;
+    skos:prefLabel "Issuing authority name"@en .
+
+:issuingAuthorityURI a owl:ObjectProperty ;
+    ns1:definition-en "The reference in the form of a Uniform Resource Identifier to the issuing authority."@en ;
+    ns1:label-en "issuing authority URI"@en ;
+    ns1:uri "http://purl.org/dc/terms/creator"@en ;
+    ns1:usageNote-en "Example: \"https://belgium.be/id/organizations/1233\"."@en ;
+    skos:prefLabel "Issuing authority u r i"@en .
+
+:keyword a rdf:Property ;
+    ns1:definition-en "A word, phrase or tag to describe the Asset."@en ;
+    ns1:label-en "keyword"@en ;
+    ns1:uri "http://www.w3.org/ns/dcat#keyword"@en ;
+    skos:prefLabel "Keyword"@en .
+
+:landingPage a owl:ObjectProperty ;
+    ns1:definition-en "A Web page that can be navigated to in a Web browser to gain access to the Asset, its distributions and/or additional information."@en ;
+    ns1:label-en "landing page"@en ;
+    ns1:uri "http://www.w3.org/ns/dcat#landingPage"@en ;
+    ns1:usageNote-en "NOTE$ea_notes=If the Asset Distribution(s) are accessible only through a landing page (i.e. direct download URLs are not known), then the landing page link should be duplicated as accessURL on a distribution."@en ;
+    skos:prefLabel "Landing page"@en .
+
+:language a rdf:Property ;
+    ns1:definition-en "The language of the Asset."@en ;
+    ns1:label-en "language"@en ;
+    ns1:uri "http://purl.org/dc/terms/language"@en ;
+    skos:prefLabel "Language"@en .
+
+:last a owl:ObjectProperty ;
+    ns1:definition-en "A link to the current or latest version of the Asset."@en ;
+    ns1:label-en "last"@en ;
+    ns1:uri "http://www.w3.org/ns/adms#last"@en ;
+    skos:prefLabel "Last"@en .
+
+:legalIdentifier a owl:ObjectProperty ;
+    ns1:definition-en "The unambiguous structured reference assigned to the Legal Entity by the legal authority that registered it."@en ;
+    ns1:label-en "legal identifier"@en ;
+    ns1:package "Core Business"@en ;
+    ns1:uri "http://www.w3.org/ns/legal#legalIdentifier"@en ;
+    ns1:usageNote-en """NOTE$ea_notes=Legal Entity must have a unique identification number, allowing it to be clearly identified in communication across business registers.
+
+The details of the registration are provided as properties of the Identifier class. The Core vocabulary sets no restriction on the type of legal identifier. In many countries, the business register's identifier is the relevant data point."""@en ;
+    skos:prefLabel "Legal identifier"@en .
+
+:license a owl:ObjectProperty ;
+    ns1:definition-en "Links to the conditions or restrictions for (re-)use of the Asset Distribution."@en ;
+    ns1:label-en "license"@en ;
+    ns1:uri "http://purl.org/dc/terms/license"@en ;
+    ns1:usageNote-en "If multiple licenses are given, these licenses apply to all files in the Asset Distribution."@en ;
+    skos:prefLabel "License"@en .
+
+:mediatype a owl:ObjectProperty ;
+    ns1:definition-en "The media type of the distribution as defined by IANA ."@en ;
+    ns1:label-en "mediatype"@en ;
+    ns1:uri "http://www.w3.org/ns/dcat#mediaType"@en ;
+    ns1:usageNote-en "NOTE$ea_notes=This property should be used when the media type of the distribution is defined in IANA , e.g. text/csv otherwise dcterms:format may be used with different values. See also adms:representationTechnique ."@en ;
+    skos:prefLabel "Mediatype"@en .
+
+:modified a rdf:Property ;
+    ns1:definition-en "Date of the latest update of the Asset."@en ;
+    ns1:label-en "modified"@en ;
+    ns1:uri "http://purl.org/dc/terms/modified"@en ;
+    skos:prefLabel "Modified"@en .
+
+:next a owl:ObjectProperty ;
+    ns1:definition-en "A link to the next version of the Asset."@en ;
+    ns1:label-en "next"@en ;
+    ns1:uri "http://www.w3.org/ns/adms#next"@en ;
+    skos:prefLabel "Next"@en .
+
+:notation a rdf:Property ;
+    ns1:definition-en "A string of characters to uniquely identify a concept."@en ;
+    ns1:label-en "notation"@en ;
+    ns1:uri "http://www.w3.org/2004/02/skos/core#notation"@en ;
     ns1:usageNote-en "NOTE"@en ;
-    skos:prefLabel "Patronymic name"@en .
+    skos:prefLabel "Notation"@en .
 
-:placeOfBirth a owl:ObjectProperty ;
-    ns1:definition-en "The Location where the Person was born."@en ;
-    ns1:label-en "place of birth"@en ;
-    ns1:package "Core Person"@en ;
-    ns1:uri "http://www.w3.org/ns/person#placeOfBirth"@en ;
-    ns1:usageNote-en "NOTE$ea_notes=The Place of Birth and Place of Death are given using the Location class which is associated via the appropriate relationship. The Location Class has two properties: (1) the geographic name of the place, which is given as a string such as \"Amsterdam\" or \"Valetta\" and (2) an identifier, such as a geonames URI <a href=\"http://sws.geonames.org/2759794\">http://sws.geonames.org/2759794</a> (which identifies Amsterdam) or <a href=\"http://sws.geonames.org/2562305\">http://sws.geonames.org/2562305</a> (which identifies Valetta). The use of identifiers is preferred as these are unambiguous, however, public sector data typically uses simple names to record places and this is fully supported."@en ;
-    skos:definition """A person's place of birth.
- (cpv:Person -> Location (+placeOfBirth)) """@en ;
-    skos:prefLabel "Place of birth"@en .
+:page a owl:ObjectProperty ;
+    ns1:definition-en "Links to documentation that contains information related to the Asset."@en ;
+    ns1:label-en "page"@en ;
+    ns1:uri "http://xmlns.com/foaf/0.1/page"@en ;
+    ns1:usageNote-en "NOTE$ea_notes=See also dcat:landingPage , wdrs:describedby."@en ;
+    skos:prefLabel "Page"@en .
 
-:placeOfDeath a owl:ObjectProperty ;
-    ns1:definition-en "The Location where the Person died."@en ;
-    ns1:label-en "place of death"@en ;
-    ns1:package "Core Person"@en ;
-    ns1:uri "http://www.w3.org/ns/person#placeOfDeath"@en ;
-    ns1:usageNote-en "NOTE$ea_notes=The Place of Birth and Place of Death are given using the Location class which is associated via the appropriate relationship. The Location Class has two properties: (1) the geographic name of the place, which is given as a string such as \"Amsterdam\" or \"Valetta\" and (2) an identifier, such as a geonames URI <a href=\"http://sws.geonames.org/2759794\">http://sws.geonames.org/2759794</a> (which identifies Amsterdam) or <a href=\"http://sws.geonames.org/2562305\">http://sws.geonames.org/2562305</a> (which identifies Valetta). The use of identifiers is preferred as these are unambiguous, however, public sector data typically uses simple names to record places and this is fully supported."@en ;
-    skos:prefLabel "Place of death"@en .
+:prev a owl:ObjectProperty ;
+    ns1:definition-en "A link to the previous version of the Asset."@en ;
+    ns1:label-en "prev"@en ;
+    ns1:uri "http://www.w3.org/ns/adms#prev"@en ;
+    skos:prefLabel "Prev"@en .
 
-:residency a owl:ObjectProperty ;
-    ns1:definition-en "Jurisdiction where the Person has their dwelling."@en ;
-    ns1:label-en "residency"@en ;
-    ns1:package "Core Person"@en ;
-    ns1:uri "http://www.w3.org/ns/person#residency"@en ;
-    ns1:usageNote-en "NOTE$ea_notes=A Person's fixed, permanent, and principal home for legal purposes, the place (especially the house) in which a person officially lives or resides. A Person has one, multiple or even no residency status. Multiple residencies are recorded as multiple instances of the residency relationship."@en ;
-    skos:prefLabel "Residency"@en .
+:publisher a owl:ObjectProperty ;
+    ns1:definition-en "inks an Asset Distribution to the publishing foaf:Agent."@en,
+        "inks an Asset Repository to the publishing foaf:Agent."@en,
+        "inks an Asset to the publishing foaf:Agent."@en ;
+    ns1:label-en "publisher"@en ;
+    ns1:uri "http://purl.org/dc/terms/publisher"@en ;
+    skos:prefLabel "Publisher"@en .
 
-:sex a rdf:Property ;
-    ns1:definition-en "The organism's biological sex."@en ;
-    ns1:label-en "sex"@en ;
-    ns1:uri "http://data.europa.eu/m8g/sex"@en ;
-    ns1:usageNote-en "NOTE"@en ;
-    skos:prefLabel "Sex"@en .
+:relation a owl:ObjectProperty ;
+    ns1:definition-en "A link between two Assets that are related in some (unspecified) way."@en ;
+    ns1:label-en "relation"@en ;
+    ns1:uri "http://purl.org/dc/terms/relation"@en ;
+    skos:prefLabel "Relation"@en .
 
-cccev:Person a owl:Class ;
-    ns1:definition-en "A individual human being who may be dead or alive, but not imaginary."@en ;
-    ns1:label-en "Person"@en ;
-    ns1:uri "http://www.w3.org/ns/person#Person"@en ;
-    ns1:usageNote-en "NOTE#NOTES#The fact that a person in the context of Core Person Vocabulary cannot be imaginary makes person:Person a subclass of foaf:Person which cover imaginary characters as well as real people. The Person Class is a subclass of the more general <a href=\"#Agent\">'Agent' class</a>."@en ;
-    skos:prefLabel "Person"@en .
+:representationTechnique a owl:ObjectProperty ;
+    ns1:definition-en "NOTE$ea_notes=More information about the format in which an Asset Distribution is released. This is different from the file format as, for example, a ZIP file (file format) could contain an XML schema (representation technique)."@en ;
+    ns1:label-en "representation technique"@en ;
+    ns1:uri "http://www.w3.org/ns/adms#representationTechnique"@en ;
+    ns1:usageNote-en "NOTE$ea_notes=See also dcterms:format and dcat:mediaType ."@en ;
+    skos:prefLabel "Representation technique"@en .
+
+:sample a owl:ObjectProperty ;
+    ns1:definition-en "Links to a sample of an Asset (which is itself an Asset)."@en ;
+    ns1:label-en "sample"@en ;
+    ns1:uri "http://www.w3.org/ns/adms#sample"@en ;
+    skos:prefLabel "Sample"@en .
+
+:schemeName a rdf:Property ;
+    ns1:definition-en "Name of the scheme used to construct the identifier."@en ;
+    ns1:label-en "scheme name"@en ;
+    ns1:uri "http://www.w3.org/2000/01/rdf-schema#label"@en ;
+    skos:prefLabel "Scheme name"@en .
+
+:schemeURI a rdf:Property ;
+    ns1:definition-en "URI of the scheme used to construct the identifier."@en ;
+    ns1:label-en "scheme URI"@en ;
+    ns1:uri "http://purl.org/dc/terms/conformsTo"@en ;
+    skos:prefLabel "Scheme u r i"@en .
+
+:spatial a owl:ObjectProperty ;
+    ns1:definition-en "The geographic region to which the Asset Repository applies."@en ;
+    ns1:label-en "spatial"@en ;
+    ns1:uri "http://purl.org/dc/terms/spatial"@en ;
+    skos:prefLabel "Spatial"@en .
+
+:status a owl:ObjectProperty ;
+    ns1:definition-en "The status of the Asset in the context of a particular workflow process."@en,
+        "The status of the AssetRepository in the context of a particular workflow process."@en ;
+    ns1:label-en "status"@en ;
+    ns1:uri "http://www.w3.org/ns/adms#status"@en ;
+    skos:prefLabel "Status"@en .
+
+:supportedSchema a owl:ObjectProperty ;
+    ns1:definition-en "A schema according to which the Asset Repository can provide data about its content, e.g. ADMS."@en ;
+    ns1:label-en "supported schema"@en ;
+    ns1:uri "http://www.w3.org/ns/adms#supportedSchema"@en ;
+    skos:prefLabel "Supported schema"@en .
+
+:temporal a owl:ObjectProperty ;
+    ns1:definition-en "The time period to which the Asset applies, e.g. its validity."@en ;
+    ns1:label-en "temporal"@en ;
+    ns1:uri "http://purl.org/dc/terms/temporal"@en ;
+    skos:prefLabel "Temporal"@en .
+
+:theme a owl:ObjectProperty ;
+    ns1:definition-en "The theme or sector to which the Asset applies."@en ;
+    ns1:label-en "theme"@en ;
+    ns1:uri "http://www.w3.org/ns/dcat#theme"@en ;
+    skos:prefLabel "Theme"@en .
+
+:themeTaxonomy a owl:ObjectProperty ;
+    ns1:definition-en "The SKOS Concept Scheme used to classify an Asset Repository's assets."@en ;
+    ns1:label-en "theme taxonomy"@en ;
+    ns1:uri "http://www.w3.org/ns/dcat#themeTaxonomy"@en ;
+    skos:prefLabel "Theme taxonomy"@en .
+
+:title a rdf:Property ;
+    ns1:definition-en "A name given to the Asset."@en ;
+    ns1:label-en "title"@en ;
+    ns1:uri "http://purl.org/dc/terms/title"@en ;
+    skos:prefLabel "Title"@en .
+
+:translation a owl:ObjectProperty ;
+    ns1:definition-en "Links Assets that are translations of each other."@en ;
+    ns1:label-en "translation"@en ;
+    ns1:uri "http://www.w3.org/ns/adms#translation"@en ;
+    skos:prefLabel "Translation"@en .
+
+:type a owl:ObjectProperty ;
+    ns1:definition-en "This property is used to point to the specific type of Asset."@en ;
+    ns1:label-en "type"@en ;
+    ns1:uri "http://purl.org/dc/terms/type"@en ;
+    ns1:usageNote-en "The type should be provided using a controlled vocabulary encoded as a SKOS Concept."@en ;
+    skos:prefLabel "Type"@en .
+
+:versionInfo a rdf:Property ;
+    ns1:definition-en "A version number or other designation of the Asset."@en ;
+    ns1:label-en "version info"@en ;
+    ns1:uri "http://www.w3.org/2002/07/owl#versionInfo"@en ;
+    skos:prefLabel "Version info"@en .
+
+:versionNotes a rdf:Property ;
+    ns1:definition-en "A description of changes between this version and the previous version of the Asset."@en ;
+    ns1:label-en "version notes"@en ;
+    ns1:uri "http://www.w3.org/ns/adms#versionNotes"@en ;
+    skos:prefLabel "Version notes"@en .
 
 <http://data.europa.eu/m8g/ontology#core> a owl:Ontology ;
     cc:attributionName "European Union" ;
@@ -195,7 +352,7 @@ cccev:Person a owl:Class ;
     dcterms:abstract "This artefact provides the ontology core specification." ;
     dcterms:created ""^^xsd:date ;
     dcterms:description "TODO: replace.   This module provides the definitions for the eProcurement ontology core.         Procurement data has been identified as data with a high-reuse potential.         Given the increasing importance of data standards for eProcurement, a number of initiatives         driven by the public sector, the industry and academia have been kick-started in recent years.         Some have grown organically, while others are the result of standardisation work.         The vocabularies and the semantics that they are introducing, the phases of public procurement that they are covering,         and the technologies that they are using all differ. These differences hamper data interoperability and thus its reuse by them or by the wider public.         This creates the need for a common data standard for publishing procurement data, hence allowing data         from different sources to be easily accessed and linked, and consequently reused."@en ;
-    dcterms:issued "2023-08-22"^^xsd:date ;
+    dcterms:issued "2023-08-23"^^xsd:date ;
     dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
     dcterms:rights "The Commission’s reuse policy is implemented by Commission Decision2011/833/EU of 12 December 2011 on the reuse of Commission documents         (OJ L 330,14.12.2011, p. 39 – https://eur-lex.europa.eu/eli/dec/2011/833/oj). Unlessotherwise noted, the reuse of this document is authorised under the         CreativeCommons Attribution 4.0 International (CC BY 4.0) licence (https://creativecommons.org/licenses/by/4.0/).This means that reuse is allowed, provided         that appropriate credit is given and any changes are indicated." ;
     dcterms:title "Core Person Vocabulary"@en ;
@@ -223,5 +380,12 @@ cccev:Person a owl:Class ;
     owl:priorVersion "2.0.0" ;
     owl:versionIRI <http://data.europa.eu/m8g/ontology#core-2.1.0> ;
     owl:versionInfo "2.1.0" ;
-    skos:changeNote "This version is automatically generated from core_person_CM.xml on 2023-08-22" .
+    skos:changeNote "This version is automatically generated from core_person_CM.xml on 2023-08-23" .
+
+adms:Identifier a owl:Class ;
+    ns1:definition-en "A structured reference that identifies an entity."@en ;
+    ns1:label-en "Identifier"@en ;
+    ns1:uri "http://www.w3.org/ns/adms#Identifier"@en ;
+    ns1:usageNote-en "The Identifier class is based on the UN/CEFACT class of the same name and is defined under the ADMS namespace."@en ;
+    skos:prefLabel "Identifier"@en .
 

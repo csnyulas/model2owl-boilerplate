@@ -55,13 +55,13 @@
       <dct:title xml:lang="en">Core Person Vocabulary</dct:title>
       <dct:description xml:lang="en">TODO: replace.   This module provides the definitions for the eProcurement ontology core.         Procurement data has been identified as data with a high-reuse potential.         Given the increasing importance of data standards for eProcurement, a number of initiatives         driven by the public sector, the industry and academia have been kick-started in recent years.         Some have grown organically, while others are the result of standardisation work.         The vocabularies and the semantics that they are introducing, the phases of public procurement that they are covering,         and the technologies that they are using all differ. These differences hamper data interoperability and thus its reuse by them or by the wider public.         This creates the need for a common data standard for publishing procurement data, hence allowing data         from different sources to be easily accessed and linked, and consequently reused.</dct:description>
       <dct:abstract>This artefact provides the ontology core specification.</dct:abstract>
-      <skos:changeNote>This version is automatically generated from core_person_CM.xml on 2023-08-22</skos:changeNote>
+      <skos:changeNote>This version is automatically generated from core_person_CM.xml on 2023-08-23</skos:changeNote>
       <rdfs:seeAlso rdf:resource="https://github.com/eprocurementontology/eprocurementontology"/>
       <rdfs:seeAlso rdf:resource="https://joinup.ec.europa.eu/collection/eprocurement/solution/eprocurement-ontology/about"/>
       <rdfs:seeAlso rdf:resource="https://op.europa.eu/en/web/eu-vocabularies/e-procurement"/>
       <rdfs:seeAlso rdf:resource="https://docs.ted.europa.eu/EPO/latest/index.html"/>
       <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
-      <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-08-22</dct:issued>
+      <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-08-23</dct:issued>
       <owl:versionInfo>2.1.0</owl:versionInfo>
       <owl:incompatibleWith>1.0.0</owl:incompatibleWith>
       <owl:versionIRI rdf:resource="http://data.europa.eu/m8g/ontology#core-2.1.0"/>
@@ -74,163 +74,107 @@
       <cc:attributionName>European Union</cc:attributionName>
       <cc:attributionURL rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/EURUN"/>
    </owl:Ontology>
-   <owl:Class rdf:about="http://data.europa.eu/m8g/Person"/>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/Person">
-      <skos:prefLabel xml:lang="en">Person</skos:prefLabel>
+   <owl:Class rdf:about="http://www.w3.org/ns/adms#Identifier"/>
+   <rdf:Description rdf:about="http://www.w3.org/ns/adms#Identifier">
+      <skos:prefLabel xml:lang="en">Identifier</skos:prefLabel>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/Person">
-      <definition-en xmlns="" xml:lang="en">A individual human being who may be dead or alive, but not imaginary.</definition-en>
+   <rdf:Description rdf:about="http://www.w3.org/ns/adms#Identifier">
+      <definition-en xmlns="" xml:lang="en">A structured reference that identifies an entity.</definition-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/Person">
-      <label-en xmlns="" xml:lang="en">Person</label-en>
+   <rdf:Description rdf:about="http://www.w3.org/ns/adms#Identifier">
+      <label-en xmlns="" xml:lang="en">Identifier</label-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/Person">
-      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/person#Person</uri>
+   <rdf:Description rdf:about="http://www.w3.org/ns/adms#Identifier">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#Identifier</uri>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/Person">
-      <usageNote-en xmlns="" xml:lang="en">NOTE#NOTES#The fact that a person in the context of Core Person Vocabulary cannot be imaginary makes person:Person a subclass of foaf:Person which cover imaginary characters as well as real people. The Person Class is a subclass of the more general &lt;a href="#Agent"&gt;'Agent' class&lt;/a&gt;.</usageNote-en>
+   <rdf:Description rdf:about="http://www.w3.org/ns/adms#Identifier">
+      <usageNote-en xmlns="" xml:lang="en">The Identifier class is based on the UN/CEFACT class of the same name and is defined under the ADMS namespace.</usageNote-en>
    </rdf:Description>
-   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#citizenship"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
-      <skos:prefLabel xml:lang="en">Citizenship</skos:prefLabel>
+   <owl:Class rdf:about="http://data.europa.eu/a4g/ontology#Asset"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#Asset">
+      <skos:prefLabel xml:lang="en">Asset</skos:prefLabel>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
-      <skos:definition xml:lang="en">The citizenship relationship links a Person to a Jurisdiction that has conferred citizenship rights on the individual such as the right to vote, to receive certain protection from the community or the issuance of a passport. Multiple citizenships are recorded as multiple instances of the citizenship relationship. (cpv:Person -&gt; Jurisdiction (+citizenship)) </skos:definition>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#Asset">
+      <definition-en xmlns="" xml:lang="en">NOTE#NOTES#An abstract entity that reflects the intellectual content of the asset and represents those characteristics of the asset that are independent of its physical embodiment. This abstract entity combines the FRBR entities work (a distinct intellectual or artistic creation) and expression (the intellectual or artistic realization of a work).</definition-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
-      <label-en xmlns="" xml:lang="en">citizenship</label-en>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#Asset">
+      <label-en xmlns="" xml:lang="en">Asset</label-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
-      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/person#citizenship</uri>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#Asset">
+      <usageNote-en xmlns="" xml:lang="en">NOTE#NOTES#Assets can be versioned. Every time the intellectual content of an asset changes, the result is considered to be a new asset that can be linked to previous and next versions of the Asset.
+&lt;br/&gt;&lt;br/&gt;
+The physical embodiment of an Asset is called an Asset Distribution. A particular Asset may have zero or more Distributions.</usageNote-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
-      <definition-en xmlns="" xml:lang="en">The Jurisdiction that has conferred citizenship rights on the Person such as the right to vote, to receive certain protection from the community or the issuance of a passport.</definition-en>
+   <owl:Class rdf:about="http://data.europa.eu/a4g/ontology#AssetDistribution"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#AssetDistribution">
+      <skos:prefLabel xml:lang="en">Asset distribution</skos:prefLabel>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
-      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=Citizenship is a relationship between an individual and a state to which the individual owes allegiance and in turn is entitled to its protection.
-
-Citizenship is information needed by many cross-border use cases and is a legal status as opposed to the more culturally-focussed and less well-defined term "nationality". A Person has one, multiple or even no citizenship status. Multiple citizenships are recorded as multiple instances of the citizenship relationship.</usageNote-en>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#AssetDistribution">
+      <definition-en xmlns="" xml:lang="en">A particular physical embodiment of an Asset, which is an example of the FRBR entity manifestation (the physical embodiment of an expression of a work).</definition-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#citizenship">
-      <package xmlns="" xml:lang="en">Core Person</package>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#AssetDistribution">
+      <label-en xmlns="" xml:lang="en">Asset Distribution</label-en>
    </rdf:Description>
-   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#placeOfDeath"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfDeath">
-      <skos:prefLabel xml:lang="en">Place of death</skos:prefLabel>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#AssetDistribution">
+      <usageNote-en xmlns="" xml:lang="en">NOTE#NOTES#A Distribution is typically a downloadable computer file (but in principle it could also be a paper document or API response) that implements the intellectual content of an Asset.
+&lt;br/&gt;&lt;br/&gt;
+A particular Distribution is associated with one and only one Asset, while all Distributions of an Asset share the same intellectual content in different physical formats.
+&lt;br/&gt;&lt;br/&gt;
+Distributions themselves are not versioned. If Distribution 1A is the manifestation of Asset 1 and Distribution 2A is the manifestation of Asset 2, a version relationship will be expressed between Asset 1 and Asset 2, not between Distribution 1A and Distribution 2A.</usageNote-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfDeath">
-      <label-en xmlns="" xml:lang="en">place of death</label-en>
+   <owl:Class rdf:about="http://data.europa.eu/a4g/ontology#AssetRepository"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#AssetRepository">
+      <skos:prefLabel xml:lang="en">Asset repository</skos:prefLabel>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfDeath">
-      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/person#placeOfDeath</uri>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#AssetRepository">
+      <definition-en xmlns="" xml:lang="en">NOTE#NOTES#A system or service that provides facilities for storage and maintenance of descriptions of Assets and Asset Distributions, and functionality that allows users to search and access these descriptions. An Asset Repository will typically contain descriptions of several Assets and related Asset Distributions.</definition-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfDeath">
-      <definition-en xmlns="" xml:lang="en">The Location where the Person died.</definition-en>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#AssetRepository">
+      <label-en xmlns="" xml:lang="en">Asset Repository</label-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfDeath">
-      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=The Place of Birth and Place of Death are given using the Location class which is associated via the appropriate relationship. The Location Class has two properties: (1) the geographic name of the place, which is given as a string such as "Amsterdam" or "Valetta" and (2) an identifier, such as a geonames URI &lt;a href="http://sws.geonames.org/2759794"&gt;http://sws.geonames.org/2759794&lt;/a&gt; (which identifies Amsterdam) or &lt;a href="http://sws.geonames.org/2562305"&gt;http://sws.geonames.org/2562305&lt;/a&gt; (which identifies Valetta). The use of identifiers is preferred as these are unambiguous, however, public sector data typically uses simple names to record places and this is fully supported.</usageNote-en>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#AssetRepository">
+      <usageNote-en xmlns="" xml:lang="en">adms:AssetRepository is a sub class of dcat:Catalog</usageNote-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfDeath">
-      <package xmlns="" xml:lang="en">Core Person</package>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#identifies"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
+      <skos:prefLabel xml:lang="en">Identifies</skos:prefLabel>
    </rdf:Description>
-   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#countryOfDeath"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfDeath">
-      <skos:prefLabel xml:lang="en">Country of death</skos:prefLabel>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
+      <label-en xmlns="" xml:lang="en">identifies</label-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfDeath">
-      <label-en xmlns="" xml:lang="en">country of death</label-en>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
+      <definition-en xmlns="" xml:lang="en">The entity that is referenced by the Identifier.</definition-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfDeath">
-      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/person#countryOfDeath</uri>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
+      <package xmlns="" xml:lang="en">Core Business</package>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfDeath">
-      <definition-en xmlns="" xml:lang="en">The country in which the Person died.</definition-en>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
+      <uri xmlns="" xml:lang="en">http://data.europa.eu/m8g/identifies</uri>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfDeath">
-      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=The Location Class has two properties: a Geographic Name and a Geographic Identifier. Plain codes like "DE" should be provided as values for Geographical Names whereas URIs should be provided as value of the Geographical Identifier. Ideally, provide both. Providing a simple country name is problematic and should be avoided whereas using a standardised system that allows the use of a code list for country names has a lot of potential for increasing semantic interoperability. Known diversity that one has to deal with when exchanging country names between different communication partners without relying on an agreed code list are: (a) long form vs. short form of a country name (e.g. Federal Republic of Germany vs. Germany), (b) different languages (Italy vs. Italia), (c) historic name vs. current name (Burma vs. Myanmar), (d) ambiguity of similar sounding countries (Republic of the Congo vs. Democratic Republic of the Congo). The Publications Office of the European Union recommends and uses &lt;a href="https://www.iso.org/iso-3166-country-codes.html"&gt;ISO 3166-1&lt;/a&gt; codes for countries in all cases except two: use 'UK' in preference to the ISO 3166 code GB for the United Kingdom; use 'EL' in preference to the ISO 3166 code GR for Greece. See &lt;a href="http://publications.europa.eu/code/en/en-5000500.htm"&gt; Publications Office list of countries&lt;/a&gt; for details of the OPOCE's full list of countries, codes, currencies and more. Where a country has changed its name or no longer exists (such as Czechoslovakia, Yugoslavia etc.) use the&lt;a href="https://www.iso.org/standard/72484.html"&gt;ISO 3166-3 code&lt;/a&gt;.</usageNote-en>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
+      <label-en xmlns="" xml:lang="en">identifies</label-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfDeath">
-      <package xmlns="" xml:lang="en">Core Person</package>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#identifies</uri>
    </rdf:Description>
-   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth">
-      <skos:prefLabel xml:lang="en">Place of birth</skos:prefLabel>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
+      <definition-en xmlns="" xml:lang="en">The entity that is referenced by the Identifier.</definition-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth">
-      <skos:definition xml:lang="en">A person's place of birth.
- (cpv:Person -&gt; Location (+placeOfBirth)) </skos:definition>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#issuingAuthorityURI"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#issuingAuthorityURI">
+      <skos:prefLabel xml:lang="en">Issuing authority u r i</skos:prefLabel>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth">
-      <label-en xmlns="" xml:lang="en">place of birth</label-en>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#issuingAuthorityURI">
+      <label-en xmlns="" xml:lang="en">issuing authority URI</label-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth">
-      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/person#placeOfBirth</uri>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#issuingAuthorityURI">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/creator</uri>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth">
-      <definition-en xmlns="" xml:lang="en">The Location where the Person was born.</definition-en>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#issuingAuthorityURI">
+      <definition-en xmlns="" xml:lang="en">The reference in the form of a Uniform Resource Identifier to the issuing authority.</definition-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth">
-      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=The Place of Birth and Place of Death are given using the Location class which is associated via the appropriate relationship. The Location Class has two properties: (1) the geographic name of the place, which is given as a string such as "Amsterdam" or "Valetta" and (2) an identifier, such as a geonames URI &lt;a href="http://sws.geonames.org/2759794"&gt;http://sws.geonames.org/2759794&lt;/a&gt; (which identifies Amsterdam) or &lt;a href="http://sws.geonames.org/2562305"&gt;http://sws.geonames.org/2562305&lt;/a&gt; (which identifies Valetta). The use of identifiers is preferred as these are unambiguous, however, public sector data typically uses simple names to record places and this is fully supported.</usageNote-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#placeOfBirth">
-      <package xmlns="" xml:lang="en">Core Person</package>
-   </rdf:Description>
-   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#domicile"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#domicile">
-      <skos:prefLabel xml:lang="en">Domicile</skos:prefLabel>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#domicile">
-      <skos:definition xml:lang="en">The permanent address of a person (cpv:Person -&gt; Address (+domicile)) </skos:definition>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#domicile">
-      <uri xmlns="" xml:lang="en">http://data.europa.eu/m8g/domicile</uri>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#domicile">
-      <label-en xmlns="" xml:lang="en">domicile</label-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#domicile">
-      <definition-en xmlns="" xml:lang="en">The place that the Person treats as permanent home.</definition-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#domicile">
-      <package xmlns="" xml:lang="en">Core Person</package>
-   </rdf:Description>
-   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth">
-      <skos:prefLabel xml:lang="en">Country of birth</skos:prefLabel>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth">
-      <skos:definition xml:lang="en">The country in which a Person was born. (cpv:Person -&gt; Location (+countryOfBirth)) </skos:definition>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth">
-      <label-en xmlns="" xml:lang="en">country of birth</label-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth">
-      <definition-en xmlns="" xml:lang="en">The country in which the Person was born.</definition-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth">
-      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=The Location Class has two properties: a Geographic Name and a Geographic Identifier. Plain codes like "DE" should be provided as values for Geographical Names whereas URIs should be provided as value of the Geographical Identifier. Ideally, provide both. Providing a simple country name is problematic and should be avoided whereas using a standardised system that allows the use of a code list for country names has a lot of potential for increasing semantic interoperability. Known diversity that one has to deal with when exchanging country names between different communication partners without relying on an agreed code list are: (a) long form vs. short form of a country name (e.g. Federal Republic of Germany vs. Germany), (b) different languages (Italy vs. Italia), (c) historic name vs. current name (Burma vs. Myanmar), (d) ambiguity of similar sounding countries (Republic of the Congo vs. Democratic Republic of the Congo). The Publications Office of the European Union recommends and uses &lt;a href="https://www.iso.org/iso-3166-country-codes.html"&gt;ISO 3166-1&lt;/a&gt; codes for countries in all cases except two: use 'UK' in preference to the ISO 3166 code GB for the United Kingdom; use 'EL' in preference to the ISO 3166 code GR for Greece. See &lt;a href="http://publications.europa.eu/code/en/en-5000500.htm"&gt; Publications Office list of countries&lt;/a&gt; for details of the OPOCE's full list of countries, codes, currencies and more. Where a country has changed its name or no longer exists (such as Czechoslovakia, Yugoslavia etc.) use the&lt;a href="https://www.iso.org/standard/72484.html"&gt;ISO 3166-3 code&lt;/a&gt;.</usageNote-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth">
-      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/person#countryOfBirth</uri>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#countryOfBirth">
-      <package xmlns="" xml:lang="en">Core Person</package>
-   </rdf:Description>
-   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#change"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#change">
-      <skos:prefLabel xml:lang="en">Change</skos:prefLabel>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#change">
-      <label-en xmlns="" xml:lang="en">change</label-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#change">
-      <usageNote-en xmlns="" xml:lang="en">For example, a change of name or a person's their death. It is assumed that an inverse relationship will also be defined.</usageNote-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#change">
-      <package xmlns="" xml:lang="en">Core Person</package>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#change">
-      <definition-en xmlns="" xml:lang="en">The change relationship links a Class to a record of change in a data field associated with the Class.</definition-en>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#issuingAuthorityURI">
+      <usageNote-en xmlns="" xml:lang="en">Example: "https://belgium.be/id/organizations/1233".</usageNote-en>
    </rdf:Description>
    <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#identifier"/>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
@@ -238,6 +182,18 @@ Citizenship is information needed by many cross-border use cases and is a legal 
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
       <skos:definition xml:lang="en">For many systems, the identifier is the key piece of information about an individual and therefore an important part of the core person vocabulary. However, all identifiers are contextspecific and when exchanging data between systems it is important to provide additional information that makes this explicit. An individual may have any number of identifiers. (cpv:Person -&gt; adms:Identifier (+identifier)) </skos:definition>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <label-en xmlns="" xml:lang="en">identifier</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#identifier</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <definition-en xmlns="" xml:lang="en">The unambiguous structured reference for the Public Organization.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=Public organizations identifiers are often using (but not limited to) acronyms. For example, among the EU institutions, the ECB is the identifier for the European Central Bank, OLAF for the European Anti-Fraud Office, and so on. These are formally recognised by the European Commission which provides a &lt;a href="https://ec.europa.eu/eurostat/ramon/cybernews/abbreviations.htm"&gt; list&lt;/a&gt; of such acronyms.</usageNote-en>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
       <label-en xmlns="" xml:lang="en">identifier</label-en>
@@ -254,6 +210,51 @@ Citizenship is information needed by many cross-border use cases and is a legal 
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
       <package xmlns="" xml:lang="en">Core Person</package>
    </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <label-en xmlns="" xml:lang="en">identifier</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#identifier</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <definition-en xmlns="" xml:lang="en">The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=Legal Entities may have any number of identifiers (but only one legal identifier). For example, in many jurisdictions, a business will have one or more tax numbers associated with them which do not, by themselves, confer legal entity status. An individual may be issued with identifiers for everything from social security to club membership. The identifier relationship must not be used to link to the identifier issued by the authority that conferred legal entity status on a business.</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <package xmlns="" xml:lang="en">adms</package>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#identifier</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <label-en xmlns="" xml:lang="en">identifier</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifier">
+      <definition-en xmlns="" xml:lang="en">Links a resource to an adms:Identifier class.</definition-en>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#legalIdentifier"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#legalIdentifier">
+      <skos:prefLabel xml:lang="en">Legal identifier</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#legalIdentifier">
+      <label-en xmlns="" xml:lang="en">legal identifier</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#legalIdentifier">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/legal#legalIdentifier</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#legalIdentifier">
+      <definition-en xmlns="" xml:lang="en">The unambiguous structured reference assigned to the Legal Entity by the legal authority that registered it.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#legalIdentifier">
+      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=Legal Entity must have a unique identification number, allowing it to be clearly identified in communication across business registers.
+
+The details of the registration are provided as properties of the Identifier class. The Core vocabulary sets no restriction on the type of legal identifier. In many countries, the business register's identifier is the relevant data point.</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#legalIdentifier">
+      <package xmlns="" xml:lang="en">Core Business</package>
+   </rdf:Description>
    <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#contactPoint"/>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#contactPoint">
       <skos:prefLabel xml:lang="en">Contact point</skos:prefLabel>
@@ -262,220 +263,611 @@ Citizenship is information needed by many cross-border use cases and is a legal 
       <label-en xmlns="" xml:lang="en">contact point</label-en>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#contactPoint">
-      <definition-en xmlns="" xml:lang="en">The main contact information of the resource.</definition-en>
+      <definition-en xmlns="" xml:lang="en">Links an asset to a contact point from where further information about an Asset can be obtained.</definition-en>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#contactPoint">
-      <uri xmlns="" xml:lang="en">http://data.europa.eu/m8g/contactPoint</uri>
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/dcat#contactPoint</uri>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#contactPoint">
-      <usageNote xmlns="" xml:lang="en">NOTE$ea_notes=Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information.</usageNote>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#describedBy"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#describedBy">
+      <skos:prefLabel xml:lang="en">Described by</skos:prefLabel>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#contactPoint">
-      <package xmlns="" xml:lang="en">Core Person</package>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#describedBy">
+      <label-en xmlns="" xml:lang="en">described by</label-en>
    </rdf:Description>
-   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#residency"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#residency">
-      <skos:prefLabel xml:lang="en">Residency</skos:prefLabel>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#describedBy">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/2007/05/powder-s#describedby</uri>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#residency">
-      <label-en xmlns="" xml:lang="en">residency</label-en>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#describedBy">
+      <definition-en xmlns="" xml:lang="en">The main documentation or specification of the Asset.</definition-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#residency">
-      <definition-en xmlns="" xml:lang="en">Jurisdiction where the Person has their dwelling.</definition-en>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#describedBy">
+      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=See also dcat:landingPage , foaf:page.</usageNote-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#residency">
-      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=A Person's fixed, permanent, and principal home for legal purposes, the place (especially the house) in which a person officially lives or resides. A Person has one, multiple or even no residency status. Multiple residencies are recorded as multiple instances of the residency relationship.</usageNote-en>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#translation"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#translation">
+      <skos:prefLabel xml:lang="en">Translation</skos:prefLabel>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#residency">
-      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/person#residency</uri>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#translation">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#translation</uri>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#residency">
-      <package xmlns="" xml:lang="en">Core Person</package>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#translation">
+      <label-en xmlns="" xml:lang="en">translation</label-en>
    </rdf:Description>
-   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#identifies"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
-      <skos:prefLabel xml:lang="en">Identifies</skos:prefLabel>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#translation">
+      <definition-en xmlns="" xml:lang="en">Links Assets that are translations of each other.</definition-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
-      <label-en xmlns="" xml:lang="en">identifies</label-en>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#theme"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#theme">
+      <skos:prefLabel xml:lang="en">Theme</skos:prefLabel>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
-      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#identifies</uri>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#theme">
+      <label-en xmlns="" xml:lang="en">theme</label-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#identifies">
-      <definition-en xmlns="" xml:lang="en">The entity that is referenced by the Identifier.</definition-en>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#theme">
+      <definition-en xmlns="" xml:lang="en">The theme or sector to which the Asset applies.</definition-en>
    </rdf:Description>
-   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#alternativeName"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#alternativeName">
-      <skos:prefLabel xml:lang="en">Alternative name</skos:prefLabel>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#theme">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/dcat#theme</uri>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#alternativeName">
-      <definition-en xmlns="" xml:lang="en">Any name by which a Person is known, other than their full name.</definition-en>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#interoperabilityLevel"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#interoperabilityLevel">
+      <skos:prefLabel xml:lang="en">Interoperability level</skos:prefLabel>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#alternativeName">
-      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/alternative</uri>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#interoperabilityLevel">
+      <label-en xmlns="" xml:lang="en">interoperability level</label-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#alternativeName">
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#interoperabilityLevel">
+      <definition-en xmlns="" xml:lang="en">The interoperability level for which the Asset is relevant.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#interoperabilityLevel">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#interoperabilityLevel</uri>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#type"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#type">
+      <skos:prefLabel xml:lang="en">Type</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#type">
+      <label-en xmlns="" xml:lang="en">type</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#type">
+      <definition-en xmlns="" xml:lang="en">This property is used to point to the specific type of Asset.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#type">
+      <usageNote-en xmlns="" xml:lang="en">The type should be provided using a controlled vocabulary encoded as a SKOS Concept.</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#type">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/type</uri>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#sample"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#sample">
+      <skos:prefLabel xml:lang="en">Sample</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#sample">
+      <label-en xmlns="" xml:lang="en">sample</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#sample">
+      <definition-en xmlns="" xml:lang="en">Links to a sample of an Asset (which is itself an Asset).</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#sample">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#sample</uri>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#relation"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#relation">
+      <skos:prefLabel xml:lang="en">Relation</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#relation">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/relation</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#relation">
+      <label-en xmlns="" xml:lang="en">relation</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#relation">
+      <definition-en xmlns="" xml:lang="en">A link between two Assets that are related in some (unspecified) way.</definition-en>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#next"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#next">
+      <skos:prefLabel xml:lang="en">Next</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#next">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#next</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#next">
+      <label-en xmlns="" xml:lang="en">next</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#next">
+      <definition-en xmlns="" xml:lang="en">A link to the next version of the Asset.</definition-en>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#distribution"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#distribution">
+      <skos:prefLabel xml:lang="en">Distribution</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#distribution">
+      <definition-en xmlns="" xml:lang="en">Links an Asset to an implementation in a particular format.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#distribution">
+      <label-en xmlns="" xml:lang="en">distribution</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#distribution">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/dcat#distribution</uri>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#last"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#last">
+      <skos:prefLabel xml:lang="en">Last</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#last">
+      <label-en xmlns="" xml:lang="en">last</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#last">
+      <definition-en xmlns="" xml:lang="en">A link to the current or latest version of the Asset.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#last">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#last</uri>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#includedAsset"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#includedAsset">
+      <skos:prefLabel xml:lang="en">Included asset</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#includedAsset">
+      <label-en xmlns="" xml:lang="en">included asset</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#includedAsset">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#includedAsset</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#includedAsset">
+      <definition-en xmlns="" xml:lang="en">An Asset that is contained in the Asset being described, e.g. when there are several vocabularies defined in a single document.</definition-en>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#landingPage"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#landingPage">
+      <skos:prefLabel xml:lang="en">Landing page</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#landingPage">
+      <label-en xmlns="" xml:lang="en">landing page</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#landingPage">
+      <definition-en xmlns="" xml:lang="en">A Web page that can be navigated to in a Web browser to gain access to the Asset, its distributions and/or additional information.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#landingPage">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/dcat#landingPage</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#landingPage">
+      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=If the Asset Distribution(s) are accessible only through a landing page (i.e. direct download URLs are not known), then the landing page link should be duplicated as accessURL on a distribution.</usageNote-en>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#temporal"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#temporal">
+      <skos:prefLabel xml:lang="en">Temporal</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#temporal">
+      <definition-en xmlns="" xml:lang="en">The time period to which the Asset applies, e.g. its validity.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#temporal">
+      <label-en xmlns="" xml:lang="en">temporal</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#temporal">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/temporal</uri>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#prev"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#prev">
+      <skos:prefLabel xml:lang="en">Prev</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#prev">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#prev</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#prev">
+      <definition-en xmlns="" xml:lang="en">A link to the previous version of the Asset.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#prev">
+      <label-en xmlns="" xml:lang="en">prev</label-en>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#page"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#page">
+      <skos:prefLabel xml:lang="en">Page</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#page">
+      <label-en xmlns="" xml:lang="en">page</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#page">
+      <definition-en xmlns="" xml:lang="en">Links to documentation that contains information related to the Asset.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#page">
+      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=See also dcat:landingPage , wdrs:describedby.</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#page">
+      <uri xmlns="" xml:lang="en">http://xmlns.com/foaf/0.1/page</uri>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#spatial"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#spatial">
+      <skos:prefLabel xml:lang="en">Spatial</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#spatial">
+      <label-en xmlns="" xml:lang="en">spatial</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#spatial">
+      <definition-en xmlns="" xml:lang="en">The geographic region to which the Asset Repository applies.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#spatial">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/spatial</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#spatial">
+      <label-en xmlns="" xml:lang="en">spatial</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#spatial">
+      <definition-en xmlns="" xml:lang="en">The geographic region to which the Asset Repository applies.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#spatial">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/spatial</uri>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#publisher"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#publisher">
+      <skos:prefLabel xml:lang="en">Publisher</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#publisher">
+      <label-en xmlns="" xml:lang="en">publisher</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#publisher">
+      <definition-en xmlns="" xml:lang="en">inks an Asset to the publishing foaf:Agent.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#publisher">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/publisher</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#publisher">
+      <label-en xmlns="" xml:lang="en">publisher</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#publisher">
+      <definition-en xmlns="" xml:lang="en">inks an Asset Distribution to the publishing foaf:Agent.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#publisher">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/publisher</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#publisher">
+      <label-en xmlns="" xml:lang="en">publisher</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#publisher">
+      <definition-en xmlns="" xml:lang="en">inks an Asset Repository to the publishing foaf:Agent.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#publisher">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/publisher</uri>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#status"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#status">
+      <skos:prefLabel xml:lang="en">Status</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#status">
+      <label-en xmlns="" xml:lang="en">status</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#status">
+      <definition-en xmlns="" xml:lang="en">The status of the Asset in the context of a particular workflow process.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#status">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#status</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#status">
+      <label-en xmlns="" xml:lang="en">status</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#status">
+      <definition-en xmlns="" xml:lang="en">The status of the AssetRepository in the context of a particular workflow process.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#status">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#status</uri>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#supportedSchema"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#supportedSchema">
+      <skos:prefLabel xml:lang="en">Supported schema</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#supportedSchema">
+      <label-en xmlns="" xml:lang="en">supported schema</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#supportedSchema">
+      <definition-en xmlns="" xml:lang="en">A schema according to which the Asset Repository can provide data about its content, e.g. ADMS.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#supportedSchema">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#supportedSchema</uri>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#dataset"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dataset">
+      <skos:prefLabel xml:lang="en">Dataset</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dataset">
+      <label-en xmlns="" xml:lang="en">dataset</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dataset">
+      <definition-en xmlns="" xml:lang="en">Used to link an Asset Repository to an Asset.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dataset">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/dcat#dataset</uri>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#license"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#license">
+      <skos:prefLabel xml:lang="en">License</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#license">
+      <label-en xmlns="" xml:lang="en">license</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#license">
+      <definition-en xmlns="" xml:lang="en">Links to the conditions or restrictions for (re-)use of the Asset Distribution.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#license">
+      <usageNote-en xmlns="" xml:lang="en">If multiple licenses are given, these licenses apply to all files in the Asset Distribution.</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#license">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/license</uri>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#representationTechnique"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#representationTechnique">
+      <skos:prefLabel xml:lang="en">Representation technique</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#representationTechnique">
+      <label-en xmlns="" xml:lang="en">representation technique</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#representationTechnique">
+      <definition-en xmlns="" xml:lang="en">NOTE$ea_notes=More information about the format in which an Asset Distribution is released. This is different from the file format as, for example, a ZIP file (file format) could contain an XML schema (representation technique).</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#representationTechnique">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#representationTechnique</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#representationTechnique">
+      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=See also dcterms:format and dcat:mediaType .</usageNote-en>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#mediatype"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#mediatype">
+      <skos:prefLabel xml:lang="en">Mediatype</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#mediatype">
+      <label-en xmlns="" xml:lang="en">mediatype</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#mediatype">
+      <definition-en xmlns="" xml:lang="en">The media type of the distribution as defined by IANA .</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#mediatype">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/dcat#mediaType</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#mediatype">
+      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=This property should be used when the media type of the distribution is defined in IANA , e.g. text/csv otherwise dcterms:format may be used with different values. See also adms:representationTechnique .</usageNote-en>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#format"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#format">
+      <skos:prefLabel xml:lang="en">Format</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#format">
+      <label-en xmlns="" xml:lang="en">format</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#format">
+      <definition-en xmlns="" xml:lang="en">The file format of the distribution.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#format">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/format</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#format">
+      <usageNote-en xmlns="" xml:lang="en">NOTE$ea_notes=dcat:mediaType should be used if the type of the distribution is defined by IANA . Suitable values for dcterms:format include URIs as used in the example . See also adms:representationTechnique .</usageNote-en>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://data.europa.eu/a4g/ontology#themeTaxonomy"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#themeTaxonomy">
+      <skos:prefLabel xml:lang="en">Theme taxonomy</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#themeTaxonomy">
+      <label-en xmlns="" xml:lang="en">theme taxonomy</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#themeTaxonomy">
+      <definition-en xmlns="" xml:lang="en">The SKOS Concept Scheme used to classify an Asset Repository's assets.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#themeTaxonomy">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/dcat#themeTaxonomy</uri>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#dateOfIssue"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfIssue">
+      <skos:prefLabel xml:lang="en">Date of issue</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfIssue">
+      <label-en xmlns="" xml:lang="en">date of issue</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfIssue">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/issued</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfIssue">
+      <definition-en xmlns="" xml:lang="en">The date on which the Identifier was assigned.</definition-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#issuingAuthorityName"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#issuingAuthorityName">
+      <skos:prefLabel xml:lang="en">Issuing authority name</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#issuingAuthorityName">
+      <definition-en xmlns="" xml:lang="en">The name of the agency responsible for issuing the Identifier.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#issuingAuthorityName">
+      <label-en xmlns="" xml:lang="en">issuing authority name</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#issuingAuthorityName">
+      <usageNote-en xmlns="" xml:lang="en">Example: "Federal Public Service Interior"@en.</usageNote-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#issuingAuthorityName">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#schemeAgency</uri>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#notation"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#notation">
+      <skos:prefLabel xml:lang="en">Notation</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#notation">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/2004/02/skos/core#notation</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#notation">
+      <label-en xmlns="" xml:lang="en">notation</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#notation">
       <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#alternativeName">
-      <label-en xmlns="" xml:lang="en">alternative name</label-en>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#notation">
+      <definition-en xmlns="" xml:lang="en">A string of characters to uniquely identify a concept.</definition-en>
    </rdf:Description>
-   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#birthName"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#birthName">
-      <skos:prefLabel xml:lang="en">Birth name</skos:prefLabel>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#schemeName"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#schemeName">
+      <skos:prefLabel xml:lang="en">Scheme name</skos:prefLabel>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#birthName">
-      <definition-en xmlns="" xml:lang="en">Full name of the Person given upon their birth.</definition-en>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#schemeName">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/2000/01/rdf-schema#label</uri>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#birthName">
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#schemeName">
+      <label-en xmlns="" xml:lang="en">scheme name</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#schemeName">
+      <definition-en xmlns="" xml:lang="en">Name of the scheme used to construct the identifier.</definition-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#schemeURI"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#schemeURI">
+      <skos:prefLabel xml:lang="en">Scheme u r i</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#schemeURI">
+      <definition-en xmlns="" xml:lang="en">URI of the scheme used to construct the identifier.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#schemeURI">
+      <label-en xmlns="" xml:lang="en">scheme URI</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#schemeURI">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/conformsTo</uri>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#alternativeLabel"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#alternativeLabel">
+      <skos:prefLabel xml:lang="en">Alternative label</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#alternativeLabel">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/2004/02/skos/core#altLabel</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#alternativeLabel">
+      <label-en xmlns="" xml:lang="en">alternative label</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#alternativeLabel">
+      <definition-en xmlns="" xml:lang="en">An alternative name for the Asset.</definition-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#description"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#description">
+      <skos:prefLabel xml:lang="en">Description</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#description">
+      <label-en xmlns="" xml:lang="en">description</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#description">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/description</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#description">
+      <definition-en xmlns="" xml:lang="en">A description of the Asset.</definition-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#issued"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#issued">
+      <skos:prefLabel xml:lang="en">Issued</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#issued">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/issued</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#issued">
+      <label-en xmlns="" xml:lang="en">issued</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#issued">
+      <definition-en xmlns="" xml:lang="en">Date of formal issuance (e.g., publication) of the Asset.</definition-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#keyword"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#keyword">
+      <skos:prefLabel xml:lang="en">Keyword</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#keyword">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/dcat#keyword</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#keyword">
+      <label-en xmlns="" xml:lang="en">keyword</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#keyword">
+      <definition-en xmlns="" xml:lang="en">A word, phrase or tag to describe the Asset.</definition-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#language"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#language">
+      <skos:prefLabel xml:lang="en">Language</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#language">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/language</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#language">
+      <label-en xmlns="" xml:lang="en">language</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#language">
+      <definition-en xmlns="" xml:lang="en">The language of the Asset.</definition-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#modified"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#modified">
+      <skos:prefLabel xml:lang="en">Modified</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#modified">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/modified</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#modified">
+      <label-en xmlns="" xml:lang="en">modified</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#modified">
+      <definition-en xmlns="" xml:lang="en">Date of the latest update of the Asset.</definition-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#title"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#title">
+      <skos:prefLabel xml:lang="en">Title</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#title">
+      <uri xmlns="" xml:lang="en">http://purl.org/dc/terms/title</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#title">
+      <label-en xmlns="" xml:lang="en">title</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#title">
+      <definition-en xmlns="" xml:lang="en">A name given to the Asset.</definition-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#versionInfo"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#versionInfo">
+      <skos:prefLabel xml:lang="en">Version info</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#versionInfo">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/2002/07/owl#versionInfo</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#versionInfo">
+      <label-en xmlns="" xml:lang="en">version info</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#versionInfo">
+      <definition-en xmlns="" xml:lang="en">A version number or other designation of the Asset.</definition-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#versionNotes"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#versionNotes">
+      <skos:prefLabel xml:lang="en">Version notes</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#versionNotes">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/adms#versionNotes</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#versionNotes">
+      <definition-en xmlns="" xml:lang="en">A description of changes between this version and the previous version of the Asset.</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#versionNotes">
+      <label-en xmlns="" xml:lang="en">version notes</label-en>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#accessURL"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#accessURL">
+      <skos:prefLabel xml:lang="en">Access u r l</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#accessURL">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/dcat#accessURL</uri>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#accessURL">
+      <label-en xmlns="" xml:lang="en">access URL</label-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#accessURL">
+      <definition-en xmlns="" xml:lang="en">NOTE</definition-en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#accessURL">
       <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#birthName">
-      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/person#birthName</uri>
+   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#downloadURL"/>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#downloadURL">
+      <skos:prefLabel xml:lang="en">Download u r l</skos:prefLabel>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#birthName">
-      <label-en xmlns="" xml:lang="en">birth name</label-en>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#downloadURL">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/dcat#downloadURL</uri>
    </rdf:Description>
-   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#dateOfBirth"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfBirth">
-      <skos:prefLabel xml:lang="en">Date of birth</skos:prefLabel>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#downloadURL">
+      <label-en xmlns="" xml:lang="en">download URL</label-en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfBirth">
-      <uri xmlns="" xml:lang="en">http://data.europa.eu/m8g/birthDate</uri>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfBirth">
-      <definition-en xmlns="" xml:lang="en">The point in time on which the Person was born.</definition-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfBirth">
-      <label-en xmlns="" xml:lang="en">date of birth</label-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfBirth">
-      <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
-   </rdf:Description>
-   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#dateOfDeath"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfDeath">
-      <skos:prefLabel xml:lang="en">Date of death</skos:prefLabel>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfDeath">
-      <uri xmlns="" xml:lang="en">http://data.europa.eu/m8g/deathDate</uri>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfDeath">
-      <definition-en xmlns="" xml:lang="en">The point in time on which the Person died.</definition-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfDeath">
-      <label-en xmlns="" xml:lang="en">date of death</label-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#dateOfDeath">
-      <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
-   </rdf:Description>
-   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#familyName"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#familyName">
-      <skos:prefLabel xml:lang="en">Family name</skos:prefLabel>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#familyName">
-      <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#familyName">
-      <uri xmlns="" xml:lang="en">http://xmlns.com/foaf/0.1/familyName</uri>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#familyName">
-      <definition-en xmlns="" xml:lang="en">The hereditary surname of a family.</definition-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#familyName">
-      <label-en xmlns="" xml:lang="en">family name</label-en>
-   </rdf:Description>
-   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#fullName"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#fullName">
-      <skos:prefLabel xml:lang="en">Full name</skos:prefLabel>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#fullName">
-      <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#fullName">
-      <uri xmlns="" xml:lang="en">http://xmlns.com/foaf/0.1/name</uri>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#fullName">
-      <definition-en xmlns="" xml:lang="en">The complete name of the Person as one string.</definition-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#fullName">
-      <label-en xmlns="" xml:lang="en">full name</label-en>
-   </rdf:Description>
-   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#gender"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#gender">
-      <skos:prefLabel xml:lang="en">Gender</skos:prefLabel>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#gender">
-      <uri xmlns="" xml:lang="en">http://data.europa.eu/m8g/gender</uri>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#gender">
-      <label-en xmlns="" xml:lang="en">gender</label-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#gender">
-      <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#gender">
-      <definition-en xmlns="" xml:lang="en">The identities, expressions and societal roles of the Person.</definition-en>
-   </rdf:Description>
-   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#givenName"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#givenName">
-      <skos:prefLabel xml:lang="en">Given name</skos:prefLabel>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#givenName">
-      <definition-en xmlns="" xml:lang="en">The name(s) that identify the Person within a family with a common surname.</definition-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#givenName">
-      <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#givenName">
-      <uri xmlns="" xml:lang="en">http://xmlns.com/foaf/0.1/givenName</uri>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#givenName">
-      <label-en xmlns="" xml:lang="en">given name</label-en>
-   </rdf:Description>
-   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#matronymicName"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#matronymicName">
-      <skos:prefLabel xml:lang="en">Matronymic name</skos:prefLabel>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#matronymicName">
-      <uri xmlns="" xml:lang="en">http://data.europa.eu/m8g/matronymicName</uri>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#matronymicName">
-      <label-en xmlns="" xml:lang="en">matronymic name</label-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#matronymicName">
-      <definition-en xmlns="" xml:lang="en">Name based on the given name of the Person's mother.</definition-en>
-   </rdf:Description>
-   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#patronymicName"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#patronymicName">
-      <skos:prefLabel xml:lang="en">Patronymic name</skos:prefLabel>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#patronymicName">
-      <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#patronymicName">
-      <uri xmlns="" xml:lang="en">http://www.w3.org/ns/person#patronymicName</uri>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#patronymicName">
-      <definition-en xmlns="" xml:lang="en">Name based on the given name of the Person's father.</definition-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#patronymicName">
-      <label-en xmlns="" xml:lang="en">patronymic name</label-en>
-   </rdf:Description>
-   <rdf:Property rdf:about="http://data.europa.eu/a4g/ontology#sex"/>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#sex">
-      <skos:prefLabel xml:lang="en">Sex</skos:prefLabel>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#sex">
-      <uri xmlns="" xml:lang="en">http://data.europa.eu/m8g/sex</uri>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#sex">
-      <label-en xmlns="" xml:lang="en">sex</label-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#sex">
-      <definition-en xmlns="" xml:lang="en">The organism's biological sex.</definition-en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#sex">
-      <usageNote-en xmlns="" xml:lang="en">NOTE</usageNote-en>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/ontology#downloadURL">
+      <definition-en xmlns="" xml:lang="en">NOTE</definition-en>
    </rdf:Description>
 </rdf:RDF>

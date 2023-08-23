@@ -9,76 +9,166 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:alternativeName rdfs:domain cccev:Person ;
-    rdfs:range :Text .
+:accessURL rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :AssetDistribution :AssetRepository ) ] ;
+    rdfs:range :Resource .
 
-:birthName rdfs:domain cccev:Person ;
-    rdfs:range :Text .
+:alternativeLabel rdfs:domain :Asset ;
+    rdfs:range :Literal .
 
-:change rdfs:domain cccev:Person ;
-    rdfs:range :Change .
+:contactPoint rdfs:domain :Asset ;
+    rdfs:range :VCard .
 
-:citizenship rdfs:domain cccev:Person ;
-    rdfs:range :Jurisdiction .
+:dataset rdfs:domain :AssetRepository ;
+    rdfs:range :Asset .
 
-:contactPoint rdfs:domain cccev:Person ;
-    rdfs:range :ContactPoint .
+:dateOfIssue rdfs:domain adms:Identifier ;
+    rdfs:range :Date .
 
-:countryOfBirth rdfs:domain cccev:Person ;
-    rdfs:range :Location .
+:describedBy rdfs:domain :Asset ;
+    rdfs:range :Document .
 
-:countryOfDeath rdfs:domain cccev:Person ;
-    rdfs:range :Location .
+:description rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Asset :AssetDistribution :AssetRepository ) ] ;
+    rdfs:range :Literal .
 
-:dateOfBirth rdfs:domain cccev:Person ;
-    rdfs:range :GenericDate .
+:distribution rdfs:domain :Asset ;
+    rdfs:range :AssetDistribution .
 
-:dateOfDeath rdfs:domain cccev:Person ;
-    rdfs:range :GenericDate .
+:downloadURL rdfs:domain :AssetDistribution ;
+    rdfs:range :Resource .
 
-:domicile rdfs:domain cccev:Person ;
-    rdfs:range :Address .
+:format rdfs:domain :AssetDistribution ;
+    rdfs:range :FileFormat .
 
-:familyName rdfs:domain cccev:Person ;
-    rdfs:range :Text .
-
-:fullName rdfs:domain cccev:Person ;
-    rdfs:range :Text .
-
-:gender rdfs:domain cccev:Person ;
-    rdfs:range :Code .
-
-:givenName rdfs:domain cccev:Person ;
-    rdfs:range :Text .
-
-:identifier rdfs:domain cccev:Person ;
+:identifier rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :PublicOrganisation cccev:Person :LegalEntity :Asset ) ] ;
     rdfs:range adms:Identifier .
 
-:identifies rdfs:domain adms:Identifier ;
-    rdfs:range cccev:Person .
+:identifies rdf:domain adms:Identifier ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( :LegalEntity cccev:Person ) ] .
 
-:matronymicName rdfs:domain cccev:Person ;
+:includedAsset a owl:AsymmetricProperty ;
+    rdfs:domain :Asset ;
+    rdfs:range :Asset .
+
+:interoperabilityLevel rdfs:domain :Asset ;
+    rdfs:range :Concept .
+
+:issued rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Asset :AssetDistribution :AssetRepository ) ] ;
+    rdfs:range :Literal .
+
+:issuingAuthorityName rdfs:domain adms:Identifier ;
     rdfs:range :Text .
 
-:patronymicName rdfs:domain cccev:Person ;
+:issuingAuthorityURI rdfs:domain adms:Identifier ;
+    rdfs:range :Agent .
+
+:keyword rdfs:domain :Asset ;
+    rdfs:range :Literal .
+
+:landingPage rdfs:domain :Asset ;
+    rdfs:range :Document .
+
+:language rdfs:domain :Asset ;
+    rdfs:range :LinguisticSystem .
+
+:last a owl:AsymmetricProperty ;
+    rdfs:domain :Asset ;
+    rdfs:range :Asset .
+
+:legalIdentifier rdfs:domain :LegalEntity ;
+    rdfs:range adms:Identifier .
+
+:license rdfs:domain :AssetDistribution ;
+    rdfs:range :LicenseDocument .
+
+:mediatype rdfs:domain :AssetDistribution ;
+    rdfs:range :FileFormat .
+
+:modified rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Asset :AssetDistribution :AssetRepository ) ] ;
+    rdfs:range :Literal .
+
+:next a owl:AsymmetricProperty ;
+    rdfs:domain :Asset ;
+    rdfs:range :Asset .
+
+:notation rdfs:domain adms:Identifier ;
+    rdfs:range :Literal .
+
+:page rdfs:domain :Asset ;
+    rdfs:range :Document .
+
+:prev a owl:AsymmetricProperty ;
+    rdfs:domain :Asset ;
+    rdfs:range :Asset .
+
+:publisher rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Asset :AssetDistribution :AssetRepository ) ] ;
+    rdfs:range :Agent .
+
+:relation a owl:AsymmetricProperty ;
+    rdfs:domain :Asset ;
+    rdfs:range :Asset .
+
+:representationTechnique rdfs:domain :AssetDistribution ;
+    rdfs:range :Concept .
+
+:sample a owl:AsymmetricProperty ;
+    rdfs:domain :Asset ;
+    rdfs:range :Asset .
+
+:schemeName rdfs:domain adms:Identifier ;
     rdfs:range :Text .
 
-:placeOfBirth rdfs:domain cccev:Person ;
+:schemeURI rdfs:domain adms:Identifier ;
+    rdfs:range :Text .
+
+:spatial rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Asset :AssetRepository ) ] ;
     rdfs:range :Location .
 
-:placeOfDeath rdfs:domain cccev:Person ;
-    rdfs:range :Location .
+:status rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Asset :AssetDistribution ) ] ;
+    rdfs:range :Concept .
 
-:residency rdfs:domain cccev:Person ;
-    rdfs:range :Jurisdiction .
+:supportedSchema rdfs:domain :AssetRepository ;
+    rdfs:range :Asset .
 
-:sex rdfs:domain cccev:Person ;
-    rdfs:range :Code .
+:temporal rdfs:domain :Asset ;
+    rdfs:range :PeriodOfTime .
+
+:theme rdfs:domain :Asset ;
+    rdfs:range :Concept .
+
+:themeTaxonomy rdfs:domain :AssetRepository ;
+    rdfs:range :ConceptScheme .
+
+:title rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Asset :AssetDistribution :AssetRepository ) ] ;
+    rdfs:range :Literal .
+
+:translation a owl:AsymmetricProperty ;
+    rdfs:domain :Asset ;
+    rdfs:range :Asset .
+
+:type rdfs:domain :Asset ;
+    rdfs:range :Concept .
+
+:versionInfo rdfs:domain :Asset ;
+    rdfs:range :Literal .
+
+:versionNotes rdfs:domain :Asset ;
+    rdfs:range :Literal .
 
 core-res:core-restriction a owl:Ontology ;
     cc:attributionName "European Union" ;
@@ -86,7 +176,7 @@ core-res:core-restriction a owl:Ontology ;
     dcterms:abstract "This artefact provides the ontology extention with restrictions and inference-relaated specification." ;
     dcterms:created ""^^xsd:date ;
     dcterms:description "TODO: replace.   This module provides the definitions for the eProcurement ontology core.         Procurement data has been identified as data with a high-reuse potential.         Given the increasing importance of data standards for eProcurement, a number of initiatives         driven by the public sector, the industry and academia have been kick-started in recent years.         Some have grown organically, while others are the result of standardisation work.         The vocabularies and the semantics that they are introducing, the phases of public procurement that they are covering,         and the technologies that they are using all differ. These differences hamper data interoperability and thus its reuse by them or by the wider public.         This creates the need for a common data standard for publishing procurement data, hence allowing data         from different sources to be easily accessed and linked, and consequently reused."@en ;
-    dcterms:issued "2023-08-22"^^xsd:date ;
+    dcterms:issued "2023-08-23"^^xsd:date ;
     dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
     dcterms:rights "The Commission’s reuse policy is implemented by Commission Decision2011/833/EU of 12 December 2011 on the reuse of Commission documents         (OJ L 330,14.12.2011, p. 39 – https://eur-lex.europa.eu/eli/dec/2011/833/oj). Unlessotherwise noted, the reuse of this document is authorised under the         CreativeCommons Attribution 4.0 International (CC BY 4.0) licence (https://creativecommons.org/licenses/by/4.0/).This means that reuse is allowed, provided         that appropriate credit is given and any changes are indicated." ;
     dcterms:title "Core Person Vocabulary"@en ;
@@ -116,5 +206,11 @@ core-res:core-restriction a owl:Ontology ;
     owl:versionIRI core-res:core-restriction-2.1.0 ;
     owl:versionInfo "2.1.0" ;
     skos:changeNote """This version is automatically generated from core_person_CM.xml on 
-                2023-08-22""" .
+                2023-08-23""" .
+
+:AssetRepository a owl:Class .
+
+:AssetDistribution a owl:Class .
+
+:Asset a owl:Class .
 
