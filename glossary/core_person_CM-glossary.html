@@ -41,19 +41,7 @@
                </thead>
                <tbody>
                   <tr>
-                     <td>adms:Identifier</td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>Asset</td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>AssetDistribution</td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>AssetRepository</td>
+                     <td>cpv:Person</td>
                      <td></td>
                   </tr>
                </tbody>
@@ -70,100 +58,70 @@
                </thead>
                <tbody>
                   <tr>
-                     <td>AssetDistribution<br>AssetRepository<br></td>
-                     <td>accessURL</td>
-                     <td> </td>
-                     <td>Resource [0..*]<br>Resource [0..*]<br></td>
-                  </tr>
-                  <tr>
-                     <td>Asset</td>
-                     <td>alternativeLabel</td>
-                     <td></td>
-                     <td>Literal [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>adms:Identifier</td>
-                     <td>dateOfIssue</td>
-                     <td></td>
-                     <td>Date [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>Asset<br>AssetDistribution<br>AssetRepository<br></td>
-                     <td>description</td>
-                     <td>  </td>
-                     <td>Literal [0..*]<br>Literal [0..*]<br>Literal [0..*]<br></td>
-                  </tr>
-                  <tr>
-                     <td>AssetDistribution</td>
-                     <td>downloadURL</td>
-                     <td></td>
-                     <td>Resource [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>Asset<br>AssetDistribution<br>AssetRepository<br></td>
-                     <td>issued</td>
-                     <td>  </td>
-                     <td>Literal [0..*]<br>Literal [0..*]<br>Literal [0..*]<br></td>
-                  </tr>
-                  <tr>
-                     <td>adms:Identifier</td>
-                     <td>issuingAuthorityName</td>
+                     <td>cpv:Person</td>
+                     <td>alternativeName</td>
                      <td></td>
                      <td>Text [0..*]</td>
                   </tr>
                   <tr>
-                     <td>Asset</td>
-                     <td>keyword</td>
-                     <td></td>
-                     <td>Literal [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>Asset</td>
-                     <td>language</td>
-                     <td></td>
-                     <td>LinguisticSystem [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>Asset<br>AssetDistribution<br>AssetRepository<br></td>
-                     <td>modified</td>
-                     <td>  </td>
-                     <td>Literal [0..*]<br>Literal [0..*]<br>Literal [0..*]<br></td>
-                  </tr>
-                  <tr>
-                     <td>adms:Identifier</td>
-                     <td>notation</td>
-                     <td></td>
-                     <td>Literal [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>adms:Identifier</td>
-                     <td>schemeName</td>
+                     <td>cpv:Person</td>
+                     <td>birthName</td>
                      <td></td>
                      <td>Text [0..*]</td>
                   </tr>
                   <tr>
-                     <td>adms:Identifier</td>
-                     <td>schemeURI</td>
+                     <td>cpv:Person</td>
+                     <td>dateOfBirth</td>
+                     <td></td>
+                     <td>GenericDate [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Person</td>
+                     <td>dateOfDeath</td>
+                     <td></td>
+                     <td>GenericDate [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Person</td>
+                     <td>familyName</td>
                      <td></td>
                      <td>Text [0..*]</td>
                   </tr>
                   <tr>
-                     <td>Asset<br>AssetDistribution<br>AssetRepository<br></td>
-                     <td>title</td>
-                     <td>  </td>
-                     <td>Literal [0..*]<br>Literal [0..*]<br>Literal [0..*]<br></td>
+                     <td>cpv:Person</td>
+                     <td>fullName</td>
+                     <td></td>
+                     <td>Text [0..*]</td>
                   </tr>
                   <tr>
-                     <td>Asset</td>
-                     <td>versionInfo</td>
+                     <td>cpv:Person</td>
+                     <td>gender</td>
                      <td></td>
-                     <td>Literal [0..*]</td>
+                     <td>Code [0..*]</td>
                   </tr>
                   <tr>
-                     <td>Asset</td>
-                     <td>versionNotes</td>
+                     <td>cpv:Person</td>
+                     <td>givenName</td>
                      <td></td>
-                     <td>Literal [0..*]</td>
+                     <td>Text [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Person</td>
+                     <td>matronymicName</td>
+                     <td></td>
+                     <td>Text [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Person</td>
+                     <td>patronymicName</td>
+                     <td></td>
+                     <td>Text [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Person</td>
+                     <td>sex</td>
+                     <td></td>
+                     <td>Code [0..*]</td>
                   </tr>
                </tbody>
             </table>
@@ -178,158 +136,67 @@
                </thead>
                <tbody>
                   <tr>
+                     <td>change</td>
+                     <td></td>
+                     <td>cpv:Person -&gt; Change (external) []</td>
+                  </tr>
+                  <tr>
+                     <td>citizenship</td>
+                     <td>The citizenship relationship links a Person to a Jurisdiction that has conferred citizenship
+                        rights on the individual such as the right to vote, to receive certain protection
+                        from the community or the issuance of a passport. Multiple citizenships are recorded
+                        as multiple instances of the citizenship relationship.</td>
+                     <td>cpv:Person -&gt; Jurisdiction (external) [0..*]</td>
+                  </tr>
+                  <tr>
                      <td>contactPoint</td>
                      <td></td>
-                     <td>Asset -&gt; VCard (external) [0..*]</td>
+                     <td>cpv:Person -&gt; ContactPoint (external) [0..*]</td>
                   </tr>
                   <tr>
-                     <td>dataset</td>
-                     <td></td>
-                     <td>AssetRepository -&gt; Asset [0..*]</td>
+                     <td>countryOfBirth</td>
+                     <td>The country in which a Person was born.</td>
+                     <td>cpv:Person -&gt; Location (external) [0..*]</td>
                   </tr>
                   <tr>
-                     <td>describedBy</td>
+                     <td>countryOfDeath</td>
                      <td></td>
-                     <td>Asset -&gt; Document (external) [0..*]</td>
+                     <td>cpv:Person -&gt; Location (external) [0..*]</td>
                   </tr>
                   <tr>
-                     <td>distribution</td>
-                     <td></td>
-                     <td>Asset -&gt; AssetDistribution [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>format</td>
-                     <td></td>
-                     <td>AssetDistribution -&gt; FileFormat (external) [0..*]</td>
+                     <td>domicile</td>
+                     <td>The permanent address of a person</td>
+                     <td>cpv:Person -&gt; Address (external) [0..*]</td>
                   </tr>
                   <tr>
                      <td>identifier</td>
-                     <td> For many systems, the identifier is the key piece of information about an individual
+                     <td>For many systems, the identifier is the key piece of information about an individual
                         and therefore an important part of the core person vocabulary. However, all identifiers
                         are contextspecific and when exchanging data between systems it is important to provide
                         additional information that makes this explicit. An individual may have any number
-                        of identifiers.  </td>
-                     <td>PublicOrganisation (external) -&gt; adms:Identifier [0..*]<br>cpv:Person (external) -&gt; adms:Identifier [0..*]<br>LegalEntity (external) -&gt; adms:Identifier [0..*]<br>Asset -&gt; adms:Identifier [0..*]<br></td>
+                        of identifiers.</td>
+                     <td>cpv:Person -&gt; adms:Identifier (external) [0..*]</td>
                   </tr>
                   <tr>
                      <td>identifies</td>
-                     <td> </td>
-                     <td>adms:Identifier -&gt; LegalEntity (external) [0..*]<br>adms:Identifier -&gt; cpv:Person (external) [0..*]<br></td>
-                  </tr>
-                  <tr>
-                     <td>includedAsset</td>
                      <td></td>
-                     <td>Asset -&gt; Asset [0..*]</td>
+                     <td>adms:Identifier (external) -&gt; cpv:Person [0..*]</td>
                   </tr>
                   <tr>
-                     <td>interoperabilityLevel</td>
+                     <td>placeOfBirth</td>
+                     <td>A person's place of birth.
+                        </td>
+                     <td>cpv:Person -&gt; Location (external) [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>placeOfDeath</td>
                      <td></td>
-                     <td>Asset -&gt; Concept (external) [0..*]</td>
+                     <td>cpv:Person -&gt; Location (external) [0..*]</td>
                   </tr>
                   <tr>
-                     <td>issuingAuthorityURI</td>
+                     <td>residency</td>
                      <td></td>
-                     <td>adms:Identifier -&gt; Agent (external) [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>landingPage</td>
-                     <td></td>
-                     <td>Asset -&gt; Document (external) [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>last</td>
-                     <td></td>
-                     <td>Asset -&gt; Asset [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>legalIdentifier</td>
-                     <td></td>
-                     <td>LegalEntity (external) -&gt; adms:Identifier [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>license</td>
-                     <td></td>
-                     <td>AssetDistribution -&gt; LicenseDocument (external) [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>mediatype</td>
-                     <td></td>
-                     <td>AssetDistribution -&gt; FileFormat (external) [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>next</td>
-                     <td></td>
-                     <td>Asset -&gt; Asset [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>page</td>
-                     <td></td>
-                     <td>Asset -&gt; Document (external) [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>prev</td>
-                     <td></td>
-                     <td>Asset -&gt; Asset [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>publisher</td>
-                     <td>  </td>
-                     <td>Asset -&gt; Agent (external) [0..*]<br>AssetDistribution -&gt; Agent (external) [0..*]<br>AssetRepository -&gt; Agent (external) [0..*]<br></td>
-                  </tr>
-                  <tr>
-                     <td>relation</td>
-                     <td></td>
-                     <td>Asset -&gt; Asset [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>representationTechnique</td>
-                     <td></td>
-                     <td>AssetDistribution -&gt; Concept (external) [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>sample</td>
-                     <td></td>
-                     <td>Asset -&gt; Asset [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>spatial</td>
-                     <td> </td>
-                     <td>Asset -&gt; Location (external) [0..*]<br>AssetRepository -&gt; Location (external) [0..*]<br></td>
-                  </tr>
-                  <tr>
-                     <td>status</td>
-                     <td> </td>
-                     <td>Asset -&gt; Concept (external) [0..*]<br>AssetDistribution -&gt; Concept (external) [0..*]<br></td>
-                  </tr>
-                  <tr>
-                     <td>supportedSchema</td>
-                     <td></td>
-                     <td>AssetRepository -&gt; Asset [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>temporal</td>
-                     <td></td>
-                     <td>Asset -&gt; PeriodOfTime (external) [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>theme</td>
-                     <td></td>
-                     <td>Asset -&gt; Concept (external) [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>themeTaxonomy</td>
-                     <td></td>
-                     <td>AssetRepository -&gt; ConceptScheme (external) [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>translation</td>
-                     <td></td>
-                     <td>Asset -&gt; Asset [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>type</td>
-                     <td></td>
-                     <td>Asset -&gt; Concept (external) [0..*]</td>
+                     <td>cpv:Person -&gt; Jurisdiction (external) [0..*]</td>
                   </tr>
                </tbody>
             </table>
