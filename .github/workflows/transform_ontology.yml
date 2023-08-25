@@ -4,6 +4,7 @@ on:
     branches:
       - "**"
     paths:
+      - ".github\workflows"
       - "implementation/core_person/**"
       - "implementation/testPapyrus1/**"
 
