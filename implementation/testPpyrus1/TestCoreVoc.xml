@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_62E0AECtEe6ekuDDLa70QA" name="TestCoreVoc">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_69C-sECtEe6ekuDDLa70QA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_63WmYECtEe6ekuDDLa70QA" name="Activity1"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_65i-wECtEe6ekuDDLa70QA" name="Interaction2"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_650EgECtEe6ekuDDLa70QA" name="Activity3"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_6549AECtEe6ekuDDLa70QA" name="Interaction4"/>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_66G_cECtEe6ekuDDLa70QA" name="StateMachine5">
+    <region xmi:type="uml:Region" xmi:id="_66QwcECtEe6ekuDDLa70QA" name="Region1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ZoY1QEJcEe6rH8E1roVOxw" name="Person">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_50a34EJcEe6rH8E1roVOxw" name="dct:alternate">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9PnMYEJcEe6rH8E1roVOxw" name="locn:Location"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="__pkGUEJcEe6rH8E1roVOxw"/>
+</uml:Model>

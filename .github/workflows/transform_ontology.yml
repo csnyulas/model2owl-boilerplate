@@ -5,6 +5,7 @@ on:
       - "**"
     paths:
       - "implementation/core_person/**"
+      - "implementation/testPpyrus1/**"
 
 jobs:
   transform:
@@ -27,7 +28,7 @@ jobs:
 
       - name: transform step
         run: |
-          AVAILABLE_IMPLEMENTATIONS=(core_person)
+          AVAILABLE_IMPLEMENTATIONS=(core_person testPpyrus1)
           for implementation in "${AVAILABLE_IMPLEMENTATIONS[@]}"
           do
             echo "-------------------${implementation} transform---------------------------------"
